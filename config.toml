@@ -1,4 +1,30 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+# theme
 theme = "devfest-theme-hugo"
+
+# params
+
+[params]
+    title = "JSON Schema Conf'24"
+    date = "2024-12-03"  # update date 
+    description = "JSON Schema Conf. website for 2024"
+    images = ["/images/social-share.jpg"]
+    email = "contact@devfesttoulouse.fr"
+    keywords = "event, gdg, gde, devfest, google, programming, android, chrome, developers, web, cloud, androiddev"
+    appleTouchIcon = "/apple-touch-icon.png"
+    favicon32 = "/favicon-32x32.png"
+    favicon16 = "/favicon-16x16.png"
+    manifest = "/manifest.json"
+    safariPinnedTab = "/safari-pinned-tab.svg"
+    themeColor = "#00040f"
+    
+[params.logos]
+    jumbo = "/images/logos/devfest_color_text.png"
+    header = "/images/logos/devfest_color_text.png"
+    footer = "/images/logos/devfest_gray_text.png"
+
+[taxonomies]
+  tag = "tags"
