@@ -1,0 +1,9 @@
+follow:
+  - name: github
+    url: https://github.com/json-schema-org
+  - name: twitter
+    url: https://x.com/jsonschema
+  - name: linkedin
+    url: https://www.linkedin.com/company/jsonschema
+  - name: youtube
+    url: https://www.youtube.com/@JSONSchemaOrgOfficial
