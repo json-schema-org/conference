@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My New Hugo Site</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>_big_data___ml___ai</title>
+      <link>http://example.org/tags/_big_data___ml___ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/_big_data___ml___ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>_cloud___infra</title>
+      <link>http://example.org/tags/_cloud___infra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/_cloud___infra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>_iot</title>
+      <link>http://example.org/tags/_iot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/_iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>_languages</title>
+      <link>http://example.org/tags/_languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/_languages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>_method___tools</title>
+      <link>http://example.org/tags/_method___tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/_method___tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>_native_mobile_apps</title>
+      <link>http://example.org/tags/_native_mobile_apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/_native_mobile_apps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>_web</title>
+      <link>http://example.org/tags/_web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/_web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>_wtf</title>
+      <link>http://example.org/tags/_wtf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/_wtf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keynote</title>
+      <link>http://example.org/tags/keynote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/keynote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lunch</title>
+      <link>http://example.org/tags/lunch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/lunch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>office-hours</title>
+      <link>http://example.org/tags/office-hours/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/office-hours/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open</title>
+      <link>http://example.org/tags/open/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/open/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>party</title>
+      <link>http://example.org/tags/party/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/party/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pause</title>
+      <link>http://example.org/tags/pause/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/pause/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
