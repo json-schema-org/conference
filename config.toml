@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = ""
+languageCode = "en-us"
+title = "JSON Schema Conf'24"
 
 # theme
 theme = "devfest-theme-hugo"
@@ -10,8 +10,8 @@ theme = "devfest-theme-hugo"
 [params]
     title = "JSON Schema Conf'24"
     date = "2024-12-03"  # update date 
-    description = "JSON Schema Conf. website for 2024"
-    images = ["/images/social-share.jpg"]
+    description = "JSON Schema Conf website for 2024"
+    images = ["/images/"]
     email = "contact@devfesttoulouse.fr"
     keywords = "event, gdg, gde, devfest, google, programming, android, chrome, developers, web, cloud, androiddev"
     appleTouchIcon = "/apple-touch-icon.png"
