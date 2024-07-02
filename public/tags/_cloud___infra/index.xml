@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>_cloud___infra on My New Hugo Site</title>
-    <link>http://example.org/tags/_cloud___infra/</link>
-    <description>Recent content in _cloud___infra on My New Hugo Site</description>
+    <title>_cloud___infra on JSON Schema Conf&#39;24</title>
+    <link>/tags/_cloud___infra/</link>
+    <description>Recent content in _cloud___infra on JSON Schema Conf&#39;24</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/tags/_cloud___infra/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/_cloud___infra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comprendre le rôle du noyau d&#39;un système d&#39;exploitation en en créant un from scratch</title>
-      <link>http://example.org/sessions/comprendre_le_role_du_noyau_d_un_systeme_d_exploitation_en_creant_un_from_scratch/</link>
+      <link>/sessions/comprendre_le_role_du_noyau_d_un_systeme_d_exploitation_en_creant_un_from_scratch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/sessions/comprendre_le_role_du_noyau_d_un_systeme_d_exploitation_en_creant_un_from_scratch/</guid>
+      <guid>/sessions/comprendre_le_role_du_noyau_d_un_systeme_d_exploitation_en_creant_un_from_scratch/</guid>
       <description>Programmer le noyau d&amp;rsquo;un système d&amp;rsquo;exploitation est un très bon moyen pour en comprendre le fonctionnement et le scope de son travail (IO, gestion de la mémoire, etc). Cette présentation a pour but de présenter et de développer les composants élémentaires d&amp;rsquo;un micro noyau UNIX.
 Dans ce talk je présenterai:
 L&amp;rsquo;émulateur QEMU La réalisation d&amp;rsquo;un secteur de boot avec une micro console Comment gérer les interruptions hardware (clavier) et software La gestion des appels systèmes Un système multi-process simple qui va permettre de découvrir le surcoût des changements de contexte liés à la programmation concurrentielle </description>
@@ -19,10 +19,10 @@ L&amp;rsquo;émulateur QEMU La réalisation d&amp;rsquo;un secteur de boot avec 
     
     <item>
       <title>Rust, WebAssembly, and the future of Serverless</title>
-      <link>http://example.org/sessions/rust__webassembly__and_the_future_of_serverless/</link>
+      <link>/sessions/rust__webassembly__and_the_future_of_serverless/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/sessions/rust__webassembly__and_the_future_of_serverless/</guid>
+      <guid>/sessions/rust__webassembly__and_the_future_of_serverless/</guid>
       <description>A lot of things have been said about WebAssembly inside of the browser; after all, that&amp;rsquo;s why it was originally created. But a new case is emerging as well, and that&amp;rsquo;s WebAssembly on the server. More specifically, we&amp;rsquo;re seeing a rise of support for WebAssembly in serverless application platforms, combining two brand-new technologies together. We&amp;rsquo;re also seeing a lot of growth of the Rust programming language, and its close alignment with WebAssembly.</description>
     </item>
     

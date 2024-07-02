@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Partners on My New Hugo Site</title>
-    <link>http://example.org/partners/</link>
-    <description>Recent content in Partners on My New Hugo Site</description>
+    <title>Partners on JSON Schema Conf&#39;24</title>
+    <link>/partners/</link>
+    <description>Recent content in Partners on JSON Schema Conf&#39;24</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/partners/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/partners/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Airbus</title>
-      <link>http://example.org/partners/platinium/airbus/</link>
+      <link>/partners/platinium/airbus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/partners/platinium/airbus/</guid>
+      <guid>/partners/platinium/airbus/</guid>
       <description>Airbus is an international pioneer in the aerospace industry and a leader in designing, manufacturing and delivering aerospace products, services and solutions to customers on a global scale. We believe that it’s not just what we make, but how we make it that counts; promoting responsible, sustainable and inclusive business practices and acting with integrity. Our people work with passion and determination to make the world a more connected, safer and smarter place, on the ground, in the sky and in space.</description>
     </item>
     
     <item>
       <title>Altran</title>
-      <link>http://example.org/partners/soutien/altran/</link>
+      <link>/partners/soutien/altran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/partners/soutien/altran/</guid>
+      <guid>/partners/soutien/altran/</guid>
       <description></description>
     </item>
     
     <item>
       <title>APSIDE</title>
-      <link>http://example.org/partners/gold/apside/</link>
+      <link>/partners/gold/apside/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/partners/gold/apside/</guid>
+      <guid>/partners/gold/apside/</guid>
       <description>APSIDE est une société de conseil en ingénierie qui accompagne tous les acteurs de l&amp;rsquo;écosystème IT sur leurs projets innovants. Tous nos ingénieurs ont leur spécialité : JAVA, JS, BDD, C#, PHP, C++ &amp;hellip; Nous sélectionnons rigoureusement les projets sur lesquels peuvent intervenir nos ingénieurs : caractère innovant, phase d&amp;rsquo;architecture, produits complets, sujets porteurs et utiles&amp;hellip; C&amp;rsquo;est ce qui rend totalement satisfaits de leur mission plus de 96% de nos ingénieurs.</description>
     </item>
     
     <item>
       <title>Intuiface</title>
-      <link>http://example.org/partners/startup/intuiface/</link>
+      <link>/partners/startup/intuiface/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/partners/startup/intuiface/</guid>
+      <guid>/partners/startup/intuiface/</guid>
       <description>Intuiface is the world’s premier platform for creating, deploying, measuring and managing deeply interactive digital experiences without writing code. Over 1500 companies across 70+ countries are connecting people to place using interactive options such as touch, RFID/NFC, beacons, Web APIs, Internet of Things, and much more. For any industry – including retail, hospitality, real estate, tourism, education – and for any intent – from digital signs to self-service kiosks and assisted selling.</description>
     </item>
     
     <item>
       <title>Programmez</title>
-      <link>http://example.org/partners/media/programmez/</link>
+      <link>/partners/media/programmez/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/partners/media/programmez/</guid>
+      <guid>/partners/media/programmez/</guid>
       <description>Find Programmez on https://www.programmez.com/</description>
     </item>
     
