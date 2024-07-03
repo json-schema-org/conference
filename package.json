@@ -8,6 +8,7 @@
   "scripts": {
     "watch:style": "node-sass src/styles/theme.scss -o static --watch",
     "start": "run-p watch:*",
+    "build:icons": "node icons.js",
     "build:style": "node-sass src/styles/theme.scss -o static; postcss static/theme.css --replace",
     "build": "run-p build:*"
   },
