@@ -16,15 +16,11 @@
 
     .image-info {
       margin: -1.5em 1em;
-      opacity: .5;
+      opacity: 0.5;
 
-      &.dark {
-        color: #000;
-        text-shadow: 0 1px hsla(0, 100%, 100%, .5);
-      }
       &.light {
         color: #fff;
-        text-shadow: 0 1px rgba(0, 0, 0, .5);
+        text-shadow: 0 1px rgba(0, 0, 0, 0.5);
       }
     }
 
@@ -38,7 +34,8 @@
     }
   }
 
-  main h1, main .content {
+  main h1,
+  main .content {
     max-width: var(--theJdrSize);
     margin: 0 auto;
   }
@@ -61,18 +58,27 @@
       margin: var(--space-3) 0;
     }
 
-    h1,h2,h3,h4,h5,h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--toc-text);
       font-style: normal;
       font-weight: 400;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       margin-top: 1.25rem; // 10px
       margin-bottom: 0.625rem; // 10px
     }
 
-    h4, h5, h6 {
+    h4,
+    h5,
+    h6 {
       margin-top: 0.625rem; // 10px
       margin-bottom: 0.625rem; // 10px
     }

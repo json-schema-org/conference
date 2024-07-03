@@ -142,10 +142,4 @@ body>footer {
       width: auto;
     }
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  .follow a.social {
-    filter: grayscale(0.75);
-  }
-}
+} 
