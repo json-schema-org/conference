@@ -22,9 +22,9 @@ theme = "devfest-theme-hugo"
     themeColor = "#00040f"
     
 [params.logos]
-    jumbo = "/images/logos/devfest_color_text.png"
-    header = "/images/logos/devfest_color_text.png"
-    footer = "/images/logos/devfest_gray_text.png"
+    jumbo = "/images/logos/json-schema-logo.svg"
+    header = "/images/logos/json-schema-logo.svg"
+    footer = "/images/logos/json-schema-logo.svg"
 
 [taxonomies]
   tag = "tags"
