@@ -7,6 +7,7 @@ body > header {
 
   .top-content {
     max-width: var(--theJdrSize);
+    padding: 10px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -14,22 +15,22 @@ body > header {
     align-items: center;
   }
 
-  box-shadow: 0 var(--space-1) var(--space-1) rgba(0, 0, 0, .5);
-  background: var(--primary);
-  color: var(--primary-txt);
+  box-shadow: 0 var(--space-1) var(--space-1) rgba(0, 0, 0, 0.5);
+  background: var(--primary-txt);
+  color: #000;
+  font-size: 18px;
 
   .logo {
     padding: var(--space-2) 0;
     img {
       height: calc(var(--toolbar-height) - (2 * var(--space-2)));
-      filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .5));
     }
   }
 
   label {
     display: none;
-    opacity: .5;
-    padding: .1em;
+    opacity: 0.5;
+    padding: 0.1em;
     border: var(--space-2) solid transparent; // Extending the hit area
     outline-offset: var(--space-2);
 
@@ -47,13 +48,14 @@ body > header {
       display: none;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       opacity: 1;
       outline: thin dotted currentColor;
     }
   }
 
-  input[type=checkbox]:checked ~ label {
+  input[type="checkbox"]:checked ~ label {
     .icon-menu {
       display: none;
     }
@@ -78,7 +80,6 @@ body > header {
 
     li {
       opacity: 0.6;
-      transition: all var(--animation);
       border-bottom: thin solid transparent;
       border-radius: 5%;
       margin-right: var(--space-2);
@@ -102,7 +103,7 @@ body > header {
 
       &.external {
         opacity: 1;
-        background: rgba(0, 0, 0, .25);
+        background: rgba(0, 0, 0, 0.25);
       }
     }
 
@@ -111,9 +112,8 @@ body > header {
       text-transform: uppercase;
       padding: 0 var(--space-3);
       text-decoration: none;
-      line-height: calc(var(--toolbar-height) - (4 * var(--space-2)));;
+      line-height: calc(var(--toolbar-height) - (4 * var(--space-2)));
       color: inherit;
-      font-weight: 200;
 
       svg {
         max-width: 3ch;
@@ -128,31 +128,9 @@ body > header {
       }
     }
 
-    .languages {
-      a.lang {
-        color: transparent;
-        max-width: 2em;
-        height: 2em;
-        overflow: hidden;
-
-        &::before {
-          color: initial;
-        }
-
-        &.lang-fr::before {
-          content: '🇫🇷';
-        }
-
-        &.lang-gb::before {
-          content: '🇬🇧';
-        }
-      }
-
-      a.active {
-        display: none;
-      }
+    a.active {
+      display: none;
     }
-
   }
 }
 
@@ -168,7 +146,7 @@ body > header {
       display: none;
       width: 100%;
       padding: 0 1em;
-      background: var(--primary);
+      background: var(--primary-txt);
       flex-direction: column;
       justify-content: flex-start;
 
@@ -193,13 +171,14 @@ body > header {
           border-bottom-color: var(--lighten-2);
         }
 
-        &:focus, &:hover {
+        &:focus,
+        &:hover {
           background: var(--darken-1);
         }
       }
     }
 
-    input[type=checkbox]:checked ~ nav {
+    input[type="checkbox"]:checked ~ nav {
       display: block;
     }
   }
