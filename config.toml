@@ -24,7 +24,7 @@ theme = "devfest-theme-hugo"
 [params.logos]
     jumbo = "/images/logos/json-schema-logo.svg"
     header = "/images/logos/json-schema-logo.svg"
-    footer = "/images/logos/json-schema-logo.svg"
+    footer = "/images/logos/json-schema-logo-white.svg"
 
 [taxonomies]
   tag = "tags"
