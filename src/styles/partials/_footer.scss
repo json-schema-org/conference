@@ -7,7 +7,7 @@ body>footer {
   .bottom-content {
     max-width: var(--theJdrSize);
     margin: 0 auto;
-    height: 200px;
+    height: 100px;
   }
 
   // Header
@@ -16,6 +16,7 @@ body>footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     font-weight: 500;
+    height: 100%;
     flex-wrap: wrap;
     text-transform: uppercase;
 
@@ -24,7 +25,7 @@ body>footer {
       align-items: center;
 
       ul.social-list {
-        font-size: 1.5em;
+        font-size: 2em;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -86,8 +87,7 @@ body>footer {
     }
 
     img {
-      height: 2rem;
-      // width: auto;
+      height: 2.5em;
     }
   }
 } 
