@@ -1,9 +1,13 @@
 body > header {
-
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100vw;
+
+  box-shadow: 0 var(--space-1) var(--space-1) rgba(0, 0, 0, 0.5);
+  background: var(--primary);
+  color: #000;
+  font-size: 18px;
 
   .top-content {
     max-width: var(--theJdrSize);
@@ -14,11 +18,6 @@ body > header {
     justify-content: space-between;
     align-items: center;
   }
-
-  box-shadow: 0 var(--space-1) var(--space-1) rgba(0, 0, 0, 0.5);
-  background: var(--primary-txt);
-  color: #000;
-  font-size: 18px;
 
   .logo {
     padding: var(--space-2) 0;
