@@ -7,23 +7,17 @@ body>footer {
   .bottom-content {
     max-width: var(--theJdrSize);
     margin: 0 auto;
-  }
-
-  a:hover {
-    text-decoration: underline;
+    height: 200px;
   }
 
   // Header
   .footer-header {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     font-weight: 500;
     flex-wrap: wrap;
     text-transform: uppercase;
-
-    .header {
-      margin-right: var(--space-2);
-    }
 
     &>div {
       display: flex;
@@ -76,52 +70,6 @@ body>footer {
     }
   }
 
-  // Content
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    section {
-      margin: var(--space-2) var(--space-4);
-
-      @include mq($until: md) {
-        margin: var(--space-2) 0;
-      }
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      .header {
-        font-size: 1.125rem;
-        font-weight: 600;
-        margin-bottom: var(--space-2);
-      }
-
-      ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        padding: 0;
-        margin: var(--space-1) 0;
-        font-weight: 100;
-
-        li {
-          margin: var(--space-2) 0;
-
-          a {
-            padding: var(--space-3) 0;
-          }
-        }
-      }
-    }
-  }
-
   // Footer
   .footer-footer {
     display: flex;
@@ -139,7 +87,7 @@ body>footer {
 
     img {
       height: 2rem;
-      width: auto;
+      // width: auto;
     }
   }
 } 
