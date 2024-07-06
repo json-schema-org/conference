@@ -9,11 +9,9 @@ menu:
 
 {{% jumbo img="/images/backgrounds/back-0.jpg" imgLabel="JSON Schema Conf'24" %}}
 
-## October 3rd, 2019
+## December 3rd, 2024
 
 ### Pierre Baudis congress center <!-- Change -->
-
-<a class="btn primary btn-lg" style="margin-top: 1em" href="https://drive.google.com/file/d/1td_9Cr1b2JZvv0bCpOCJNDsEWgVgEp2Y/view?usp=sharing" target="_blank">Become a sponsor</a> <!-- Change -->
 
 {{% /jumbo %}}
 
