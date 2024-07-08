@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.Home.Language | default "en" }}">
 {{ partial "head.html" . }}
 
-<body class="{{ .Kind }} {{ with .File }} {{ anchorize .File.ContentBaseName }} {{ end }} {{ .Section }}">
+<body class="{{ .Kind }} {{ with .File }}   {{ range . }} {{ anchorize .File.ContentBaseName }} {{ end }} {{ .Section }}">
 
 {{ readFile "static/icons.svg" | safeHTML }}
 
