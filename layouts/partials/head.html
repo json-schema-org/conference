@@ -13,7 +13,6 @@
 	{{- template "_internal/opengraph.html" . -}}
 	{{- template "_internal/schema.html" . -}}
 	{{- template "_internal/twitter_cards.html" . -}}
-	{{ template "_internal/google_analytics_async.html" . }}
 	{{ end }}
 
 	{{ hugo.Generator }}
@@ -34,15 +33,17 @@
 	<link rel="manifest" href="{{ .Site.Params.manifest }}">
 	{{ end }}
 	{{ if .Site.Params.themeColor }}
-	<meta name="theme-color" content="{{ .Site.Params.themeColor }}"/>
+	<meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
 	<meta name="msapplication-TileColor" content="#{{ .Site.Params.themeColor }}">
 	{{ if .Site.Params.safariPinnedTab }}
 	<link rel="mask-icon" href="{{ .Site.Params.safariPinnedTab }}" color="{{ .Site.Params.themeColor }}">
 	{{ end }}
 	{{ end }}
 
-	<link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"/>
-	<link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}"/>
+	<link href="{{ with .OutputFormats.Get " RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate"
+		type="application/rss+xml" title="{{ .Site.Title }}" />
+	<link href="{{ with .OutputFormats.Get " RSS" }}{{ .RelPermalink }}{{ end }}" rel="feed" type="application/rss+xml"
+		title="{{ .Site.Title }}" />
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
 	{{ partial "stylesheets" . }}
