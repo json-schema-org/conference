@@ -6,7 +6,7 @@ body > header {
 
   box-shadow: 0 var(--space-1) var(--space-1) rgba(0, 0, 0, 0.5);
   background: var(--primary);
-  color: #000;
+  color: #fff;
   font-size: 18px;
 
   .top-content {
@@ -79,24 +79,17 @@ body > header {
 
     li {
       opacity: 0.6;
-      border-bottom: thin solid transparent;
+      border-bottom: solid transparent;
       border-radius: 5%;
       margin-right: var(--space-2);
       display: flex;
       align-items: center;
 
-      --angle: 10deg;
-      transform: skewX(calc(-1 * var(--angle)));
-
-      a {
-        transform: skewX(var(--angle));
-      }
-
       &.active {
         opacity: 1;
 
         a {
-          border-bottom: thin solid currentColor;
+          border-bottom: solid currentColor;
         }
       }
 
