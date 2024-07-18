@@ -30,7 +30,7 @@ hugo server
 
 This starts a local server and opens the website in your web browser at http://localhost:1313. 
 
-<!-- 
+
 
 ## Contributing
 
@@ -41,17 +41,13 @@ This starts a local server and opens the website in your web browser at http://l
     * Adding new entries to the landscape
     * Improving the user interface
 
-## License
-The contents of this repository are licensed under either the BSD 3-clause license or the Academic Free License v3.0. See the [license file](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-license) for more details.
-
-
 ## Contact
 
  For any questions or feedback, please feel free to open an issue on this repository.
 
 ## Get Involved!
 
- Explore the landscape and see how you can contribute to this evolving space.  Whether through contributions, partnerships, or feedback, your involvement can help shape the future of JSON Schema.
+ Explore the website and see how you can contribute to this evolving space.  Whether through contributions, partnerships, or feedback, your involvement can help shape the future of JSON Schema.
 
 ## Connect with the JSON Schema Community
 
@@ -60,4 +56,4 @@ The contents of this repository are licensed under either the BSD 3-clause licen
     <a href="https://twitter.com/jsonschema" target="blank" style="margin-right: 5px;"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="JSON Schema Twitter" height="30" width="40" /></a>
     <a href="https://www.linkedin.com/company/jsonschema" target="blank" style="margin-right: 5px;"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="JSON Schema LinkedIn" height="30" width="40" /></a>
     <a href="https://www.youtube.com/@JSONSchemaOrgOfficial" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="JSON Schema YouTube" height="30" width="40" /></a>
-</p> -->
+</p>
