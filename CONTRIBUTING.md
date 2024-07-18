@@ -1,4 +1,4 @@
-## Contributing to the JSON Schema Website
+## Contributing to the JSON Schema Conference Website
 
 This document outlines how you can get involved and help improve the JSON Schema website. We appreciate all contributions!
 

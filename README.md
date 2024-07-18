@@ -1,4 +1,4 @@
-## JSON Schema Conference
+## JSON Schema Conference Website
 
 [![JSON Schema logo - Build more, break less, empower others.](https://raw.githubusercontent.com/json-schema-org/.github/main/assets/json-schema-banner.png)](https://json-schema.org) 
 
