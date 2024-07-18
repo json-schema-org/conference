@@ -28,7 +28,17 @@ git submodule update --init
 hugo server
 ```
 
-This starts a local server and opens the website in your web browser at http://localhost:1313. 
+This starts a local server and opens the website in your web browser at http://localhost:1313.
+
+## Editing styles
+
+Website is created leverging scss styles for mkaing changes to it we can edit scss file as per our need then run below make command to build the website and reflect the changes at live server.
+
+```bash
+make build
+```
+
+**Note:** Since we are using hugo tool for website creation it might take some time to reflect the changes at live server.
 
 
 
