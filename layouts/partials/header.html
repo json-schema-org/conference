@@ -36,19 +36,6 @@
 				</li>
 				{{ end }}
 			</ul>
-
-			<ul class="languages">
-				{{ range .Translations }}
-				<li>
-					<a class="lang lang-{{ .Language.LanguageName }} {{ if eq .Language $.Site.Home.Language }}active{{ end }}"
-						title="{{ .Language.LanguageName }}" href="{{ .RelPermalink }}" role="radio"
-						aria-label="{{ i18n " language_switch" }} {{ .Language.LanguageName }}"
-						aria-checked="{{ if eq .Language $.Site.Home.Language }}true{{ else }}false{{ end }}">
-						{{- i18n "language_switch" }} {{ .Language.LanguageName -}}
-					</a>
-				</li>
-				{{ end }}
-			</ul>
 		</nav>
 
 	</div>

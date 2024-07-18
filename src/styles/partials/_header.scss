@@ -47,11 +47,7 @@ body > header {
       display: none;
     }
 
-    &:hover,
-    &:focus {
-      opacity: 1;
-      outline: thin dotted currentColor;
-    }
+
   }
 
   input[type="checkbox"]:checked ~ label {
@@ -138,7 +134,7 @@ body > header {
       display: none;
       width: 100%;
       padding: 0 1em;
-      background: var(--primary-txt);
+      background: var(--primary);
       flex-direction: column;
       justify-content: flex-start;
 

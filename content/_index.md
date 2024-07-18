@@ -50,15 +50,6 @@ It is aimed at students, professionals or simply curious technophiles.
     address="11 Espl. Compans Caffarelli, 31000 Toulouse"
     latitude="43.6110956"
     longitude="1.4332799" %}}
-
-## The venue
-
-### Centre de Congrès Pierre Baudis
-
-The Centre de Congrès Pierre Baudis is a modern place of exchange,
-located on a privileged location,
-in the immediate vicinity of the centre of Toulouse and in a green environment.
-
 {{% /home-location %}}
 
 <!-- ... -->
