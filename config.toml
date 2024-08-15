@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://json-schema.org/"
 languageCode = "en-us"
 title = "JSON Schema Conf'24"
 
