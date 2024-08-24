@@ -9,82 +9,38 @@ draft: false
 
 ## General
 
-### What is DevFest Toulouse?
+### What is the JSON Scheme Conference?
 
-The DevFest, or "Developers Festival", is a technical conference for developers.
-It is aimed at students, professionals or simply curious technophiles.
-Throughout the day, renowned speakers will present a variety of topics: around mobile development, the web, data, connected objects, the cloud, DevOps, etc... as well as good development practices.
-Pauses are used to engage in dialogue and deepen the topics presented.
+The JSON Schema Conference is a technical conference organized by the JSON Schema Community.
+It is aimed for the community to share and exchange experiences between existing users and new members. Throughout the day, renowned speakers will present a variety of topics including innovations, use cases, live coding sessions, tooling presentations, case studies as well as best practices.
 
-Software development is a very broad subject and our selection committee is committed to providing a varied and interesting program.
-This day will be an opportunity to meet speakers of international but also national renown, indeed we also aim to make an important place for local speakers.
+The JSON Schema Conference is part of [API Days Paris](https://www.apidays.global/paris/), the leading series of worldwide conferences on the Programmable Economy.
 
-DevFest is part of an [international event](https://developers.google.com/events/devfest/) and is organised in partnership with Google.
+### Organized by the JSON Schema Community
 
-
-### Organizing communities
-
-DevFest Toulouse is an event organized by the developer communities of Toulouse, and administratively supported by GDG Toulouse.
-You will find the list of communities at the bottom of the main page.
-
-To make all this possible, an over-vitaminated team of volunteers is working behind the scenes.
+The JSON Schema Conference is an event organized by the JSON Schema Community.
 
 ## Conference
 
-### Where and when will DevFest take place?
+### Where and when it will take place?
 
-Le DevFest Toulouse 2019 takes place on **Thursday, October 3** at the [Congress Centre Pierre Baudis](https://goo.gl/maps/vDmHc8mFQtD2).
-
-### How to get there?
-
-The [Centre de Congrés Pierre Baudis](https://goo.gl/maps/vDmHc8mFQtD2) is ideally located in the city centre.
-
-* :airplane: **by plane** : <br>
-From _Blagnac_ airport, two solutions:
-  - The easiest way is to take the airport shuttle to get off at the stop _Compans-Cafarelli_
-  - You can also:
-      1. Take the tram <mark class="t2">T<sub>2</sub></mark> to the station _Arènes_
-      2. Take a connection with the <mark class="a">A</mark> line from the metro to the _Jean Jaurès_ stop
-      3. Take a connection with the <mark class="b">B</mark> line from the metro to the _Compans-Cafarelli_ stop
-* :car: **by car** : <br>
-A parking lot (subject to charge) is located a stone's throw from the conference. <br>
-Feel free to carpool.
-* :train: **by train** : <br>
-From the station _Matabiau_, 
-simply take the <mark class="a">A</mark> line from the metro to the _Jean Jaurès_ stop<br> 
-where you will take a connection with the <mark class="b">B</mark> metro line 
-in order to get off at the _Compans-Cafarelli_ stop.
-* :metro: **en métro** : <br>
-Take the line <mark class="b">B</mark> then get off at the _Compans-Cafarelli_ stop.
+The JSON Schema Conference will take place **Thursday, December 5** at the [CNIT Forest – Paris](https://maps.app.goo.gl/U4urzY2seAZyDac78).
 
 ## Sponsor / Partner?
 
 ### How to become a sponsor/partner?
 
-The partnership file is currently available [here](https://drive.google.com/file/d/1td_9Cr1b2JZvv0bCpOCJNDsEWgVgEp2Y/view?usp=sharing).
+We are looking for a Sponsor to help us cover the expenses of travel and accomodation as well as support speakers with a speaker stipend to make it easier for them to come.
+
+This is an amazing opportunity to support the Community. To know more about how to sponsor please check [the conference's page in our Open Collective](https://opencollective.com/json-schema/events/the-json-schema-conference-f259215b).
+
 
 ## CFP: Call for Paper
 
-All the information in the [CFP Blog post](/blog/cfp/)
+The CFP is the official CFP of API Days Paris available [here](https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx). Please sure you select The JSON Schema Conference in the event's list.
 
 ## Ticketing
 
-### What are the conditions for refunding your ticket?
+The tickets should be acquired using the standard [API Days ticketing system](https://ticket.apidays.global/event/apidays-paris-2024/f8f61349-4f78-4bba-a162-68d598833116/cart).
 
-We allow a refund up to 15 days before the event excluding the processing fee of our ticketing partner.
-
-### Is it necessary to bring an identity document or is there a minimum age to enter the event?
-
-Your ticket is enough, there is no minimum age.
-
-### Can I update my registration information?
-
-Yes, you can change your order information on our ticketing partner's website.
-
-### Is it a problem if the name on my ticket or registration does not match the name of the participant?
-
-Yes, please contact us if you have any specific questions.
-
-### I would like an invoice, how do I get it?
-
-Our association is now subject to VAT. It is therefore possible to obtain an invoice from our ticketing partner.
+In the upcoming weeks we'll share a special promo code for community members. More details to be published soon.

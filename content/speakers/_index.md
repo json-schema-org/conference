@@ -8,7 +8,9 @@ draft: false
 ---
 
 {{% hero %}}
-<!-- TODO: filter and search -->
+
+We'll publish the list of speakers as soon as it is confirmed.
+
 {{% /hero %}}
 
 

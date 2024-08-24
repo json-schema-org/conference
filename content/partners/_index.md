@@ -9,12 +9,13 @@ draft: false
 
 {{% hero %}}
 
+We are looking for a platinum Sponsor to help us make this conference a huge success.
 
 {{% /hero %}}
 
 
 <!-- Parteners list -->
 
-{{% partners categories="platinium,gold,startup,soutien,communautes" %}}
+{{% partners categories="platinium" %}}
 
 {{% /partners %}}

@@ -1,0 +1,70 @@
+baseURL = "/"
+relativeURLs = true
+languageCode = "en-us"
+title = "JSON Schema Conference 24"
+
+# theme
+theme = "devfest-theme-hugo"
+
+# params
+
+[params]
+    title = "JSON Schema Conference 24"
+    date = "2024-12-05"  # update date 
+    description = "JSON Schema Conference website for 2024"
+    images = ["/images/"]
+    email = "info@json-schema.org"
+    keywords = "event, gdg, gde, devfest, google, programming, android, chrome, developers, web, cloud, androiddev"
+    appleTouchIcon = "apple-touch-icon.png"
+    favicon32 = "/favicon.ico"
+    favicon16 = "/favicon.ico"
+    manifest = "/manifest.json"
+    safariPinnedTab = "/safari-pinned-tab.svg"
+    themeColor = "#00040f"
+    
+[params.logos]
+    jumbo = "images/logos/json-schema-logo-white.svg"
+    header = "images/logos/json-schema-logo-white.svg"
+    footer = "images/logos/json-schema-logo-white.svg"
+
+[Data]
+  schedule = "2024-12-05"  # update date 
+
+[menu]
+[[menu.main]]
+    identifier = "CFP"
+    name = "CFP"
+    url = "https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx"
+    weight = 200
+    external = true
+
+[languages]
+[languages.en]
+    weight = 1
+    languageName = "gb"
+
+
+[taxonomies]
+  tag = "tags"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = true
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false

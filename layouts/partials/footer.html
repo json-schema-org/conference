@@ -17,7 +17,7 @@
 
             <div class="footer-footer">
                 {{ if .Site.Params.logos.footer }}
-                <img src="{{ .Site.Params.logos.footer }}" alt="{{ .Site.Title }}">
+                <img src="{{ .Site.BaseURL }}{{ .Site.Params.logos.footer }}" alt="{{ .Site.Title }}">
                 {{ end }}
             </div>
         </div>

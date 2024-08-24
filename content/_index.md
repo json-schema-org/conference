@@ -7,24 +7,24 @@ menu:
     weight: -1
 ---
 
-{{% jumbo img="/images/backgrounds/back-0.jpg" imgLabel="JSON Schema Conf'24" %}}
+{{% jumbo img="/images/backgrounds/back-0.jpg" imgLabel="JSON Schema Conference 24" %}}
 
-## December 3rd, 2024
+## December 5rd, 2024
 
-### Pierre Baudis congress center <!-- Change -->
+### API Days Paris | CNIT Forest Paris - France <!-- Change -->
 
 {{% /jumbo %}}
 
 <!-- change -->
 
-{{% home-info what="Participants:1000,Day:1,Sessions:36,Parallel Tracks:4" class="primary" %}}
+{{% home-info what="Day:1,Participants:1000,Sessions:8" class="primary" %}}
 
-## What is JSON Schema Conf'24?
+## What is JSON Schema Conference 24?
 
 <!-- change -->
 
-The DevFest, or 'Developers Festival', is a technical conference for developers.
-It is aimed at students, professionals or simply curious technophiles.
+The JSON Schema Conference brings together adopters, implementers, leaders and innovators 
+of the JSON Schema Ecosystem to further the education, adoption and evolution of the JSON Schema specification.
 {{% /home-info %}}
 
 {{% home-speakers %}}
@@ -39,35 +39,16 @@ It is aimed at students, professionals or simply curious technophiles.
 
 <!-- ... -->
 
-{{% home-subscribe  class="primary" %}}
-
-## Get notified about the important conference updates
-
-{{% /home-subscribe %}}
-
 {{% home-location
     image="/images/map.jpg"
-    address="11 Espl. Compans Caffarelli, 31000 Toulouse"
-    latitude="43.6110956"
-    longitude="1.4332799" %}}
+    address="CNIT Forest Paris - France"
+    latitude="48.892848"
+    longitude="2.240017" %}}
 {{% /home-location %}}
 
 <!-- ... -->
 
-{{% album images="/images/album/2018/_25A9313.jpg,/images/album/2018/_25A9386.jpg,/images/album/2018/_25A9671.jpg,/images/album/2018/_25A9334.jpg,/images/album/2018/_25A9282.jpg,/images/album/2018/_25A9612.jpg,/images/album/2018/_25A9452.jpg,/images/album/2018/_25A9628.jpg" %}}
-
-### Some pictures of the **DevFest Toulouse 2018** with the 👾 _retro-gaming_ theme.
-
-<a class="btn primary" target="_blank" rel="noopener" href="https://photos.app.goo.gl/nJYFVReFUk9mnXbv9">
-    See all photos
-    {{% icon "right" %}}
-</a>
-
-{{% /album  %}}
-
-<!-- ... -->
-
-{{% partners categories="platinium,gold,startup,soutien,communautes" %}}
+{{% partners categories="platinium" %}}
 
 ## Partners
 

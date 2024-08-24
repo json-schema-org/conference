@@ -1,18 +1,18 @@
 id: HJRThubF4uYPkb7jSUxi
-name: JSON Schema Conf'24
+name: JSON Schema Conference 24
 address:
-  formattedAddress: "11 Espl. Compans Caffarelli, 31000 Toulouse, France"
+  formattedAddress: "CNIT Forest - Paris, France"
   locality:
-    short_name: Toulouse
-    long_name: Toulouse
+    short_name: Paris
+    long_name: Paris
   country:
-    short_name: SP
-    long_name: Spain
+    short_name: FR
+    long_name: France
   latLng:
     lat: 43.6115538
     lng: 1.4345827
 dates:
-  start: "2024-12-03T10:00:00.000Z"
-  end: "2024-12-03T10:00:00.000Z"
+  start: "2024-12-05T10:00:00.000Z"
+  end: "2024-12-05T10:00:00.000Z"
 
   # update dates here
