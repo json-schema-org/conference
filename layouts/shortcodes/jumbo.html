@@ -1,0 +1,19 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $img := .Get "img" }}
+{{ $imgLabel := .Get "imgLabel" }}
+{{ $logo := .Site.Params.logos.jumbo }}
+<div class="jumbo">
+	<div class="jumbo-cover" style="background-image: url('{{ .Get "img" }}')" {{ if $imgLabel }}aria-label="{{ $imgLabel }}"{{ end }}></div>
+	<div class="inner-wrapper">
+		{{ if $logo }}
+		<img class="jumbo-logo" src="{{ $logo }}" alt="logo {{ .Site.Title }}">
+		{{ end }}
+		<div class="inner">
+			{{ .Inner }}
+		</div>
+	</div>
+
+	<div class="scroll-down" aria-hidden="true">
+		{{ partial "icon.html" "scroll-down" }}
+	</div>
+</div>
