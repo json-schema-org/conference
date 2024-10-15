@@ -7,7 +7,8 @@ menu:
     weight: -1
 ---
 
-{{% jumbo img="/images/backgrounds/back-0.jpg" imgLabel="JSON Schema Conference 24" %}}
+{{% jumbo img="/images/backgrounds/back-00.jpg" imgLabel="JSON Schema Conference 24" %}}
+
 
 ## December 5rd, 2024
 
@@ -29,7 +30,7 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 
 {{% home-speakers %}}
 
-## Featured Speakers
+## Featured Speakers (Comming soon)
 
 {{< button-link label="See all speakers"
                 url="./speakers"
