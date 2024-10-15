@@ -1,0 +1,23 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<section class="location">
+
+	<div class="map" style="background-image: url('{{ .Get "image" }}');"></div>
+
+	<div class="description">
+		<div class="inner">
+			{{ .Inner }}
+		</div>
+
+		<div class="direction">
+			{{ .Get "address" }}
+
+			<a href="https://www.google.com/maps/dir/?api=1&destination={{ .Get "latitude" }},{{ .Get "longitude" }}"
+				class="btn btn-icon-only" target="_blank" rel="noreferrer"
+			   aria-label="{{ i18n "home_location_direction" }}">
+				{{ partial "icon.html" "direction" }}
+			</a>
+
+		</div>
+
+	</div>
+</section>

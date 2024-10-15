@@ -29,22 +29,18 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 {{% /home-info %}}
 
 {{% home-speakers %}}
-
-## Featured Speakers (Coming soon)
-
-{{< button-link label="See all speakers"
-                url="./speakers"
-                icon="right" >}}
+## Featured Speakers (Coming soon...)
 
 {{% /home-speakers %}}
 
 <!-- ... -->
 
 {{% home-location
-    image="/images/map.jpg"
+    image="/images/map7.png"
     address="CNIT Forest Paris - France"
     latitude="48.892848"
     longitude="2.240017" %}}
+    
 {{% /home-location %}}
 
 <!-- ... -->
