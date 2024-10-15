@@ -16,6 +16,6 @@ We are looking for a platinum Sponsor to help us make this conference a huge suc
 
 <!-- Parteners list -->
 
-{{% partners categories="platinium" %}}
+{{% partners categories="platinum" %}}
 
 {{% /partners %}}
