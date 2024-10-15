@@ -17,7 +17,7 @@ menu:
 
 <!-- change -->
 
-{{% home-info what="Day:1,Participants:1000,Sessions:8" class="primary" %}}
+{{% home-info what="Day:1,Participants:+2000,Sessions:5" class="primary" %}}
 
 ## What is JSON Schema Conference 24?
 
