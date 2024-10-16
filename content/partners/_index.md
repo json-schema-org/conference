@@ -9,7 +9,7 @@ draft: false
 
 {{% hero %}}
 
-We are looking for a platinum Sponsor to help us make this conference a huge success! Please check the [FAQ](http://localhost:1313/faq/#how-to-become-a-sponsorpartner) if you like to know more about our Sponsor oportunities.
+We are looking for a platinum Sponsor to help us make this conference a huge success! Please check the [FAQ](/faq/#how-to-become-a-sponsorpartner) if you like to know more about our Sponsor oportunities.
 
 {{% /hero %}}
 
