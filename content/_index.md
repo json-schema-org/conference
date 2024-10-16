@@ -55,7 +55,7 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 
 <center>
 {{< button-link label="Become a Sponsor"
-                url="http://localhost:1313/faq/#how-to-become-a-sponsorpartner">}}
+                url="faq/#how-to-become-a-sponsorpartner">}}
 </center>
 
 {{% /partners %}}
