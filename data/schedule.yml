@@ -1,7 +1,6 @@
-- day: '2019-12-05'
-  start: '08:00'
+- day: '2024-12-05'
+  start: '10:00'
   rooms:
-    - room: office1
+    - room: room-json-schema
       slots:
-        - slot: office-hours-1
-        - slot: office-hours-2
+        - slot: main-track-1

@@ -14,7 +14,7 @@ draft: false
 The JSON Schema Conference is a technical conference organized by the JSON Schema Community.
 It is aimed for the community to share and exchange experiences between existing users and new members. Throughout the day, renowned speakers will present a variety of topics including innovations, use cases, live coding sessions, tooling presentations, case studies as well as best practices.
 
-The JSON Schema Conference is part of [API Days Paris](https://www.apidays.global/paris/), the leading series of worldwide conferences on the Programmable Economy.
+The JSON Schema Conference is part of [API Days Paris](https://www.apidays.global/paris/), the leading series of worldwide conferences on the Programmable Economy. We would like to thank them to hosting us and making this conference possible.
 
 ### Organized by the JSON Schema Community
 

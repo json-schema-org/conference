@@ -31,6 +31,10 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 {{% home-speakers %}}
 ## Featured Speakers (Coming soon...)
 
+{{< button-link label="Submit a presentation"
+                url="https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx"
+                icon="cfp" >}}
+                
 {{% /home-speakers %}}
 
 <!-- ... -->
@@ -47,6 +51,11 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 
 {{% partners categories="platinum" %}}
 
-## Partners
+## Sponsors
+
+<center>
+{{< button-link label="Become a Sponsor"
+                url="http://localhost:1313/faq/#how-to-become-a-sponsorpartner">}}
+</center>
 
 {{% /partners %}}

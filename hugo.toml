@@ -44,6 +44,10 @@ theme = "devfest-theme-hugo"
     weight = 1
     languageName = "gb"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [taxonomies]
   tag = "tags"
