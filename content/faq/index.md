@@ -39,6 +39,8 @@ This is an amazing opportunity to support the Community. To know more about how 
 
 The CFP is the official CFP of API Days Paris available [here](https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx). Please sure you select The JSON Schema Conference in the event's list.
 
+Last but not least, selected speakers can opt-in for a 500$ travel stipend. This won't cover all the expenses but we hope to make everything much easier for them.
+
 ## Ticketing
 
 The tickets should be acquired using the standard [API Days ticketing system](https://ticket.apidays.global/event/apidays-paris-2024/f8f61349-4f78-4bba-a162-68d598833116/cart).
