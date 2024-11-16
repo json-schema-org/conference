@@ -1,2 +1,12 @@
-- key: office-hours
-  name: Office Hours
+- key: talk
+  name: Talk
+- key: lunch
+  name: Lunch
+- key: pause
+  name: Pause
+- key: open
+  name: Open
+- key: pause
+  name: Pause
+- key: close
+  name: Close

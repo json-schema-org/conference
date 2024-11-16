@@ -1,0 +1,81 @@
+:root {
+	--primary: #002cc4;
+	--primary-txt: #f8f8ff;
+	--accent: grey;
+	--accent-txt: #fff;
+	--base: #fff;
+	--base-text: #424242;
+	--base-secondary-text: #636363;
+	--link-secondary-text: #424242;
+	--toc-text: var(--primary);
+	--darken-1: rgba(0, 0, 0, 0.125);
+	--darken-2: rgba(0, 0, 0, 0.25);
+	--darken-3: rgba(0, 0, 0, 0.5);
+	--lighten-1: rgba(255, 255, 255, 0.125);
+	--lighten-2: rgba(255, 255, 255, 0.25);
+	--lighten-3: rgba(255, 255, 255, 0.5);
+	--color-hero: #f8f8ff;
+	--color-platium: #73737a;
+	--color-gold: #b7935b;
+	--color-error: #b22222;
+	--space-1: 0.125rem;
+	--space-2: 0.25rem;
+	--space-3: 0.5rem;
+	--space-4: 1rem;
+	--theJdrSize: 1100px;
+	--block-text-max-width: 60rem;
+	--breakpoint-sm: 34.375rem;
+	--breakpoint-md: 45rem;
+	--breakpoint-lg: 60rem;
+	--breakpoint-xl: 71.25rem;
+	--container-margin: 10vw;
+	--container-margin-mobile: 3vw;
+	--toolbar-height: 3.25rem;
+	--font-family: "Roboto", sans-serif;
+	--tag1: #b3e2cd;
+	--tag2: #fdcdac;
+	--tag3: #cbd5e8;
+	--tag4: #f4cae4;
+	--tag5: #e6f5c9;
+	--tag6: #fff2ae;
+	--tag7: #f1e2cc;
+	--tag8: #ccc;
+	--native-mobile-apps: var(--tag2);
+	--web: var(--tag6);
+	--method-tools: var(--tag5);
+	--big-data-ml-ai: var(--tag3);
+	--iot: var(--tag8);
+	--cloud: var(--tag4);
+	--languages: var(--tag1);
+	--wtf: var(--tag7);
+	--general: var(--tag8);
+	--office-hours: #fffaf0;
+	--keynote: #afeeee;
+	--jumbo-logo-width: 800px;
+	--jumbo-overlay-opacity: 0.6;
+	--partner-support-height: 60px;
+	--partner-platinum-height: calc(var(--partner-support-height)*3);
+	--partner-gold-height: calc(var(--partner-support-height)*2);
+	--animation: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	--extruded-light: 1px 0 0 var(--lighten-3);
+	--box-shadow-1: 0 0 2px 0 rgba(0, 0, 0, 0.07), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+	--box-shadow-2: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+	--fg-mark-a: #fff;
+	--bg-mark-a: #fb2c17;
+	--fg-mark-b: #000;
+	--bg-mark-b: #fc0;
+	--fg-mark-t2: #fff;
+	--bg-mark-t2: #11a7e0;
+	--base-grid-height: 4.5em;
+	--footer-bg: #000;
+	--footer-fg: #fff
+}
+
+.typee {
+	font-weight: 100;
+
+}
+
+.speaker-header {
+	padding-top: 30px;
+}
