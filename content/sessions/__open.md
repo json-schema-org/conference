@@ -1,7 +1,7 @@
 ---
 key: __open
 title: 'Welcome and Opening Remarks'
-format: talk
+format: close
 duration: 15
 tags:
   - talk
