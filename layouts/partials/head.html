@@ -5,11 +5,8 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="Description" content="{{ .Site.Params.description }}">
-	<meta name="google-site-verification" content="{{ .Site.Params.googleWebmasterKey }}">
 
 	{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-	{{/* NOTE: These Hugo Internal Templates can be found starting at
-	https://github.com/gohugoio/hugo/tree/master/tpl/tplimpl/embedded/templates */}}
 	{{- template "_internal/opengraph.html" . -}}
 	{{- template "_internal/schema.html" . -}}
 	{{- template "_internal/twitter_cards.html" . -}}
@@ -45,7 +42,9 @@
 	<link href="{{ with .OutputFormats.Get " RSS" }}{{ .RelPermalink }}{{ end }}" rel="feed" type="application/rss+xml"
 		title="{{ .Site.Title }}" />
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
+	<!-- Add your custom CSS here -->
+	<link rel="stylesheet" href="{{ "custom.css" | relURL }}">
+
 	{{ partial "stylesheets" . }}
 
 </head>

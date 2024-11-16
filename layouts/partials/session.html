@@ -1,0 +1,43 @@
+<a href="{{ .Params.key }}">
+
+<h2>
+	{{ .Title }}
+	<span class="language {{ anchorize .Params.language }}"></span>
+</h2>
+
+<hr>
+
+<div class="info">
+	{{ if.Params.tags }}
+	<div class="tags">
+		{{ range .Params.tags }}
+			{{ range first 1 (where $.Site.Data.categories "key" .) }}
+			<span>{{ .name }}</span>
+		  {{ end }}
+		{{ end }}
+	</div>
+	{{ end }}
+
+	<div>
+		{{ if .Params.presentation }}
+		<div class="presentation">{{ partial "icon.html" "slides" }}</div>
+		{{ end }}
+		{{ if .Params.videoId }}
+		<div class="video">{{ partial "icon.html" "youtube" }}</div>
+		{{ end }}
+	</div>
+</div>
+
+
+<ul class="speakers">
+	{{ range where .Site.RegularPages "Params.key" "in" .Params.speakers }}
+	<li class="speaker">
+		<div class="speaker-img" style="background-image: url({{ .Params.photoURL }});"></div>
+		<strong class="speaker-name">{{ .Params.name }}</strong>
+		<span class="speaker-country">{{ .Params.country }}</span>
+		<div class="speaker-company">{{ .Params.company }}</div>
+	</li>
+	{{ end }}
+</ul>
+
+</a>

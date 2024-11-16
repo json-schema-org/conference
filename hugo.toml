@@ -19,7 +19,6 @@ theme = "devfest-theme-hugo"
     cfpUrl = "https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx"
     favicon32 = "/favicon.ico"
     favicon16 = "/favicon.ico"
-    manifest = "/manifest.json"
     safariPinnedTab = "/safari-pinned-tab.svg"
     themeColor = "#00040f"
     
@@ -57,7 +56,7 @@ theme = "devfest-theme-hugo"
     disable = true
   [privacy.googleAnalytics]
     anonymizeIP = false
-    disable = false
+    disable = true
     respectDoNotTrack = false
     useSessionStorage = false
   [privacy.instagram]

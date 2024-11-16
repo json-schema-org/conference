@@ -28,12 +28,12 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 {{% /home-info %}}
 
 {{% home-speakers %}}
-## Featured Speakers (Coming soon...)
+## Featured Speakers
 
-{{< button-link label="Submit a presentation"
-                url="https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx"
-                icon="cfp" >}}
-                
+{{< button-link label="See all speakers"
+                url="./speakers"
+                icon="right" >}}
+
 {{% /home-speakers %}}
 
 <!-- ... -->

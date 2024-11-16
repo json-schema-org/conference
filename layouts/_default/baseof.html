@@ -20,7 +20,9 @@
 {{ partialCached "footer.html" . }}
 {{ end }}
 
+{{ block "scripts" . }}
 {{ partial "scripts" . }}
-</body>
+{{ end }}
 
+</body>
 </html>

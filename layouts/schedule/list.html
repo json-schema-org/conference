@@ -1,0 +1,111 @@
+{{ define "main" }}
+
+
+{{ .Content }}
+
+{{ $lang := $.Page.Language.Lang }}
+
+<nav class="day-tabs">
+	{{ range $day := $.Site.Data.schedule }}
+	<a href="#day_{{$day.day}}">{{- partial "date-long.html" (dict "time" .day "lang" $lang) }}</a>
+	{{ end }}
+</nav>
+
+{{ $.Scratch.Set "maxEnd" 0 }}
+{{ range $.Site.Data.slots }}
+	{{ if gt .row.end ($.Scratch.Get "maxEnd") }}
+	{{ $.Scratch.Set "maxEnd" .row.end }}
+	{{ end}}
+{{ end }}
+
+{{ $maxEnd := $.Scratch.Get "maxEnd" }}
+
+<section class="schedule{{ if $.Params.horizontal}} horizontal{{ end  }}">
+
+	{{ range $day := $.Site.Data.schedule }}
+	{{ $time := split $day.start ":" }}
+	{{ $dayStartH := index $time 0 }}
+	{{ $dayStartM := index $time 1 }}
+	{{ $time := split $day.end ":" }}
+	{{ $dayEndH := index $time 0 }}
+	{{ $dayEndM := index $time 1 }}
+
+	<article id="day_{{$day.day}}" class="day"
+	         style="--rooms: {{ len .rooms }}; --end: {{ $maxEnd }};">
+
+		<h2>{{- partial "date-long.html" (dict "time" .day "lang" $lang) }}</h2>
+
+		{{ with (index .rooms 0) }}
+		{{ range .slots }}
+		{{ $slot := index (where $.Site.Data.slots "key" .slot) 0 }}
+		{{ $time := split $slot.start ":" }}
+		{{ $hh := index $time 0 }}
+		{{ $mm := index $time 1 }}
+		<div class="slot" style="--duration: {{ $slot.duration }}; --row-start: {{ $slot.row.start }}; --row-end: {{ $slot.row.end }};">
+			<span class="hh">{{ $hh }}</span>
+			<span class="mm">{{ $mm }}</span>
+		</div>
+		{{ end }}
+		{{ end }}
+
+		{{ range $index, $room := .rooms }}
+		{{ range where (where $.Site.Data.rooms "key" $room.room) "skip" "!=" true }}
+		<!-- Room {{ $room.room }} -->
+		<div class="room {{ if (modBool $index 2)}}even{{end}}" style="--room: {{ $index }};">
+			<h3>
+				{{ .label }}
+				{{ if .description }}
+				<small>{{ .description }}</small>
+				{{ end }}
+			</h3>
+		</div>
+
+		{{ range $room.slots }}
+		{{ $sessionPage := index (where $.Site.AllPages "Params.key" .talk ) 0}}
+		{{ $slot := index (where $.Site.Data.slots "key" .slot) 0 }}
+		{{ $time := split $slot.start ":" }}
+		{{ $hh := index $time 0 }}
+		{{ $mm := index $time 1 }}
+		<div class="session format-{{$sessionPage.Params.format}} tag-{{ anchorize (delimit ($sessionPage.Params.tags | default (slice)) " " ) }}"
+		style="--room: {{ $index }}; --row-start: {{ $slot.row.start }}; --row-end: {{ $slot.row.end }};">
+
+		<span class="start">
+			<span class="hh">{{ $hh }}</span>
+			<span class="mm">{{ $mm }}</span>
+		</span>
+		{{ partial "schedule-session" $sessionPage }}
+
+		</div>
+		{{ end }}
+		<!-- End room {{ $room.room }} -->
+		{{ end }}
+		{{ end }}
+
+	</article>
+	{{ end }}
+    
+</section>
+
+<!--<a href="#" class="goto-top" aria-label="Top">⬆︎</a>-->
+
+{{ end }}
+
+{{ define "scripts" }}
+<script>
+function checkLinks() {
+    const currentDay = document.location.hash;
+    if (!currentDay) {
+        let firstDay = document.querySelector('nav.day-tabs a');
+        if (firstDay) {
+            firstDay.click();
+        }
+    }
+    document.querySelectorAll('nav.day-tabs a')
+        .forEach(function(lnk) {
+            lnk.classList.toggle('active', lnk.getAttribute('href') === currentDay);
+        });
+}
+window.addEventListener("load", checkLinks, false);
+window.addEventListener("hashchange", checkLinks, false);
+</script>
+{{ end }}

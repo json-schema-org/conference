@@ -1,6 +1,72 @@
-- key: main-track-1
-  start: '10:00'
-  duration: 360
+- key: welcome
+  start: '09:45'
+  duration: 15
   row:
     start: 1
+    end: 3
+- key: talk-1
+  start: '10:00'
+  duration: 25
+  row:
+    start: 3
     end: 6
+- key: talk-2
+  start: '10:25'
+  duration: 25
+  row:
+    start: 6
+    end: 9
+- key: coffee-break
+  start: '10:50'
+  duration: 20
+  row:
+    start: 9
+    end: 12
+- key: talk-3
+  start: '11:10'
+  duration: 25
+  row:
+    start: 12
+    end: 15
+- key: talk-4
+  start: '11:35'
+  duration: 25
+  row:
+    start: 15
+    end: 18
+- key: talk-5
+  start: '12:00'
+  duration: 25
+  row:
+    start: 18
+    end: 21
+- key: talk-6
+  start: '12:25'
+  duration: 25
+  row:
+    start: 21
+    end: 24
+- key: lunch
+  start: '12:50'
+  duration: 60
+  row:
+    start: 24
+    end: 27
+- key: talk-7
+  start: '13:50'
+  duration: 25
+  row:
+    start: 27
+    end: 30
+- key: talk-8
+  start: '14:15'
+  duration: 25
+  row:
+    start: 30
+    end: 33
+- key: talk-9
+  start: '14:40'
+  duration: 25
+  row:
+    start: 33
+    end: 36

@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<div class="hero speaker-header">
+
+	<header>
+		<div class="speaker-img" style="background-image: url({{ .Page.Params.photoURL }});"></div>
+		<div>
+			<h1>{{ .Page.Params.name }}</h1>
+
+			<ul class="socials">
+				{{ range .Page.Params.socials }}
+				<li>
+					<a href="{{ .link }}" class="social" rel="noreferrer" target="_blank">
+						{{ partial "icon.html" .icon }}
+						{{ .name }}
+					</a>
+				</li>
+				{{ end }}
+			</ul>
+		</div>
+	</header>
+
+	<div class="description">
+
+		<ul class="talks">
+			{{ range where .Site.RegularPages "Params.speakers" "intersect" (slice .Page.Params.key) }}
+			<li>
+				<a href="{{ .Permalink }}" class="visually-hidden">{{ .Title }}</a>
+				<a href="{{ .Permalink }}" class="talk tag-{{ anchorize (delimit .Params.tags "" ) }}">
+				<div class="tags">
+					{{ range .Params.tags }}
+						{{ range first 1 (where $.Site.Data.categories "key" .) }}
+						<span>{{ .name }}</span>
+						{{ end }}
+					{{ end }}
+				</div>
+				<span class="language {{ anchorize .Params.language }}"></span>
+				<h3 class="text">{{ .Title }}</h3>
+				</a>
+			</li>
+			{{ end }}
+		</ul>
+
+	</div>
+</div>
+
+<section class="speaker">
+
+	<header>
+		<h2>{{ .Page.Params.city }}</h2>
+		<div class="speaker-company">{{ .Page.Params.company }}</div>
+	</header>
+
+	<div class="bio">
+		{{ .Content }}
+	</div>
+
+</section>
+
+
+{{ end }}
