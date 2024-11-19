@@ -3,7 +3,7 @@ key: juan
 name: Juan Cruz Viotti
 id: juan
 feature: true
-company: Intelligence.ai
+company: Sourcemeta
 city: 'London, England, United Kingdom'
 photoURL: /images/speakers/juan_cruz_viotti.jpeg
 socials:
@@ -11,7 +11,7 @@ socials:
     link: 'https://www.linkedin.com/in/jviotti/'
     name: jviotti
 title: Applying software engineering practices to schemas
-position: CTO
+position: Founder
 ---
 
 Hey there! I'm a Computer Scientist with experience in startups, open-source, and academia. Some facts about me:
