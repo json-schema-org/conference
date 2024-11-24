@@ -9,7 +9,7 @@ draft: false
 
 ## General
 
-### What is the JSON Scheme Conference?
+### What is the JSON Schema Conference?
 
 The JSON Schema Conference is a technical conference organized by the JSON Schema Community.
 It is aimed for the community to share and exchange experiences between existing users and new members. Throughout the day, renowned speakers will present a variety of topics including innovations, use cases, live coding sessions, tooling presentations, case studies as well as best practices.
@@ -37,7 +37,7 @@ This is an amazing opportunity to support the Community. To know more about how 
 
 ## CFP: Call for Paper
 
-The CFP is the official CFP of API Days Paris available [here](https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx). Please sure you select The JSON Schema Conference in the event's list.
+The CFP is the official CFP of API Days Paris available [here](https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx). Please make sure you select The JSON Schema Conference in the event's list.
 
 Last but not least, selected speakers can opt-in for a 500$ travel stipend. This won't cover all the expenses but we hope to make everything much easier for them.
 
