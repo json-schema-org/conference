@@ -998,7 +998,7 @@ a.social:hover {
 	object-position: 50% 50%
 }
 
-.partners-group.partner-platinium ul li {
+.partners-group.partner-platinum ul li {
 	height: 180px;
 	height: var(--partner-platinum-height);
 	flex-basis: 320px
@@ -1044,14 +1044,14 @@ a.social:hover {
 	margin-left: 15px
 }
 
-.partners-group.partner-platinium .fancy {
+.partners-group.partner-platinum .fancy {
 	font-size: 1.5em;
 	color: #73737a;
 	color: var(--color-platium)
 }
 
-.partners-group.partner-platinium .fancy span:after,
-.partners-group.partner-platinium .fancy span:before {
+.partners-group.partner-platinum .fancy span:after,
+.partners-group.partner-platinum .fancy span:before {
 	border-bottom: 1px solid;
 	border-top: 1px solid
 }

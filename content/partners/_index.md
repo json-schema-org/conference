@@ -14,6 +14,6 @@ draft: false
 
 <!-- Parteners list -->
 
-{{% partners categories="platinium" %}}
+{{% partners categories="platinum" %}}
 
 {{% /partners %}}

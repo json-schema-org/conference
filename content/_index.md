@@ -48,7 +48,7 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 
 <!-- ... -->
 
-{{% partners categories="platinium" %}}
+{{% partners categories="platinum" %}}
 
 ## Sponsors
 

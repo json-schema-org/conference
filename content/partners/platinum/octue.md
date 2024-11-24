@@ -1,9 +1,9 @@
 ---
 key: octue
 title: Octue
-category: platinium
+category: platinum
 order: 0
-logo: /images/partners/platinium/octue.webp
+logo: /images/partners/platinum/octue.webp
 website: 'https://www.octue.com/'
 lang: en
 why: >-
