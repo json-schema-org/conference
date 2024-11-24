@@ -32,7 +32,7 @@
 <ul class="speakers">
 	{{ range where .Site.RegularPages "Params.key" "in" .Params.speakers }}
 	<li class="speaker">
-		<div class="speaker-img" style="background-image: url({{ .Params.photoURL }});"></div>
+		<div class="speaker-img" style="background-image: url('{{ .Params.photoURL }}');"></div>
 		<strong class="speaker-name">{{ .Params.name }}</strong>
 		<span class="speaker-country">{{ .Params.country }}</span>
 		<div class="speaker-company">{{ .Params.company }}</div>
