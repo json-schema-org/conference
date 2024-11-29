@@ -1,0 +1,9 @@
+<a class="visually-hidden" aria-hidden="true" href="/speakers/{{ .Params.key }}">{{ .Params.name }}</a>
+<a class="speaker" href="/speakers/{{ .Params.key }}">
+	<div role="presentation" class="speaker-img" style="background-image: url('{{ .Params.photoURL }}');"></div>
+	<div class="info">
+		<div class="speaker-company">{{ .Params.company }}</div>
+		<strong class="speaker-name">{{ .Params.name }}</strong>
+		<span class="speaker-country">{{ .Params.city }}</span>
+	</div>
+</a>
