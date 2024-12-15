@@ -3,7 +3,7 @@ key: benjamin
 name: Benjamin Granados
 id: benjamin
 feature: false
-company: Celonis
+company: Celonis, TSC member
 city: ' Madrid, Community of Madrid, Spain '
 photoURL: /images/speakers/benjamin_granados.jpeg
 socials:

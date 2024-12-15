@@ -1,9 +1,9 @@
 ---
 key: tomc
-name: Tom Clark
+name: Thomas Clark
 id: tomc
 feature: true
-company: Octue
+company: Octue CEO, conference sponsor
 city: 'Cambridge, England, United Kingdom'
 photoURL: /images/speakers/tom_clark.jpeg
 socials:
