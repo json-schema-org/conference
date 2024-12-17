@@ -3,7 +3,7 @@ key: andreas
 name: Andreas Eberhart
 id: andreas
 feature: true
-company: Dashjoin, ambassador
+company: Dashjoin, Ambassador
 city: "Mannheim, Baden-Württemberg, Germany"
 photoURL: /images/speakers/andreas_eberhart.png
 socials:
