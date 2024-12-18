@@ -3,7 +3,7 @@ key: tomcollins
 name: Tom Collins
 id: tomcollins
 feature: true
-company: Driver and Vehicle Licensing Agency (UK Gov)
+company: DVLA, UK Gov
 city: ' Greater Swansea Area '
 photoURL: /images/speakers/tom_collins.jpeg
 socials:

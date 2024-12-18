@@ -3,7 +3,7 @@ key: juan
 name: Juan Cruz Viotti
 id: juan
 feature: true
-company: Sourcemeta
+company: Sourcemeta CEO, TSC member
 city: 'London, England, United Kingdom'
 photoURL: /images/speakers/juan_cruz_viotti.jpeg
 socials:

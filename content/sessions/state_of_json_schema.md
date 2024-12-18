@@ -1,6 +1,6 @@
 ---
 key: state_of_json_schema
-title: The State of JSON Schema
+title: The state of JSON schema
 id: state_of_json_schema
 format: talk
 duration: 25
@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - benjamin
-presentation: null
+presentation: /presentation/The state of JSON schema.pdf
 draft: false
 ---
 

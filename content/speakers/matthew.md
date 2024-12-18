@@ -3,7 +3,7 @@ key: matthew
 name: Matthew Adams
 id: matthew
 feature: true
-company: Endjin Ltd
+company: Endjin, TSC member
 city: 'London, England, United Kingdom'
 photoURL: /images/speakers/matthew_adams.jpeg
 socials:

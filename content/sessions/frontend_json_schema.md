@@ -1,6 +1,6 @@
 ---
 key: frontend_json_schema
-title: Unlocking Dynamic Frontend Development Through JSON Schema
+title: Unlocking dynamic frontend development through JSON Schema
 id: frontend_json_schema
 format: talk
 duration: 25
@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - neha
-presentation: null
+presentation: /presentation/Unlocking dynamic frontend development through JSON Schema.pdf
 draft: false
 ---
 
