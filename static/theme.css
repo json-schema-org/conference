@@ -301,6 +301,33 @@ body>header nav a.active {
 	display: none
 }
 
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: black;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+  }
+.topArrow{
+    font-size: 40px;
+    position: relative;
+    bottom: 55px;
+    color: white;
+  }
+
 @media (max-width:71.24em) {
 	body>header {
 		flex-wrap: wrap
