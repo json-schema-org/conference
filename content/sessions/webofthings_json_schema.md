@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - andreas
-presentation: /presentation/Generic and extensible web of things manager using JSON Schema and AI.pdf
+presentation: /presentation/Generic and extensible web of things manager.pdf
 draft: false
 ---
 
