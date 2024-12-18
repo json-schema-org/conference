@@ -1829,7 +1829,8 @@ form input:invalid {
 }
 
 .page.sessions .talk .media {
-	grid-column: 1/-1
+	grid-column: 1/-1;
+	margin: 2rem 0;
 }
 
 .page.sessions .talk .media a {
