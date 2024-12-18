@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - juan
-presentation: https://www.dropbox.com/scl/fo/a9u4xueurojxohsu4lrfd/AGLD0oJPP6OK-Ved0eWSME8?dl=0&e=1&preview=software-engineering-practices-to-schemas.pdf&rlkey=msisvkx4h50902qvc052z9v3m&st=0mh3slll
+presentation: /presentation/Applying software engineering practices to JSON Schemas.pdf
 draft: false
 ---
 

@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - tomc
-presentation: https://www.dropbox.com/scl/fo/a9u4xueurojxohsu4lrfd/AGLD0oJPP6OK-Ved0eWSME8?dl=0&e=1&preview=iec-standards.pdf&rlkey=msisvkx4h50902qvc052z9v3m&st=0mh3slll
+presentation: /presentation/IEC Standards.pdf
 draft: false
 ---
 
