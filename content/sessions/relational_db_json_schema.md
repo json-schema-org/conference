@@ -1,6 +1,6 @@
 ---
 key: relational_db_json_schema
-title: JSON Schema and Relational Databases - Bridging the Gap!
+title: JSON schema and relational databases - bridging the gap
 id: relational_db_json_schema
 format: talk
 duration: 25
@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - loic
-presentation: null
+presentation: /presentation/JSON schema and relational databases.pdf
 draft: false
 ---
 

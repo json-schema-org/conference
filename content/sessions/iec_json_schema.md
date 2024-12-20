@@ -1,6 +1,6 @@
 ---
 key: iec_json_schema
-title: IEC Standards - Toward digital standards with JSONSchema.
+title: IEC Standards - Toward Digital Standards with JSON Schema 
 id: iec_json_schema
 format: talk
 duration: 25
@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - tomc
-presentation: null
+presentation: /presentation/IEC Standards.pdf
 draft: false
 ---
 

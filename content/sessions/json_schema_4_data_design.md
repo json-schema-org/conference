@@ -1,6 +1,6 @@
 ---
 key: json_schema_4_data_design
-title: JSON Schema for data design & contract, client and code generation
+title: JSON Schema for data design and contract, client and code generation
 id: json_schema_4_data_design
 format: talk
 duration: 25
@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - tomcollins
-presentation: null
+presentation: /presentation/JSON Schema for data design and contract.pdf
 draft: false
 ---
 

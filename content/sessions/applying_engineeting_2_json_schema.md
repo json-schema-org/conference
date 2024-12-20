@@ -1,6 +1,6 @@
 ---
 key: applying_engineeting_2_json_schema
-title: Applying software engineering practices to schemas
+title: Applying software engineering practices to JSON Schemas
 id: applying_engineeting_2_json_schema
 format: talk
 duration: 25
@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - juan
-presentation: null
+presentation: /presentation/Applying software engineering practices to JSON Schemas.pdf
 draft: false
 ---
 

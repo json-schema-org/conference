@@ -1,6 +1,6 @@
 ---
 key: json_schema_strands
-title: Strands - Announcing a repository for JSONSchema
+title: Introducing Strands - a JSON Schema repository
 id: json_schema_strands
 format: talk
 duration: 25
@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - tomc
-presentation: null
+presentation: /presentation/Introducing Strands.pdf
 draft: false
 ---
 

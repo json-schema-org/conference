@@ -1,6 +1,6 @@
 ---
 key: webofthings_json_schema
-title: Generic and Extensible Web of Things Manager Using JSON Schema & AI
+title: Generic and extensible web of things manager using JSON Schema and AI
 id: webofthings_json_schema
 format: talk
 duration: 25
@@ -8,7 +8,7 @@ tags:
   - talk
 speakers:
   - andreas
-presentation: null
+presentation: /presentation/Generic and extensible web of things manager.pdf
 draft: false
 ---
 

@@ -1585,17 +1585,17 @@ form input:invalid {
 
 .section.sessions ul.talks,
 .taxonomy.tags ul.talks {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+  gap: 2rem; 
 }
 
 .section.sessions ul.talks li.talk,
 .taxonomy.tags ul.talks li.talk {
-	margin: 1rem;
-	flex: 1 0 320px
+  width: 100%;
 }
 
 .section.sessions ul.talks a,
@@ -1688,7 +1688,6 @@ form input:invalid {
 }
 
 .talk {
-	margin: 2rem auto 0;
 	max-width: 60rem;
 	max-width: var(--block-text-max-width)
 }
@@ -1856,7 +1855,8 @@ form input:invalid {
 }
 
 .page.sessions .talk .media {
-	grid-column: 1/-1
+	grid-column: 1/-1;
+	margin: 2rem 0;
 }
 
 .page.sessions .talk .media a {
