@@ -497,13 +497,17 @@ body>footer .footer-footer {
 
 @media (max-width:44.99em) {
 	body>footer .footer-footer {
-		flex-direction: column;
 		align-items: start
 	}
 
 	body>footer .footer-footer>* {
 		margin: .25rem 0;
 		margin: var(--space-2) 0
+	}
+}
+@media (max-width:24.74em) {
+	body>footer .footer-header {	
+		justify-content: center;	
 	}
 }
 
