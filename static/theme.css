@@ -389,6 +389,28 @@ body>main>section {
 	padding-left: 0;
 	padding-right: 0
 }
+body>main .hero h1 {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 2rem 10px;
+}
+
+body>main nav,
+body>main .schedule {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+body>main> .sessions {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+body>main> .speakers-list {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 10px;
+}
 
 @media (max-width:44.99em) {
 	body>main>section {
@@ -424,6 +446,12 @@ body>footer .bottom-content {
 	max-width: var(--theJdrSize);
 	margin: 0 auto;
 	height: 100px
+}
+body>main .content {
+	max-width: 1100px;
+	max-width: var(--theJdrSize);
+	margin: 0 auto;
+	padding: 10px;
 }
 
 body>footer .footer-header {
@@ -819,8 +847,7 @@ a.social:hover {
 	}
 }
 
-.hero .description,
-.hero h1 {
+.hero .description {
 	padding: 2rem 10vw;
 	padding: 2rem var(--container-margin)
 }
@@ -1691,9 +1718,11 @@ form input:invalid {
 	}
 }
 
-.talk {
-	max-width: 60rem;
-	max-width: var(--block-text-max-width)
+body>main .talk {
+	max-width: 1100px;
+	max-width: var(--theJdrSize);
+	margin: 0 auto;
+	padding: 2rem 10px;
 }
 
 .talk .complexity:before {
@@ -2047,11 +2076,6 @@ form input:invalid {
 	color: var(--primary-txt)
 }
 
-.section.schedule main>section.schedule {
-	margin: 1rem 2rem 2rem;
-	padding: .5rem 10vw;
-	padding: var(--space-3) var(--container-margin)
-}
 
 .section.schedule main>section.schedule .day {
 	display: none
@@ -2504,10 +2528,7 @@ form input:invalid {
 	}
 }
 
-.section.speakers .hero h1 {
-	padding: 2rem 10vw;
-	padding: 2rem var(--container-margin)
-}
+
 
 .section.speakers ul.speakers {
 	list-style: none;
@@ -2568,7 +2589,8 @@ form input:invalid {
 .page.speakers .hero,
 .page.speakers main {
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
+	
 }
 
 .page.speakers .hero .description,
