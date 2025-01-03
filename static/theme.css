@@ -1896,20 +1896,20 @@ body>main .talk {
 }
 
 .page.sessions .talk .media {
-	grid-column: 1 / -1; /* Spans full width in the grid */
-	margin: 2rem 0; /* Vertical spacing */
-	padding: 1rem; /* Add some padding for better spacing */
-	text-align: center; /* Center-align media content */
-	box-sizing: border-box; /* Include padding in total size */
+	grid-column: 1 / -1; 
+	margin: 2rem 0;
+	padding: 1rem; 
+	text-align: center; 
+	box-sizing: border-box;
   }
   
   .page.sessions .talk .media a {
-	padding: 0.5rem 0; /* Vertical padding for links */
+	padding: 0.5rem 0; 
 	padding: var(--space-3, 0.5rem) 0;
-	font-size: clamp(0.9rem, 1.5vw, 1rem); /* Responsive font size */
-	display: inline-block; /* Ensure consistent alignment */
-	text-decoration: none; /* Remove underlines */
-	color: inherit; /* Inherit text color */
+	font-size: clamp(0.9rem, 1.5vw, 1rem); 
+	display: inline-block; 
+	text-decoration: none;
+	color: inherit; 
   }
   
   .page.sessions .talk .media .social-slides {
@@ -2058,13 +2058,6 @@ body>main .talk {
 	width: 2ch
 }
 
-.section.schedule .hero .description {
-	display: flex
-}
-
-.section.schedule .hero .description p+p {
-	margin-left: 1em
-}
 
 .section.schedule nav.day-tabs {
 	font-size: 2em;
@@ -2110,64 +2103,59 @@ body>main .talk {
 }
 
 .section.schedule .room {
-	align-items: flex-start;
-	color: #002cc4;
-	color: var(--primary);
-	margin: .125em
-}
-
-.section.schedule .room,
-.section.schedule .room h3 {
 	display: flex;
 	justify-content: center;
-	background-color: #f8f8ff;
-	background-color: var(--primary-txt)
-}
-
-.section.schedule .room h3 {
-	border: solid;
-	border-radius: .5rem;
-	border-radius: var(--space-3);
-	font-size: 1.25em;
+	align-items: flex-start;
+	color: var(--primary);
+	background-color: var(--primary-txt);
+	margin: 0.125em;
+  }
+  
+  .section.schedule .room h3 {
+	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
-	padding: .5rem;
-	padding: var(--space-3);
 	height: 3em;
-	font-weight: 700
-}
+	padding: var(--space-3);
+	font-size: 1.25em;
+	font-weight: 700;
+	border: solid;
+	border-radius: var(--space-3);
+	background-color: inherit; /* Inherits from .room */
+  }
+  
+  .section.schedule .room h3 small {
+	font-size: 0.75em;
+	font-weight: 400;
+  }
+  
 
-.section.schedule .room h3 small {
-	font-size: .75em;
-	font-weight: 400
-}
-
-.section.schedule .slot,
-.section.schedule .start {
+  .section.schedule .slot,
+  .section.schedule .start {
 	font-size: 2em;
-	color: #636363;
-	color: var(--base-secondary-text)
-}
-
-.section.schedule .slot .mm,
-.section.schedule .start .mm {
-	font-size: 50%
-}
-
-.section.schedule .start {
+	color: var(--base-secondary-text);
+  }
+  
+  .section.schedule .slot .mm,
+  .section.schedule .start .mm {
+	font-size: 50%;
+  }
+  
+  .section.schedule .start {
 	position: absolute;
 	top: 0;
-	left: -3.5ch
-}
-
-.section.schedule .slot {
-	display: none
-}
-
+	left: -3.5ch;
+  }
+  
+  .section.schedule .slot {
+	display: none;
+  }
+  
 .section.schedule .session {
 	position: relative;
-	margin: 1rem 1rem 1rem 5ch;
+	margin: 1rem;
 	border-radius: .25rem;
 	border-radius: var(--space-2)
 }
@@ -2347,11 +2335,6 @@ body>main .talk {
 		grid-row: 1/-1
 	}
 
-	.section.schedule main>section.schedule .day .room.even {
-		background-color: #f8f8ff;
-		background-color: var(--color-hero)
-	}
-
 	.section.schedule main>section.schedule .day .session {
 		margin: .125em;
 		z-index: 2;
@@ -2361,128 +2344,8 @@ body>main .talk {
 		grid-row: var(--start)/var(--end)
 	}
 
-	.section.schedule main>section.schedule .day .session.tag-pause {
-		z-index: 0;
-		grid-column: 2/-1
-	}
-
-	.section.schedule main>section.schedule .day .session.tag-lunch h4,
-	.section.schedule main>section.schedule .day .session.tag-open h4,
-	.section.schedule main>section.schedule .day .session.tag-party h4 {
-		font-size: 2em
-	}
-
-	.section.schedule main>section.schedule .day .session.tag-lunch,
-	.section.schedule main>section.schedule .day .session.tag-open,
-	.section.schedule main>section.schedule .day .session.tag-party {
-		grid-column: 2/-1;
-		z-index: 1
-	}
-
-	.section.schedule main>section.schedule .day .session.tag-office-hours {
-		margin: .5rem;
-		margin: var(--space-3)
-	}
-
-	.section.schedule main>section.schedule .day .session.tag-office-hours .speakers.multi {
-		padding-top: .125em;
-		flex-wrap: wrap
-	}
-
 	.section.schedule main>section.schedule .day .session .start {
 		display: none
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi {
-		display: flex;
-		justify-content: space-evenly
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker {
-		position: relative;
-		border-top: none
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker .speaker-img {
-		margin-right: .125rem;
-		margin-right: var(--space-1)
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker .speaker-name {
-		background: #fff;
-		background: var(--base);
-		z-index: 100;
-		border-radius: .25rem;
-		border-radius: var(--space-2);
-		border: thin solid rgba(0, 0, 0, .125);
-		border: thin solid var(--darken-1);
-		box-shadow: 1px 1px .125rem rgba(0, 0, 0, .125);
-		box-shadow: 1px 1px var(--space-1) var(--darken-1);
-		padding: .125rem;
-		padding: var(--space-1);
-		position: absolute;
-		top: 0;
-		right: 0;
-		transform: translateX(50%) translateY(-75%);
-		display: none
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker:focus .speaker-name,
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker:hover .speaker-name {
-		display: block
-	}
-
-	.section.schedule main>section.schedule.horizontal .day {
-		overflow: auto;
-		grid-template-rows: auto repeat(var(--rooms), 1fr);
-		--dayStart: 60 * var(--dayStartH) + var(--dayStartM);
-		--dayEnd: 60 * var(--dayEndH) + var(--dayEndM);
-		grid-template-columns: 7em repeat(calc(var(--end) - 1), 4.5em);
-		grid-template-columns: 7em repeat(calc(var(--end) - 1), var(--base-grid-height, 6em));
-		grid-auto-flow: dense
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .slot {
-		display: block;
-		grid-row: 1/2;
-		--start: calc(1 + var(--row-start));
-		--end: calc(1 + var(--row-end));
-		grid-column: var(--start)/var(--end);
-		background-color: #f8f8ff;
-		background-color: var(--color-hero)
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .room {
-		grid-row: calc(var(--room) + 2);
-		grid-column: 1/-1;
-		justify-content: flex-start
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .room h3 {
-		padding: .25em;
-		height: 100%;
-		width: 5.5em;
-		max-width: 5.5em;
-		text-align: center;
-		text-orientation: upright
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .session {
-		--start: calc(1 + var(--row-start));
-		--end: calc(1 + var(--row-end));
-		grid-row: calc(var(--room) + 2);
-		grid-column: var(--start)/var(--end)
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .session.tag-lunch,
-	.section.schedule main>section.schedule.horizontal .day .session.tag-open,
-	.section.schedule main>section.schedule.horizontal .day .session.tag-party,
-	.section.schedule main>section.schedule.horizontal .day .session.tag-pause {
-		grid-row: 2/-1
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .session h4 {
-		overflow: hidden
 	}
 }
 
@@ -2495,28 +2358,15 @@ body>main .talk {
 @media (max-width:59.99em) {
 	.section.schedule main>section.schedule .day .session {
 		--container-margin: 0em;
-		margin: 1rem .5rem 2rem 2.25em
+
+	}
+	.section.schedule .slot,
+	.section.schedule .start {
+	  font-size: 1.2em;
+	  color: var(--base-secondary-text);
 	}
 
-	.section.schedule main>section.schedule .day .session .start {
-		display: block
-	}
 
-	@supports (grid-template-columns:repeat(calc(var(--rooms) + 1), 1fr)) {
-		.section.schedule main>section.schedule .day:target {
-			display: flex;
-			flex-direction: column
-		}
-
-		.section.schedule main>section.schedule .day .slot {
-			display: none
-		}
-
-		.section.schedule main>section.schedule .day .room {
-			align-items: flex-start;
-			margin-top: 1em
-		}
-	}
 }
 
 @media print {
@@ -2547,8 +2397,6 @@ body>main .talk {
 		box-shadow: none
 	}
 }
-
-
 
 .section.speakers ul.speakers {
 	list-style: none;
