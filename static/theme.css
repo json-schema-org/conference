@@ -1722,7 +1722,7 @@ body>main .talk {
 	max-width: 1100px;
 	max-width: var(--theJdrSize);
 	margin: 0 auto;
-	padding: 10px;
+	padding: 2rem 10px 0 10px;
 }
 
 .talk .complexity:before {
