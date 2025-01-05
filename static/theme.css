@@ -291,15 +291,25 @@ body>header nav a svg {
 	max-width: 3ch
 }
 
+
+
+
 body>header nav nav a:focus,
 body>header nav nav a:hover {
 	text-shadow: var(--extruded-dark);
-	opacity: .75
+	
+
+}
+body>header nav a:hover {
+    color: white; /* Change the text color to white on hover */
+    opacity: 1;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white; /* Add glowing effect */
 }
 
 body>header nav a.active {
-	display: none
+	display: none;
 }
+
 
 .scroll-to-top {
     display: none;
