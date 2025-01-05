@@ -1,7 +1,6 @@
-
 ## JSON Schema Conference Website
 
-[![JSON Schema logo - Build more, break less, empower others.](https://raw.githubusercontent.com/json-schema-org/.github/main/assets/json-schema-banner.png)](https://json-schema.org) 
+[![JSON Schema logo - Build more, break less, empower others.](https://raw.githubusercontent.com/json-schema-org/.github/main/assets/json-schema-banner.png)](https://json-schema.org)
 
 ## Run Locally
 
@@ -9,7 +8,7 @@ This section is for those interested in contributing or running the landscape we
 
 **Prerequisites:**
 
-* Install [Hugo](https://gohugo.io/installation/)
+- Install [Hugo](https://gohugo.io/installation/)
 
 **Cloning the Website:**
 
@@ -69,6 +68,7 @@ json-schema-org/conference
 ```
 
 ---
+
 ## Contributors
 
 Thanks to all the amazing contributors to this project:
@@ -78,14 +78,15 @@ Thanks to all the amazing contributors to this project:
 Want to join the list? Check out our [Contributing Guide](CONTRIBUTING.md) to get started!
 
 ---
+
 ## Contributing
 
-* We warmly welcome your contributions to this project! A dedicated [CONTRIBUTING.md](CONTRIBUTING.md) file outlines the various ways you can get involved, including:
-    * Reporting bugs and requesting features
-    * Contributing code
-    * Improving documentation
-    * Adding new entries to the landscape
-    * Improving the user interface
+- We warmly welcome your contributions to this project! A dedicated [CONTRIBUTING.md](CONTRIBUTING.md) file outlines the various ways you can get involved, including:
+  - Reporting bugs and requesting features
+  - Contributing code
+  - Improving documentation
+  - Adding new entries to the landscape
+  - Improving the user interface
 
 ---
 
