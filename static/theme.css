@@ -399,6 +399,28 @@ body>main>section {
 	padding-left: 0;
 	padding-right: 0
 }
+body>main .hero h1 {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 2rem 10px;
+}
+
+body>main nav,
+body>main .schedule {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+body>main> .sessions {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+body>main> .speakers-list {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 10px;
+}
 
 @media (max-width:44.99em) {
 	body>main>section {
@@ -434,6 +456,12 @@ body>footer .bottom-content {
 	max-width: var(--theJdrSize);
 	margin: 0 auto;
 	height: 100px
+}
+body>main .content {
+	max-width: 1100px;
+	max-width: var(--theJdrSize);
+	margin: 0 auto;
+	padding: 10px;
 }
 
 body>footer .footer-header {
@@ -507,13 +535,17 @@ body>footer .footer-footer {
 
 @media (max-width:44.99em) {
 	body>footer .footer-footer {
-		flex-direction: column;
 		align-items: start
 	}
 
 	body>footer .footer-footer>* {
 		margin: .25rem 0;
 		margin: var(--space-2) 0
+	}
+}
+@media (max-width:24.74em) {
+	body>footer .footer-header {	
+		justify-content: center;	
 	}
 }
 
@@ -825,8 +857,7 @@ a.social:hover {
 	}
 }
 
-.hero .description,
-.hero h1 {
+.hero .description {
 	padding: 2rem 10vw;
 	padding: 2rem var(--container-margin)
 }
@@ -1193,7 +1224,7 @@ section .tags {
 	--size: 1em;
 	height: 1em;
 	height: var(--size, 1em);
-	min-width: 1em;
+	min-width: 2em;
 	min-width: var(--size, 1em);
 	display: inline-block;
 	background-repeat: no-repeat;
@@ -1600,7 +1631,7 @@ form input:invalid {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-  gap: 2rem; 
+ 
 }
 
 .section.sessions ul.talks li.talk,
@@ -1697,9 +1728,11 @@ form input:invalid {
 	}
 }
 
-.talk {
-	max-width: 60rem;
-	max-width: var(--block-text-max-width)
+body>main .talk {
+	max-width: 1100px;
+	max-width: var(--theJdrSize);
+	margin: 0 auto;
+	padding: 2rem 10px 0 10px;
 }
 
 .talk .complexity:before {
@@ -1755,22 +1788,30 @@ form input:invalid {
 }
 
 .page.sessions .talk header {
-	border-radius: .25rem;
-	border-radius: var(--space-2);
-	padding: .25rem;
-	padding: var(--space-2);
+	border-radius: 0.25rem; 
+	border-radius: var(--space-2, 0.25rem);
+	padding: 0.25rem; 
+	padding: var(--space-2, 0.25rem);
 	display: flex;
-	align-items: center
-}
-
-.page.sessions .talk header h1 {
-	flex-grow: 1
-}
-
-.page.sessions .talk header .tags {
+	align-items: center;
+	gap: 0.5rem;
+	flex-wrap: wrap; 
+	box-sizing: border-box; 
+  }
+  
+  .page.sessions .talk header h1 {
+	flex-grow: 1;
+	font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+	margin: 0;
+  }
+  
+  .page.sessions .talk header .tags {
 	margin-right: 1ch;
-	white-space: nowrap
-}
+	white-space: nowrap;
+	font-size: clamp(0.9rem, 1.5vw, 1rem);
+	flex-shrink: 0;
+  }
+  
 
 .page.sessions .talk .detail {
 	margin: .25rem 0;
@@ -1865,38 +1906,50 @@ form input:invalid {
 }
 
 .page.sessions .talk .media {
-	grid-column: 1/-1;
+	grid-column: 1 / -1; 
 	margin: 2rem 0;
-}
-
-.page.sessions .talk .media a {
-	padding: .5rem 0;
-	padding: var(--space-3) 0;
-	font-size: 1rem
-}
-
-.page.sessions .talk .media .social-slides {
+	padding: 1rem; 
+	text-align: center; 
+	box-sizing: border-box;
+  }
+  
+  .page.sessions .talk .media a {
+	padding: 0.5rem 0; 
+	padding: var(--space-3, 0.5rem) 0;
+	font-size: clamp(0.9rem, 1.5vw, 1rem); 
+	display: inline-block; 
+	text-decoration: none;
+	color: inherit; 
+  }
+  
+  .page.sessions .talk .media .social-slides {
 	width: auto;
-	margin-top: 1em;
+	margin-top: 1em; 
 	background: #002cc4;
-	background: var(--primary);
+	background: var(--primary, #002cc4);
 	color: #f8f8ff;
-	color: var(--primary-txt);
-	font-size: 1.25em;
-	padding: .125em .75em;
-	border-radius: 1em
-}
-
-.page.sessions .talk .media .social-slides:active,
-.page.sessions .talk .media .social-slides:focus,
-.page.sessions .talk .media .social-slides:hover {
-	box-shadow: .0625em .0625em .125em rgba(0, 0, 0, .5);
-	box-shadow: .0625em .0625em .125em var(--darken-3)
-}
-
-.page.sessions .talk .media .social-slides svg {
-	max-width: 2ch
-}
+	color: var(--primary-txt, #f8f8ff);
+	font-size: clamp(1rem, 2vw, 1.25em);
+	padding: 0.125em 0.75em; 
+	border-radius: 1em; 
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .page.sessions .talk .media .social-slides:active,
+  .page.sessions .talk .media .social-slides:focus,
+  .page.sessions .talk .media .social-slides:hover {
+	box-shadow: 0.0625em 0.0625em 0.125em rgba(0, 0, 0, 0.5); 
+	box-shadow: 0.0625em 0.0625em 0.125em var(--darken-3, rgba(0, 0, 0, 0.5));
+	transform: scale(1.02);
+  }
+  
+  .page.sessions .talk .media .social-slides svg {
+	max-width: 3ch;
+	flex-shrink: 0; 
+  }
+  
 
 @media (max-width:59.99em) {
 	.page.talks .talk {
@@ -2015,13 +2068,6 @@ form input:invalid {
 	width: 2ch
 }
 
-.section.schedule .hero .description {
-	display: flex
-}
-
-.section.schedule .hero .description p+p {
-	margin-left: 1em
-}
 
 .section.schedule nav.day-tabs {
 	font-size: 2em;
@@ -2053,11 +2099,6 @@ form input:invalid {
 	color: var(--primary-txt)
 }
 
-.section.schedule main>section.schedule {
-	margin: 1rem 2rem 2rem;
-	padding: .5rem 10vw;
-	padding: var(--space-3) var(--container-margin)
-}
 
 .section.schedule main>section.schedule .day {
 	display: none
@@ -2072,64 +2113,59 @@ form input:invalid {
 }
 
 .section.schedule .room {
-	align-items: flex-start;
-	color: #002cc4;
-	color: var(--primary);
-	margin: .125em
-}
-
-.section.schedule .room,
-.section.schedule .room h3 {
 	display: flex;
 	justify-content: center;
-	background-color: #f8f8ff;
-	background-color: var(--primary-txt)
-}
-
-.section.schedule .room h3 {
-	border: solid;
-	border-radius: .5rem;
-	border-radius: var(--space-3);
-	font-size: 1.25em;
+	align-items: flex-start;
+	color: var(--primary);
+	background-color: var(--primary-txt);
+	margin: 0.125em;
+  }
+  
+  .section.schedule .room h3 {
+	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
-	padding: .5rem;
-	padding: var(--space-3);
 	height: 3em;
-	font-weight: 700
-}
+	padding: var(--space-3);
+	font-size: 1.25em;
+	font-weight: 700;
+	border: solid;
+	border-radius: var(--space-3);
+	background-color: inherit; /* Inherits from .room */
+  }
+  
+  .section.schedule .room h3 small {
+	font-size: 0.75em;
+	font-weight: 400;
+  }
+  
 
-.section.schedule .room h3 small {
-	font-size: .75em;
-	font-weight: 400
-}
-
-.section.schedule .slot,
-.section.schedule .start {
+  .section.schedule .slot,
+  .section.schedule .start {
 	font-size: 2em;
-	color: #636363;
-	color: var(--base-secondary-text)
-}
-
-.section.schedule .slot .mm,
-.section.schedule .start .mm {
-	font-size: 50%
-}
-
-.section.schedule .start {
+	color: var(--base-secondary-text);
+  }
+  
+  .section.schedule .slot .mm,
+  .section.schedule .start .mm {
+	font-size: 50%;
+  }
+  
+  .section.schedule .start {
 	position: absolute;
 	top: 0;
-	left: -3.5ch
-}
-
-.section.schedule .slot {
-	display: none
-}
-
+	left: -3.5ch;
+  }
+  
+  .section.schedule .slot {
+	display: none;
+  }
+  
 .section.schedule .session {
 	position: relative;
-	margin: 1rem 1rem 1rem 5ch;
+	margin: 1rem;
 	border-radius: .25rem;
 	border-radius: var(--space-2)
 }
@@ -2309,11 +2345,6 @@ form input:invalid {
 		grid-row: 1/-1
 	}
 
-	.section.schedule main>section.schedule .day .room.even {
-		background-color: #f8f8ff;
-		background-color: var(--color-hero)
-	}
-
 	.section.schedule main>section.schedule .day .session {
 		margin: .125em;
 		z-index: 2;
@@ -2323,128 +2354,8 @@ form input:invalid {
 		grid-row: var(--start)/var(--end)
 	}
 
-	.section.schedule main>section.schedule .day .session.tag-pause {
-		z-index: 0;
-		grid-column: 2/-1
-	}
-
-	.section.schedule main>section.schedule .day .session.tag-lunch h4,
-	.section.schedule main>section.schedule .day .session.tag-open h4,
-	.section.schedule main>section.schedule .day .session.tag-party h4 {
-		font-size: 2em
-	}
-
-	.section.schedule main>section.schedule .day .session.tag-lunch,
-	.section.schedule main>section.schedule .day .session.tag-open,
-	.section.schedule main>section.schedule .day .session.tag-party {
-		grid-column: 2/-1;
-		z-index: 1
-	}
-
-	.section.schedule main>section.schedule .day .session.tag-office-hours {
-		margin: .5rem;
-		margin: var(--space-3)
-	}
-
-	.section.schedule main>section.schedule .day .session.tag-office-hours .speakers.multi {
-		padding-top: .125em;
-		flex-wrap: wrap
-	}
-
 	.section.schedule main>section.schedule .day .session .start {
 		display: none
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi {
-		display: flex;
-		justify-content: space-evenly
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker {
-		position: relative;
-		border-top: none
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker .speaker-img {
-		margin-right: .125rem;
-		margin-right: var(--space-1)
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker .speaker-name {
-		background: #fff;
-		background: var(--base);
-		z-index: 100;
-		border-radius: .25rem;
-		border-radius: var(--space-2);
-		border: thin solid rgba(0, 0, 0, .125);
-		border: thin solid var(--darken-1);
-		box-shadow: 1px 1px .125rem rgba(0, 0, 0, .125);
-		box-shadow: 1px 1px var(--space-1) var(--darken-1);
-		padding: .125rem;
-		padding: var(--space-1);
-		position: absolute;
-		top: 0;
-		right: 0;
-		transform: translateX(50%) translateY(-75%);
-		display: none
-	}
-
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker:focus .speaker-name,
-	.section.schedule main>section.schedule .day .session .speakers.multi .speaker:hover .speaker-name {
-		display: block
-	}
-
-	.section.schedule main>section.schedule.horizontal .day {
-		overflow: auto;
-		grid-template-rows: auto repeat(var(--rooms), 1fr);
-		--dayStart: 60 * var(--dayStartH) + var(--dayStartM);
-		--dayEnd: 60 * var(--dayEndH) + var(--dayEndM);
-		grid-template-columns: 7em repeat(calc(var(--end) - 1), 4.5em);
-		grid-template-columns: 7em repeat(calc(var(--end) - 1), var(--base-grid-height, 6em));
-		grid-auto-flow: dense
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .slot {
-		display: block;
-		grid-row: 1/2;
-		--start: calc(1 + var(--row-start));
-		--end: calc(1 + var(--row-end));
-		grid-column: var(--start)/var(--end);
-		background-color: #f8f8ff;
-		background-color: var(--color-hero)
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .room {
-		grid-row: calc(var(--room) + 2);
-		grid-column: 1/-1;
-		justify-content: flex-start
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .room h3 {
-		padding: .25em;
-		height: 100%;
-		width: 5.5em;
-		max-width: 5.5em;
-		text-align: center;
-		text-orientation: upright
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .session {
-		--start: calc(1 + var(--row-start));
-		--end: calc(1 + var(--row-end));
-		grid-row: calc(var(--room) + 2);
-		grid-column: var(--start)/var(--end)
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .session.tag-lunch,
-	.section.schedule main>section.schedule.horizontal .day .session.tag-open,
-	.section.schedule main>section.schedule.horizontal .day .session.tag-party,
-	.section.schedule main>section.schedule.horizontal .day .session.tag-pause {
-		grid-row: 2/-1
-	}
-
-	.section.schedule main>section.schedule.horizontal .day .session h4 {
-		overflow: hidden
 	}
 }
 
@@ -2457,28 +2368,15 @@ form input:invalid {
 @media (max-width:59.99em) {
 	.section.schedule main>section.schedule .day .session {
 		--container-margin: 0em;
-		margin: 1rem .5rem 2rem 2.25em
+
+	}
+	.section.schedule .slot,
+	.section.schedule .start {
+	  font-size: 1.2em;
+	  color: var(--base-secondary-text);
 	}
 
-	.section.schedule main>section.schedule .day .session .start {
-		display: block
-	}
 
-	@supports (grid-template-columns:repeat(calc(var(--rooms) + 1), 1fr)) {
-		.section.schedule main>section.schedule .day:target {
-			display: flex;
-			flex-direction: column
-		}
-
-		.section.schedule main>section.schedule .day .slot {
-			display: none
-		}
-
-		.section.schedule main>section.schedule .day .room {
-			align-items: flex-start;
-			margin-top: 1em
-		}
-	}
 }
 
 @media print {
@@ -2510,24 +2408,20 @@ form input:invalid {
 	}
 }
 
-.section.speakers .hero h1 {
-	padding: 2rem 10vw;
-	padding: 2rem var(--container-margin)
-}
-
 .section.speakers ul.speakers {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: flex;
-	flex-wrap: wrap
-}
-
-.section.speakers ul.speakers>li {
-	margin: 1rem;
-	flex: 1 0 300px;
-	max-width: 450px
-}
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
+  }
+  
+  .section.speakers ul.speakers > li {
+	margin: 0; 
+	max-width: 100%; 
+  }
+  
 
 .section.speakers a.speaker {
 	padding: 1rem;
@@ -2574,14 +2468,11 @@ form input:invalid {
 .page.speakers .hero,
 .page.speakers main {
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
+	
 }
 
-.page.speakers .hero .description,
-.page.speakers .hero header {
-	padding: 1rem 10vw;
-	padding: var(--space-4) var(--container-margin)
-}
+
 
 .page.speakers .hero header {
 	align-self: center;
@@ -2634,42 +2525,53 @@ form input:invalid {
 	width: 1em
 }
 
+.page.speakers .hero .description,
+.page.speakers .hero header {
+  padding: 1rem 10vw;
+  padding: var(--space-4, 1rem) var(--container-margin, 10vw);
+}
+
 .page.speakers .hero .description .talks {
-	margin: 1rem auto;
-	max-width: 60rem;
-	max-width: var(--block-text-max-width);
-	padding-left: 0;
-	list-style: none
+  margin: 1rem auto;
+  max-width: 60rem;
+  max-width: var(--block-text-max-width, 60rem);
+  padding-left: 0;
+  list-style: none;
 }
 
 .page.speakers .hero .description .talks .talk {
-	margin-top: 1rem;
-	border: thin solid rgba(0, 0, 0, .125);
-	border: thin solid var(--darken-1);
-	display: inline-flex;
-	padding: .25rem;
-	padding: var(--space-2);
-	border-radius: .125rem;
-	border-radius: var(--space-1)
+  margin-top: 1rem;
+  border: thin solid rgba(0, 0, 0, 0.125);
+  border: thin solid var(--darken-1, rgba(0, 0, 0, 0.125));
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0.25rem;
+  padding: var(--space-2, 0.25rem);
+  border-radius: 0.125rem;
+  border-radius: var(--space-1, 0.125rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.25rem);
 }
 
 .page.speakers .hero .description .talks .talk .language,
 .page.speakers .hero .description .talks .talk .tags {
-	margin-right: 1ch
+  margin-right: 1ch;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 .page.speakers .hero .description .talks .talk .tags {
-	white-space: nowrap;
-	align-self: center
+  white-space: nowrap;
+  align-self: center;
 }
 
 .page.speakers .hero .description .talks .talk.tag- {
-	display: none
+  display: none;
 }
+
 
 .page.speakers section.speaker {
 	align-self: center;
 	margin: 1rem auto;
+	padding: 1rem;
 	max-width: 60rem;
 	max-width: var(--block-text-max-width)
 }
@@ -2677,8 +2579,11 @@ form input:invalid {
 .page.speakers section.speaker header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between
-}
+	justify-content: space-between;
+	padding: 1rem;
+	gap: 0.5rem; 
+	flex-wrap: wrap; 
+  }
 
 .page.speakers section.speaker .speaker-company {
 	margin: .5rem 0;
