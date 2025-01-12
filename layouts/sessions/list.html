@@ -2,7 +2,7 @@
 
 {{ .Content }}
 
-<section>
+<section class="sessions">
 	<ul class="talks">
 		{{ $sessions := where .Site.AllPages ".Section" "sessions" }}
 		{{ $types := (slice "talk") }}
