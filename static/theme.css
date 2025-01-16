@@ -294,11 +294,17 @@ body>header nav a svg {
 body>header nav nav a:focus,
 body>header nav nav a:hover {
 	text-shadow: var(--extruded-dark);
-	opacity: .75
+
+
+}
+body>header nav a:hover {
+    color: white; 
+    opacity: 1;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white; 
 }
 
 body>header nav a.active {
-	display: none
+	display: none;
 }
 
 .scroll-to-top {
