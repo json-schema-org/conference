@@ -298,9 +298,9 @@ body>header nav nav a:hover {
 
 }
 body>header nav a:hover {
-    color: white; /* Change the text color to white on hover */
+    color: white; 
     opacity: 1;
-    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white; /* Add glowing effect */
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white; 
 }
 
 body>header nav a.active {
