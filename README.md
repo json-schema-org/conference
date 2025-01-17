@@ -38,33 +38,47 @@ The repository is organized as follows:
 
 ```
 json-schema-org/conference
-├── archetypes             # Default content templates
-├── assets                 # Asset files like SCSS, JavaScript
-│   ├── css
-│   ├── fonts
-│   └── js
-├── content                # Content files (Markdown)
-│   ├── events
-│   └── posts
-├── data                   # Structured data files (YAML, JSON, TOML, CSV)
-├── layouts                # Layout files for the site
+├── archetypes            
+├── assets                
+│   └── css
+├── backgrounds  
+│   
+├── content                
+│   ├── faq
+│   ├── partners
+│   ├── schedule
+│   ├── sessions
+│   └── speakers
+│
+├── data                   
+├── layouts              
 │   ├── _default
-│   ├── events
-│   └── partials
-├── static                 # Static files served directly (e.g., images, CSS)
+│   ├── partials
+│   ├── schedule
+│   ├── sessions
+│   ├── shortcodes
+│   └── speakers
+│
+├── static                 
 │   ├── images
-│   └── theme.css          # Main CSS file for the site
-├── themes                 # Theme files
-│   └── your-theme         # Replace with your actual theme name
+│   ├── presentation
+│    ├── schedule
+│     └── theme.css
+├── themes                
+│   └── default-theme -hugo        
 │       ├── archetypes
-│       ├── assets
+│       ├── i18n
+        ├── images
 │       ├── layouts
-│       ├── static
-│       └── theme.toml
-├── .gitignore             # Specifies files to ignore in git
-├── config.toml            # Configuration file for Hugo
-├── README.md              # Project overview and instructions
-└── netlify.toml           # Configuration file for Netlify deployment
+│       ├── src
+│       └── static
+├── .gitignore  
+├── .gitmodules
+├── .hugo_build.lock
+├── CONTRIBUTING.md           
+├── hugo.toml            
+├── README.md             
+└── yarn.lock         
 ```
 
 ---
