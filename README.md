@@ -62,13 +62,13 @@ json-schema-org/conference
 ├── static                 
 │   ├── images
 │   ├── presentation
-│    ├── schedule
-│     └── theme.css
+│   ├── schedule
+│   └── theme.css
 ├── themes                
 │   └── default-theme -hugo        
 │       ├── archetypes
 │       ├── i18n
-        ├── images
+│       ├── images
 │       ├── layouts
 │       ├── src
 │       └── static
