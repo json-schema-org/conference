@@ -732,12 +732,25 @@ body > footer .footer-header .follow a.social{
 
 
 body > footer .footer-header .follow #youtube:hover{
-	color: red !important;
+	color: #FF0000 !important;
 }
 
 body > footer .footer-header .follow #linkedin:hover{
-	color: blue !important;
+	color: rgb(10, 102, 194) !important;
 }
+
+body > footer .footer-header .follow #twitter:hover{
+	color: #1DA1F2 !important;
+}
+body > footer .footer-header .follow #slack:hover{
+	color: #89D3DF !important;
+}
+
+
+
+
+
+
 
 .jumbo {
 	position: relative;
