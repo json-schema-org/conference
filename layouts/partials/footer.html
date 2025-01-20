@@ -5,7 +5,7 @@
                 <ul class="social-list">
                     {{ range .Site.Data.footer.follow }}
                     <li>
-                        <a href="{{ .url }}" class="social" rel="noopener noreferrer" target="_blank">
+                        <a href="{{ .url }}" class="social" id={{.name}} rel="noopener noreferrer" target="_blank">
                             {{ partial "icon.html" .name }}
                             {{ .name }}
                         </a>

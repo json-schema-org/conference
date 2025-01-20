@@ -7,3 +7,5 @@ follow:
     url: https://www.linkedin.com/company/jsonschema
   - name: youtube
     url: https://www.youtube.com/@JSONSchemaOrgOfficial
+  - name: slack
+    url: https://json-schema.org/slack
