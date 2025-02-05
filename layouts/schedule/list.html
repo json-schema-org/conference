@@ -86,6 +86,10 @@
     
 </section>
 
+<button id="scrollToTop" class="scroll-to-top"><div class="topArrow">
+    ↑
+</div></button>
+
 <!--<a href="#" class="goto-top" aria-label="Top">⬆︎</a>-->
 
 {{ end }}
@@ -107,5 +111,23 @@ function checkLinks() {
 }
 window.addEventListener("load", checkLinks, false);
 window.addEventListener("hashchange", checkLinks, false);
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollToTopButton = document.getElementById("scrollToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollToTopButton.style.display = "block";
+      } else {
+        scrollToTopButton.style.display = "none";
+      }
+    });
+
+    scrollToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  });
 </script>
 {{ end }}
