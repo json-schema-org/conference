@@ -123,7 +123,7 @@ Explore the website and see how you can contribute to this evolving space. Wheth
         <img align="center" src="https://img.icons8.com/color/48/null/slack-new.png" alt="JSON Schema Slack" height="30" width="40" />
     </a>
     <a href="https://twitter.com/jsonschema" target="blank" style="margin-right: 5px;">
-        <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="JSON Schema Twitter" height="30" width="40" />
+        <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/450px-X_logo_2023.svg.png" alt="JSON Schema X" height="30" width="40" />
     </a>
     <a href="https://www.linkedin.com/company/jsonschema" target="blank" style="margin-right: 5px;">
         <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="JSON Schema LinkedIn" height="30" width="40" />
