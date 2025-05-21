@@ -1,0 +1,308 @@
+{{ define "main" }}
+<section class="archive-session-page">
+    <div class="archive-session-container">
+        <div class="edition-navigation">
+            <a href="{{ .Parent.RelPermalink }}" class="back-button">← Back to All Sessions</a>
+        </div>
+        
+        <div class="session-container">
+            <header class="tag-{{ anchorize (delimit .Params.tags "" ) }}">
+                <div class="tags">
+                    {{ range .Params.tags }}
+                        <span>{{ . }}</span>
+                    {{ end }}
+                </div>
+
+                <h1 class="text">{{ .Title }}</h1>
+                <span class="language {{ anchorize .Params.language }}"></span>
+            </header>
+
+            <div class="info">
+                <div class="type">{{ .Params.format }} ({{ .Params.duration }} min.)</div>
+                <div class="detail">
+                    <ul class="speakers">
+                        {{ range .Params.speakers_info }}
+                        <li>
+                            <div class="speaker">
+                                <div class="speaker-img" style="background-image: url('{{ .photoURL }}');"></div>
+                                <div class="speaker-details">
+                                    <strong class="speaker-name">{{ .name }}</strong>
+                                    <span class="speaker-country">{{ .city }}</span>
+                                    <div class="speaker-company">{{ .company }}</div>
+                                </div>
+                            </div>
+                        </li>
+                        {{ end }}
+                    </ul>
+                    <div class="content">{{ .Content }}</div>
+                </div>
+            </div>
+
+            <div class="media">
+                {{ if .Params.presentation }}
+                <a class="social-slides"
+                   href="{{ .Params.presentation }}"
+                   rel="noreferrer"
+                   target="_blank">
+                    Presentation Slides
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .archive-session-page {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .archive-session-container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    @media (max-width: 768px) {
+        .archive-session-container {
+            padding: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .archive-session-container {
+            padding: 1rem;
+        }
+    }
+    
+    .edition-navigation {
+        margin-bottom: 2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .back-button {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        background-color: #f0f0f0;
+        color: #333;
+        transition: background-color 0.3s;
+        word-wrap: break-word;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .back-button:hover {
+        background-color: #e0e0e0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    
+    .session-container {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        padding: 2rem;
+        position: relative;
+        border: 1px solid #e0e0e0;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    .session-container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #0071BC;
+    }
+    
+    .talk header {
+        margin-bottom: 2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .talk header h1 {
+        word-wrap: break-word;
+        color: #333;
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+    
+    .tags {
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tags span {
+        display: inline-block;
+        background-color: #0071BC;
+        color: white;
+        padding: 0.4rem 1rem;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+    
+    .info {
+        margin-bottom: 2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .type {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 1.5rem;
+        background-color: #f5f5f5;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+    
+    .speakers {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2rem 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .speaker {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+        padding: 1.2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    
+    @media (max-width: 480px) {
+        .speaker {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1rem;
+        }
+    }
+    
+    .speaker-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        flex-shrink: 0;
+        border: 3px solid #0071BC;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    
+    .speaker-details {
+        overflow: hidden;
+    }
+    
+    .speaker-name {
+        display: block;
+        font-size: 1.4rem;
+        word-wrap: break-word;
+        color: #333;
+        margin-bottom: 0.3rem;
+    }
+    
+    .speaker-country {
+        display: block;
+        color: #555;
+        margin: 0.25rem 0;
+        word-wrap: break-word;
+        font-style: italic;
+    }
+    
+    .speaker-company {
+        color: #444;
+        word-wrap: break-word;
+        font-weight: 500;
+    }
+    
+    .content {
+        line-height: 1.7;
+        word-wrap: break-word;
+        font-size: 1.1rem;
+    }
+    
+    .content img, .content iframe, .content pre, .content table {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 1.5rem 0;
+    }
+    
+    .content h2, .content h3 {
+        margin-top: 2rem;
+        color: #333;
+    }
+    
+    .content ul, .content ol {
+        padding-left: 1.5rem;
+        margin: 1.2rem 0;
+    }
+    
+    .content li {
+        margin-bottom: 0.6rem;
+    }
+    
+    .media {
+        margin-top: 3rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .video {
+        margin-bottom: 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .social-slides {
+        display: inline-block;
+        background-color: #0071BC;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        word-wrap: break-word;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    
+    .social-slides:hover {
+        background-color: #005a9e;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+</style>
+{{ end }} 

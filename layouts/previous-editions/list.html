@@ -1,0 +1,158 @@
+{{ define "main" }}
+
+<section class="previous-editions-page">
+    <div class="previous-editions-container">
+        {{ .Content }}
+
+        <div class="editions-grid">
+            {{ range sort .Pages ".Params.year" "desc" }}
+                <div class="edition-card">
+                    <a href="{{ .RelPermalink }}">
+                        <div class="edition-year">{{ .Params.year }}</div>
+                        <h3 class="edition-title">{{ .Title }}</h3>
+                        <div class="edition-date">{{ .Params.date.Format "January 2, 2006" }}</div>
+                        <div class="edition-location">{{ .Params.location }}</div>
+                        <div class="edition-description">{{ .Params.summary | truncate 120 }}</div>
+                        <div class="edition-button">View Edition</div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<style>
+    .previous-editions-page {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .previous-editions-container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    @media (max-width: 768px) {
+        .previous-editions-container {
+            padding: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .previous-editions-container {
+            padding: 1rem;
+        }
+    }
+    
+    .editions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    
+    @media (max-width: 480px) {
+        .editions-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    .edition-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #e0e0e0;
+        position: relative;
+        margin: 0;
+    }
+    
+    .edition-card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+        border-color: #ccc;
+    }
+    
+    .edition-card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #0071BC;
+    }
+    
+    .edition-card a {
+        display: block;
+        padding: 1.8rem;
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .edition-year {
+        display: inline-block;
+        background-color: #0071BC;
+        color: white;
+        padding: 0.4rem 1rem;
+        border-radius: 4px;
+        font-weight: bold;
+        margin-bottom: 0.7rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+    
+    .edition-title {
+        margin: 0.7rem 0;
+        font-size: 1.5rem;
+        word-wrap: break-word;
+        color: #333;
+    }
+    
+    .edition-date, .edition-location {
+        color: #555;
+        margin-bottom: 0.5rem;
+        word-wrap: break-word;
+    }
+    
+    .edition-description {
+        margin: 1.2rem 0;
+        color: #444;
+        word-wrap: break-word;
+        line-height: 1.5;
+    }
+    
+    .edition-button {
+        display: inline-block;
+        background-color: #0071BC;
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        margin-top: 1.2rem;
+        transition: background-color 0.3s;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+    
+    .edition-button:hover {
+        background-color: #005a9e;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+</style>
+
+{{ end }} 

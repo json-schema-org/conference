@@ -1,0 +1,228 @@
+{{ define "main" }}
+
+<section class="archive-session-page">
+    <div class="archive-session-container">
+        {{ .Content }}
+        
+        <div class="edition-navigation">
+            <a href="{{ .Params.editionLink }}" class="back-button">← Back to {{ .Params.editionTitle }}</a>
+        </div>
+        
+        <ul class="talks">
+            {{ range .Pages.ByTitle }}
+            <li class="talk tag-{{ anchorize (delimit (.Params.tags | default (slice)) "" ) }}">
+                <a href="{{ .RelPermalink }}" class="talk-item">
+                    <div class="talk-content">
+                        <h3 class="talk-title">{{ .Title }}</h3>
+                        <div class="talk-format">{{ .Params.format }} ({{ .Params.duration }} min.)</div>
+                        
+                        <div class="talk-info">
+                            <div class="talk-speakers">
+                                {{ range .Params.speakers_info }}
+                                <div class="speaker">
+                                    <div class="speaker-img" style="background-image: url('{{ .photoURL }}');"></div>
+                                    <div class="speaker-details">
+                                        <div class="speaker-name">{{ .name }}</div>
+                                        <div class="speaker-company">{{ .company }}</div>
+                                    </div>
+                                </div>
+                                {{ end }}
+                            </div>
+                            
+                            <div class="talk-description">{{ .Summary | truncate 200 }}</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
+
+<style>
+    .archive-session-page {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .archive-session-container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    @media (max-width: 768px) {
+        .archive-session-container {
+            padding: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .archive-session-container {
+            padding: 1rem;
+        }
+    }
+    
+    .edition-navigation {
+        margin-bottom: 2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .back-button {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        background-color: #f0f0f0;
+        color: #333;
+        transition: background-color 0.3s;
+        word-wrap: break-word;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .back-button:hover {
+        background-color: #e0e0e0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    
+    .talks {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    
+    @media (max-width: 480px) {
+        .talks {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    .talk-item {
+        display: block;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #e0e0e0;
+        position: relative;
+        margin: 0;
+    }
+    
+    .talk-item:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+        border-color: #ccc;
+    }
+    
+    .talk-item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #0071BC;
+    }
+    
+    .talk-content {
+        padding: 1.8rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .talk-title {
+        margin-top: 0;
+        margin-bottom: 0.7rem;
+        font-size: 1.25rem;
+        word-wrap: break-word;
+        color: #333;
+    }
+    
+    .talk-format {
+        color: #555;
+        margin-bottom: 1.2rem;
+        background-color: #f5f5f5;
+        display: inline-block;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+    }
+    
+    .talk-speakers {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-bottom: 1.2rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .speaker {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .speaker-img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        flex-shrink: 0;
+        border: 2px solid #0071BC;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .speaker-details {
+        overflow: hidden;
+    }
+    
+    .speaker-name {
+        font-weight: bold;
+        word-wrap: break-word;
+        color: #333;
+    }
+    
+    .speaker-company {
+        font-size: 0.9rem;
+        color: #555;
+        word-wrap: break-word;
+    }
+    
+    .talk-description {
+        color: #444;
+        word-wrap: break-word;
+        line-height: 1.5;
+        margin-top: 1rem;
+        border-top: 1px solid #eee;
+        padding-top: 1rem;
+    }
+</style>
+
+{{ end }} 
