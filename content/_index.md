@@ -9,7 +9,7 @@ menu:
 
 {{% jumbo img="/images/backgrounds/back-00.jpg" imgLabel="JSON Schema Conference 24" %}}
 
-## December 5th, 2024
+## December 9th, 2025
 
 ### API Days Paris | CNIT Forest Paris - France <!-- Change -->
 
@@ -19,7 +19,7 @@ menu:
 
 {{% home-info what="Day:1,Participants:+2000,Sessions:9" class="primary" %}}
 
-## What is JSON Schema Conference 24?
+## What is JSON Schema Conference?
 
 <!-- change -->
 
