@@ -6,8 +6,11 @@ format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - tomc
+speakers_info:
+  - name: "Thomas Clark"
+    company: "Octue CEO, Conference Sponsor"
+    city: "Cambridge, England, United Kingdom"
+    photoURL: "/images/speakers/tom_clark.jpeg"
 presentation: /presentation/IEC Standards.pdf
 draft: false
 ---

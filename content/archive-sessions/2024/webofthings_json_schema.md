@@ -6,8 +6,11 @@ format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - andreas
+speakers_info:
+  - name: "Andreas Eberhart"
+    company: "Dashjoin, Ambassador"
+    city: "Mannheim, Baden-Württemberg, Germany"
+    photoURL: "/images/speakers/andreas_eberhart.png"
 presentation: /presentation/Generic and extensible web of things manager.pdf
 draft: false
 ---

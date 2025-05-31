@@ -6,9 +6,12 @@ format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - juan
 presentation: /presentation/Applying software engineering practices to JSON Schemas.pdf
+speakers_info:
+  - name: "Juan Cruz Viotti"
+    company: "Sourcemeta CEO, TSC Member"
+    city: "London, England, United Kingdom"
+    photoURL: "/images/speakers/juan_cruz_viotti.jpeg"
 draft: false
 ---
 

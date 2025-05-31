@@ -24,7 +24,7 @@ The JSON Schema Conference is an event organized by the JSON Schema Community.
 
 ### Where and when it will take place?
 
-The JSON Schema Conference will take place **Thursday, December 5** at the [CNIT Forest – Paris](https://maps.app.goo.gl/U4urzY2seAZyDac78).
+The JSON Schema Conference will take place **December** at the [CNIT Forest – Paris](https://maps.app.goo.gl/U4urzY2seAZyDac78).
 
 ## Sponsor / Partner?
 

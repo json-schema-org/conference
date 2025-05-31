@@ -1,14 +1,17 @@
 ---
-key: relational_db_json_schema
-title: JSON schema and relational databases - bridging the gap
-id: relational_db_json_schema
+key: json_schema_4_data_design
+title: JSON Schema for data design and contract, client and code generation
+id: json_schema_4_data_design
 format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - loic
-presentation: /presentation/JSON schema and relational databases.pdf
+speakers_info:
+  - name: "Tom Collins"
+    company: "DVLA, UK Gov"
+    city: "Greater Swansea Area"
+    photoURL: "/images/speakers/tom_collins.jpeg"
+presentation: /presentation/JSON Schema for data design and contract.pdf
 draft: false
 ---
 

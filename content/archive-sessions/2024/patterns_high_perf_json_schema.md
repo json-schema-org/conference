@@ -6,8 +6,11 @@ format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - matthew
+speakers_info:
+  - name: "Matthew Adams"
+    company: "Endjin, TSC Member"
+    city: "London, England, United Kingdom"
+    photoURL: "/images/speakers/matthew_adams.jpeg"
 presentation: /presentation/High-performance JSON Schema validation.pdf
 draft: false
 ---

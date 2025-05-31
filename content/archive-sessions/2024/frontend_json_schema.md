@@ -6,8 +6,11 @@ format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - neha
+speakers_info:
+  - name: "Neha Singla"
+    company: "Apple"
+    city: "Seattle, Washington, United States"
+    photoURL: "/images/speakers/neha_singla.jpg"
 presentation: /presentation/Unlocking dynamic frontend development through JSON Schema.pdf
 draft: false
 ---

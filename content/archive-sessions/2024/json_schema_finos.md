@@ -6,8 +6,11 @@ format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - james
+speakers_info:
+  - name: "James Gough" 
+    company: "Morgan Stanley"
+    city: "London, England, United Kingdom"
+    photoURL: "/images/speakers/james.jpg"
 presentation: /presentation/JSON Schema Powering FINOS Architecture as Code.pdf
 draft: false
 ---

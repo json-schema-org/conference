@@ -6,8 +6,11 @@ format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - benjamin
+speakers_info:
+  - name: "Benjamin Granados"
+    company: "Celonis, TSC Member"
+    city: "Madrid, Community of Madrid, Spain"
+    photoURL: "/images/speakers/benjamin_granados.jpeg"
 presentation: /presentation/The state of JSON schema.pdf
 draft: false
 ---

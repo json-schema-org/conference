@@ -5,6 +5,7 @@
 <body class="{{ .Kind }} {{ .Section }}">
 
 {{ readFile "static/icons.svg" | safeHTML }}
+{{ partial "custom-styles.html" . }}
 
 {{ block "header" . }}
 {{ partial "header.html" . }}

@@ -1,14 +1,17 @@
 ---
-key: json_schema_4_data_design
-title: JSON Schema for data design and contract, client and code generation
-id: json_schema_4_data_design
+key: relational_db_json_schema
+title: JSON schema and relational databases - bridging the gap
+id: relational_db_json_schema
 format: talk
 duration: 25
 tags:
   - talk
-speakers:
-  - tomcollins
-presentation: /presentation/JSON Schema for data design and contract.pdf
+speakers_info:
+  - name: "Loïc Lefèvre"
+    company: "Oracle"
+    city: "Tours, Centre-Val de Loire, France"
+    photoURL: "/images/speakers/loic_lefevre.jpeg"
+presentation: /presentation/JSON schema and relational databases.pdf
 draft: false
 ---
 

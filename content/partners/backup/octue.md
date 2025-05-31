@@ -1,7 +1,7 @@
 ---
 key: octue
 title: Octue
-category: platinum
+category1: platinum
 order: 0
 logo: /images/partners/platinum/octue.webp
 website: 'https://www.octue.com/'

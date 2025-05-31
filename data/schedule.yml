@@ -1,29 +1,5 @@
-- day: '2024-12-05'
+- day: '2025-12-09'
   start: '09:45'
   rooms:
     - room: main
       slots:
-        - slot: welcome
-          talk: __open
-        - slot: talk-1
-          talk: state_of_json_schema
-        - slot: talk-2
-          talk: iec_json_schema
-        - slot: coffee-break
-          talk: __pause
-        - slot: talk-3
-          talk: applying_engineeting_2_json_schema
-        - slot: talk-4
-          talk: patterns_high_perf_json_schema
-        - slot: talk-5
-          talk: relational_db_json_schema
-        - slot: talk-6
-          talk: frontend_json_schema
-        - slot: lunch
-          talk: __lunch
-        - slot: talk-7
-          talk: json_schema_strands
-        - slot: talk-8
-          talk: webofthings_json_schema
-        - slot: talk-9
-          talk: json_schema_4_data_design
