@@ -5,8 +5,8 @@ This guide provides step-by-step instructions for adding new conference editions
 ## Table of Contents
 - [Content Directory Structure](#content-directory-structure)
 - [1. Create Edition Content File](#1-create-edition-content-file)
-- [2. Add Session Content](#2-add-session-content)
-- [3. Add Speaker Information](#3-add-speaker-information)
+- [2. Move Session Content](#2-move-session-content)
+- [3. Add New Speaker Information](#3-add-new-speaker-information-if-already-exists-skip-this-step)
 - [Important Notes](#important-notes)
 - [Best Practices](#best-practices)
 
@@ -79,7 +79,7 @@ Detailed description of the conference edition.
 Additional information and links.
 ```
 
-## 2. Add Session Content
+## 2. Move Session Content
 
 1. Navigate to the `content/archive-sessions/` directory
 2. Create a new directory named `YYYY/` (replace YYYY with the year)
@@ -95,7 +95,7 @@ editionLink: "/previous-editions/YYYY/"
 Description of the sessions for this edition (For example, Browse through all sessions from the JSON Schema Conference YYYY. Click on a session to view details, watch the presentation, and access related resources.)
 ```
 
-4. Add individual session files in the `content/archive-sessions/YYYY/` directory with the following structure:
+4. Move all session files from `content/sessions/` to `content/archive-sessions/YYYY/`. Each session file should maintain structure below:
 
 ```yaml
 ---
@@ -118,13 +118,15 @@ draft: false
 Session description and content.
 ```
 
-## 3. Add Speaker Information
+## 3. Add New Speaker Information (if the speaker already exists, then skip this step)
 
 1. Navigate to the `public/speakers` directory
-2. Check if the speaker already exists by searching for their name in the `speakers/` directory
-3. If the speaker does not exist:
-    - Create a new directory named after the speaker (e.g., `utkarsh/`)
-    - Inside the new directory, create an index.html file which follows the previous speaker's index.html structure with the modified content based on the new speaker's information
+2. For each speaker in the current conference:
+    - Check if the speaker already exists by searching for their name in the `speakers/` directory
+    - If the speaker does not exist:
+        - Create a new directory named after the speaker (e.g., `utkarsh/`)
+        - Create an index.html file in their directory.
+        - Follow the existing speaker's index.html structure while updating the content with the new speaker's information
 
 ## Important Notes
 
