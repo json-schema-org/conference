@@ -23,32 +23,30 @@
 	{{ else }}
 		<div class="coming-soon">
 			<div class="coming-soon-box">
-				<h1> JSON Schema Conference <br>Sessions 2025</h1>
-				<span>Join the community that's shaping the future of the structure data.</span>
+				<h1>JSON Schema Conference <br>Sessions 2025</h1>
+				<span>Join the community that's shaping the future of structured data.</span>
 				<p>Our team is preparing an exciting lineup of talks for {{ .Params.year | default "this year" }}.<br/>
 				Stay tuned — big ideas are on the way!</p>
-				<div class="highlights-section">
-					<h2 class="highlights-title">2024 Highlights</h2>
-					
-					<div class="image-container">
-						<div class="moving-images" id="imageCarousel">
-							<img src="/images/conferences/2024/1000004657.jpg" alt="Conference 1">
-							<img src="/images/conferences/2024/1000004739.jpg" alt="Conference 2">
-							<img src="/images/conferences/2024/1000004747.jpg" alt="Conference 3">
-							<img src="/images/conferences/2024/1000004748.jpg" alt="Conference 4">
-							<img src="/images/conferences/2024/1000004751.jpg" alt="Conference 5">
-							<img src="/images/conferences/2024/1000004752.jpg" alt="Conference 6">
-							<img src="/images/conferences/2024/1000004765.jpg" alt="Conference 7">
-							<img src="/images/conferences/2024/1000004766.jpg" alt="Conference 8">
-							<img src="/images/conferences/2024/IMG_20241205_095631801_HDR.jpg" alt="Conference 9">
-							<img src="/images/conferences/2024/IMG_20241205_110532582_HDR.jpg" alt="Conference 10">
-						</div>
+
+				<!-- 3D Image Slider -->
+				<div class="slider-wrapper">
+					<div class="slider" style="--quantity: 10">
+						<div class="item" style="--position: 1"><img src="/images/conferences/2024/1000004657.jpg" alt="Conference 1"></div>
+						<div class="item" style="--position: 2"><img src="/images/conferences/2024/1000004739.jpg" alt="Conference 2"></div>
+						<div class="item" style="--position: 3"><img src="/images/conferences/2024/1000004747.jpg" alt="Conference 3"></div>
+						<div class="item" style="--position: 4"><img src="/images/conferences/2024/1000004748.jpg" alt="Conference 4"></div>
+						<div class="item" style="--position: 5"><img src="/images/conferences/2024/1000004751.jpg" alt="Conference 5"></div>
+						<div class="item" style="--position: 6"><img src="/images/conferences/2024/1000004752.jpg" alt="Conference 6"></div>
+						<div class="item" style="--position: 7"><img src="/images/conferences/2024/1000004765.jpg" alt="Conference 7"></div>
+						<div class="item" style="--position: 8"><img src="/images/conferences/2024/1000004766.jpg" alt="Conference 8"></div>
+						<div class="item" style="--position: 9"><img src="/images/conferences/2024/IMG_20241205_095631801_HDR.jpg" alt="Conference 9"></div>
+						<div class="item" style="--position: 10"><img src="/images/conferences/2024/IMG_20241205_110532582_HDR.jpg" alt="Conference 10"></div>
 					</div>
 				</div>
+
 				<a href="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42?_gl=1*1i6mx1e*_gcl_au*MTY3OTY0ODcyNS4xNzUwMTA0MzA4"
-				 target="_blank"
-				 rel="noopener">
-                  	<button >Get Your Ticket!</button>
+				 target="_blank" rel="noopener">
+                  	<button>Get Your Ticket!</button>
 				</a>
 	        </div>
 		</div>
@@ -74,140 +72,81 @@
 		text-align: center;
 	}
 
-	.coming-soon h1{
+	.coming-soon h1 {
 		font-size: 3.5rem;
-        font-weight: 400;
-        margin-bottom: 1rem;
-        text-align: center;
+		font-weight: 400;
+		margin-bottom: 1rem;
 	}
 
-	.coming-soon span{
+	.coming-soon span {
 		font-size: 1.2rem;
 		font-weight: 500;
-		letter-spacing: 0.5px;
-        margin : 20px 0;
-		text-align: center;
 		color: #667eea;
 		display: block;
+		margin-bottom: 20px;
 	}
-    
+
 	.coming-soon p {
 		font-size: 1.1rem;
-		font-weight: 400;
 		opacity: 0.85;
-		margin: 20px 0;
-		text-align: center;
-		display: block;
+		margin: 20px 0 40px 0;
 	}
 
-	.highlights-section {
-        margin: 50px 0;
-    }
-
-	.highlights-title {
-		font-size: 1em;
-		font-weight:  600;
-		color: #fff;
-		margin :  20px 0;
-		background: #0071BC;
-		padding: 0.5rem 1rem;
-		border-radius: 20px;
-		width: fit-content;
-	
-	}
-
-	/* Image container styles */
-	.image-container {
-		width: 100%;
-		height: 300px; 
-		overflow: hidden;
-		position: relative;
-		margin: 20px 0;
-		border-radius: 10px;
-	}
-
-    /* Moving images wrapper */
-	.moving-images {
+	.slider-wrapper {
 		display: flex;
-		width: calc(300px * 10); /* Width based on number of images */
-		height: 100%;
-		animation: moveRightToLeft 20s linear infinite;
-		gap: 15px;
+		justify-content: center;
 		align-items: center;
-		
+		height: 100vh;
+		transform: translateY(-80px); /* Lifts the slider slightly upward */
+		overflow: hidden;
 	}
 
-	/* Individual image styles */
-	.moving-images img {
+	.slider {
+		position: relative;
 		width: 250px;
-		height: 300px;
-		object-fit: cover;
-		border-radius: 4px;
-		transition: transform 0.3s ease;
-		flex-shrink: 0;
+		height: 240px;
+		transform-style: preserve-3d;
+		transform: perspective(1500px);
+		animation: autoRotate 70s linear infinite; /* Slower rotation */
 	}
 
-	.moving-images img:hover {
-		transform: scale(1.05);
-	}
-
-	/* Animation for right to left movement */
-	@keyframes moveRightToLeft {
-		0% {
-			transform: translateX(10%);
+	@keyframes autoRotate {
+		from {
+			transform: perspective(1500px) rotateX(-10deg) rotateY(0deg);
 		}
-		100% {
-			transform: translateX(-70%);
+		to {
+			transform: perspective(1500px) rotateX(-10deg) rotateY(360deg);
 		}
 	}
 
-	/* Pause animation on hover */
-	.image-container:hover .moving-images {
+	.slider:hover {
 		animation-play-state: paused;
 	}
 
-	@media (max-width: 768px) {
-		.coming-soon-box h1{
-			font-size: 1.2rem;
-			font-weight: 500;
-	    }
-		
-		.image-container {
-			height: 200px;
-		}
-		
-		.moving-images img {
-			width: 180px;
-			height: 200px;
-		}
-		
-		.conference-title {
-			font-size: 2em;
-		}
-	}
-    
-	.coming-soon button {
-		border-radius: 50px;
-		border: none;
-		letter-spacing: 1px;
-		font-size: 1.2rem;
-		font-weight:  700;
-		background: #0071BC;
-		padding: 0.5rem 1rem;
-		color: #fff;
-		transition: all 0.3s ease;
-		
-    }
-
-	.coming-soon button:hover {
-		transform: scale(1.05);
-    }
-
-	@keyframes float {
-		0%, 100% { transform: translateY(0); }
-		50% { transform: translateY(-4px); }
+	.slider .item {
+		position: absolute;
+		inset: 0;
+		transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(450px);
 	}
 
+	.slider .item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 20px;
+		border: 4px solid #fff;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+	}
+
+	@media (max-width: 568px) {
+		.slider {
+			width: 200px;
+			height: 260px;
+		}
+		.slider .item {
+			transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(400px);
+		}
+	}
 </style>
 
 {{ end }}

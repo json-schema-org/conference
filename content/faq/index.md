@@ -37,16 +37,26 @@ This is an amazing opportunity to support the Community. To know more about how 
 
 ## CFP: Call for Paper
 
+### How do I submit a talk proposal?
+
 The CFP is the official CFP of API Days Paris available <a href="https://forms.gle/zaVhgqdPvja38rVw6" target="_blank" rel="noopener noreferrer">here</a>. Please make sure you select The JSON Schema Conference in the event's list.
 
-Last but not least, selected speakers can opt-in for a 500$ travel stipend. This won't cover all the expenses but we hope to make everything much easier for them.
+### Is there a speaker stipend available?
+
+Yes! Selected speakers can opt-in for a 500$ travel stipend. This won't cover all the expenses but we hope to make everything much easier for them.
 
 ## Accessibility Accommodations
+
+### What accessibility accommodations are available?
 
 We are committed to making the conference inclusive and accessible to everyone—whether you're attending or speaking. If you are Deaf / Hard of Hearing, Blind / Visually Impaired, or have any other accessibility needs, we encourage you to reach out. To request accommodations or ask questions, please contact us at info@json-schema.org. The earlier we hear from you, the better we can ensure a supportive and accessible experience.
 
 ## Ticketing
 
+### How do I purchase tickets?
+
 The tickets should be acquired using the standard <a href="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42?_gl=1*1i6mx1e*_gcl_au*MTY3OTY0ODcyNS4xNzUwMTA0MzA4" target="_blank" rel="noopener noreferrer">API Days ticketing system</a>.
+
+### Are there any discount codes available?
 
 In the upcoming weeks we'll share a special promo code for community members. More details to be published soon.
