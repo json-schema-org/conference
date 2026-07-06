@@ -1,13 +1,13 @@
 ---
-title: JSON Schema Conference 2025
+title: JSON Schema Conference 2026
 draft: false
 ---
 
-{{% jumbo img="/images/conferences/2024/1000004748.jpg" imgLabel="JSON Schema Conference 2025" %}}
+{{% jumbo img="/images/conferences/2024/1000004748.jpg" imgLabel="JSON Schema Conference 2026" %}}
 
 ### JSON Schema Conference | CNIT Forest Paris - France
 
-<h2 style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; margin:8px 0;">December 11th, 2025</h2>
+<h2 style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; margin:8px 0;">Dec 1, 2026</h2>
 
 <div class="scroll-icon-positioned" aria-hidden="true">
   <svg class="icon icon-scroll-down">
@@ -20,9 +20,10 @@ draft: false
 
 <div class="cta-row">
 {{< button-link label="Apply to Speak"
-              url="https://forms.gle/zaVhgqdPvja38rVw6"
+              url="https://forms.gle/FkrStmzNm6P7f3d38"
               target="_blank" >}}
 
+<!--
 {{< button-link label="Become a Sponsor" 
               url="https://opencollective.com/json-schema/events/the-json-schema-conference-2025-f7f367ce"
               target="_blank" >}}
@@ -34,6 +35,7 @@ draft: false
 
 {{< button-link label="Buy Tickets" 
               url="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42/json-schema-conference-at-apidays-paris-2025"               target="_blank">}}
+-->
 
 
 </div>

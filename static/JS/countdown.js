@@ -1,5 +1,5 @@
-// Countdown to December 11th, 2025
-const countdownDate = new Date("Dec 11, 2025 00:00:00").getTime();
+// Countdown to December 1st, 2026
+const countdownDate = new Date("Dec 1, 2026 00:00:00").getTime();
 
 // Track previous values for animation
 let previousValues = { days: 0, hours: 0, minutes: 0, seconds: 0 };

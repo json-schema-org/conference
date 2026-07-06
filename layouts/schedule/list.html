@@ -2,7 +2,7 @@
 
 <div class="schedule-hero">
     <div class="hero-content">
-        <h1 class="schedule-heading">Conference Schedule 2025</h1>
+        <h1 class="schedule-heading">Conference Schedule 2026</h1>
         {{ with (index (where $.Site.Data.rooms "key" "main") 0) }}
             <p class="schedule-hero-subtitle">{{ .description }}</p>
         {{ end }}
@@ -12,49 +12,18 @@
 <main class="schedule-container">
     {{ .Content }}
 
+    <div style="text-align: center; padding: 4rem 1rem; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); margin: 2rem 0;">
+        <h2 style="color: var(--room-color); margin-bottom: 1rem;">Check back soon!</h2>
+        <p style="font-size: 1.2rem; color: #666;">We are working hard on the 2026 schedule. Stay tuned!</p>
+    </div>
+
     {{ range $dayIndex, $day := $.Site.Data.schedule }}
-        {{ if eq $dayIndex 0 }}
-            {{/* 2025 Schedule - Display normally */}}
-            <section id="day_{{ .day }}" class="day-block">
-                <h2 class="day-title">{{- partial "date-long.html" (dict "time" .day "lang" $.Page.Language.Lang) }}</h2>
-
-                {{ $slotsForDay := (index .rooms 0).slots }}
-                {{ range $slotRef := $slotsForDay }}
-                    {{ with (index (where $.Site.Data.slots "key" $slotRef.slot) 0) }}
-                        {{ $slotData := . }}
-                        <div class="timeslot">
-                            <div class="time-marker">{{ $slotData.start }} - {{$slotData.end}}</div>
-                            <div class="sessions-grid">
-
-                                {{ range $index, $room := $day.rooms }}
-                                    {{ with (index (where $room.slots "slot" $slotData.key) 0) }}
-                                        {{ $sessionRef := . }}
-
-                                        {{ with (index (where $.Site.AllPages "Params.key" $sessionRef.talk) 0) }}
-                                            {{ $sessionPage := . }}
-                                            {{ $roomData := index (where $.Site.Data.rooms "key" $room.room) 0 }}
-
-                                            {{/* Call the partial instead of inline HTML */}}
-                                            {{ partial "schedule-session.html" (dict "sessionPage" $sessionPage "roomData" $roomData) }}
-
-                                        {{ end }}
-                                    {{ end }}
-                                {{ end }}
-                            </div>
-                        </div>
-                    {{ end }}
-                {{ end }}
-            </section>
-        {{ else }}
-            {{/* 2024 and earlier - Display in accordion */}}
-            {{ if eq $dayIndex 1 }}
-                <details class="schedule-accordion">
-                    <summary class="accordion-header">
-                        <span class="accordion-title">See 2024 Sessions</span>
-                        <span class="accordion-icon">▼</span>
-                    </summary>
-                    <div class="accordion-content">
-            {{ end }}
+            <details class="schedule-accordion">
+                <summary class="accordion-header">
+                    <span class="accordion-title">See {{ if eq $dayIndex 0 }}2025{{ else }}2024{{ end }} Sessions</span>
+                    <span class="accordion-icon">▼</span>
+                </summary>
+                <div class="accordion-content">
 
             <section id="day_{{ .day }}" class="day-block">
                 <h2 class="day-title">{{- partial "date-long.html" (dict "time" .day "lang" $.Page.Language.Lang) }}</h2>
@@ -87,11 +56,8 @@
                 {{ end }}
             </section>
 
-            {{ if eq $dayIndex (sub (len $.Site.Data.schedule) 1) }}
-                    </div>
-                </details>
-            {{ end }}
-        {{ end }}
+                </div>
+            </details>
     {{ end }}
 </main>
 
