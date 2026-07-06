@@ -30,16 +30,14 @@ The JSON Schema Conference will take place **Dec 1, 2026** at the <a href="https
 
 ### How to become a sponsor/partner?
 
-<!--
 We are looking for a Sponsor to help us cover the expenses of travel and accomodation as well as support speakers with a speaker stipend to make it easier for them to come.
 
-This is an amazing opportunity to support the Community. To know more about how to sponsor please check <a href="https://opencollective.com/json-schema/events/the-json-schema-conference-2025-f7f367ce" target="_blank" rel="noopener noreferrer">the conference's page in our Open Collective</a>.
--->
+This is an amazing opportunity to support the Community. <!-- To know more about how to sponsor please check <a href="https://opencollective.com/json-schema/events/the-json-schema-conference-2025-f7f367ce" target="_blank" rel="noopener noreferrer">the conference's page in our Open Collective</a>. -->
 
 
 ## CFP: Call for Paper
 
-Here is the <a href="https://forms.gle/FkrStmzNm6P7f3d38" target="_blank" rel="noopener noreferrer">CFP</a> link, kindly apply to be part of the conversation.
+Here is the <a href="https://forms.gle/FkrStmzNm6P7f3d38" target="_blank" rel="noopener noreferrer">CFP</a> link, kindly apply to be part of the conversation. Last but not least, selected speakers can opt-in for a 500$ travel stipend. This won't cover all the expenses but we hope to make everything much easier for them.
 
 ## Accessibility Accommodations
 

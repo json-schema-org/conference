@@ -23,7 +23,7 @@ draft: false
               url="https://forms.gle/FkrStmzNm6P7f3d38"
               target="_blank" >}}
 
-{{/*
+<!--
 {{< button-link label="Become a Sponsor" 
               url="https://opencollective.com/json-schema/events/the-json-schema-conference-2025-f7f367ce"
               target="_blank" >}}
@@ -35,7 +35,7 @@ draft: false
 
 {{< button-link label="Buy Tickets" 
               url="https://ticket.apidays.global/event/apidays-paris-2025/3cccd07f-acb2-466e-8d91-cb1f208ecf42/json-schema-conference-at-apidays-paris-2025"               target="_blank">}}
-*/}}
+-->
 
 
 </div>
@@ -54,7 +54,7 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 
 {{% home-speakers %}}
 
-## Meet Our 2026 Speakers
+## Meet Our 2025 Speakers
 
 Join us to hear from industry experts, thought leaders, and innovators in the JSON Schema ecosystem.
 
