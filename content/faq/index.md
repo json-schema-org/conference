@@ -45,6 +45,4 @@ We are committed to making the conference inclusive and accessible to everyoneâ€
 
 ## Ticketing
 
-The ticketing link is coming soon.
-
-In the upcoming weeks we'll share a special promo code for community members. More details to be published soon.
+To purchase your tickets for the upcoming JSON Schema conference in Paris, kindly check the <a href="https://portal.joinfost.io/event/future-of-software-technologies-paris-2026/5e27c773-7fa8-4169-b6a7-93494701212a/json-schema-conference#tab-content-tickets">ticketing page.</a> In the upcoming weeks weâ€™ll share a special promo code for community members. More details to be published soon.
