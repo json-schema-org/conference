@@ -1,106 +1,135 @@
 {{define "main"}}
 
 <div class="hero">
-    <h1 class="heading">Sponsors</h1>
+  <h1 class="heading">Sponsors</h1>
 </div>
 
 {{ .Content }}
 
 <section>
-    <div style="text-align: center; margin: 4rem 0; font-size: 1.5rem;">
-        <strong>2026 sponsorship tiers</strong>
-        <p>Support the JSON Schema Conference and be part of our community!</p>
+  <div style="text-align: center; margin: 4rem 0; font-size: 1.5rem;">
+    <strong>2026 sponsorship tiers</strong>
+    <p>Support the JSON Schema Conference and be part of our community!</p>
 
-        <div style="margin: 2rem 0;">
-            <a href="#"
-               style="display: inline-block; padding: 1rem 2rem; background: #cccccc; color: #666; text-decoration: none; border-radius: 5px; font-weight: bold; pointer-events: none; cursor: not-allowed;">
-               Become a Sponsor
-            </a>
-        </div>
-        
-        <div style="margin: 3rem auto; max-width: 600px; padding: 2rem; background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;">
-            <h3 style="margin: 0; color: #333;">Coming soon!</h3>
-            <p style="font-size: 1rem; color: #666; margin-top: 1rem;">We are finalizing our 2026 sponsorship tiers. Please check back later.</p>
-        </div>
-
-        {{/*
-        <div class="sponsor-tier-grid">
-            <ul class="sponsor-tiers">
-                {{ $sponsorTiers := .Site.Data.sponsorTiers }}
-                {{ range $sponsorTiers }}
-                <li>
-                    {{ partial "sponsor-tier.html" . }}
-                </li>
-                {{ end }}
-            </ul>
-        </div>
-        */}}
+    <div style="margin: 2rem 0;">
+      <a href="https://opencollective.com/json-schema/events/json-schema-conference-2026-83c5f69d#section-contribute"
+        target="_blank" rel="noopener noreferrer"
+        style="display: inline-block; padding: 1rem 2rem; background: #0071BC; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
+        class="sponsor-cta">
+        Become a Sponsor
+      </a>
     </div>
 
-    <!-- 2025 Platinum Sponsors Section -->
-    {{ if gt (len .Site.Data.partner.platinum) 0 }}
-    <hr class="sponsors-divider" />
-    <h2 style="text-align: center; font-weight: bold; color: #73737a;">Platinum Sponsors (2025)</h2>
-    <div class="sponsors-grid">
-      {{ range .Site.Data.partner.platinum }}
-        <div class="sponsor-card">
-          <a href="{{ .homepage_url }}" target="_blank" rel="noopener noreferrer" class="sponsor-link">
-            <img class="sponsor-logo" style="max-height: 60px; max-width: 140px; width: auto; height: auto; object-fit: contain;" src="/images/partners/platinum/{{ .logo }}" alt="{{ .name }} Logo" />
-          </a>
-        </div>
-      {{ end }}
+    {{/*
+    <div style="margin: 2rem 0;">
+      <a href="#"
+        style="display: inline-block; padding: 1rem 2rem; background: #cccccc; color: #666; text-decoration: none; border-radius: 5px; font-weight: bold; pointer-events: none; cursor: not-allowed;">
+        Become a Sponsor
+      </a>
     </div>
-    {{ end }}
 
-    <!-- 2025 Silver Sponsors Section -->
-    {{ if gt (len .Site.Data.partner.silver) 0 }}
-    <hr class="sponsors-divider" />
-    <h2 style="text-align: center; font-weight: bold; color: #73737a;">Silver Sponsors (2025)</h2>
-    <div class="sponsors-grid">
-      {{ range .Site.Data.partner.silver }}
-        <div class="sponsor-card">
-          <a href="{{ .homepage_url }}" target="_blank" rel="noopener noreferrer" class="sponsor-link">
-            <img class="sponsor-logo" style="max-height: 60px; max-width: 140px; width: auto; height: auto; object-fit: contain;" src="/images/partners/silver/{{ .logo }}" alt="{{ .name }} Logo" />
-          </a>
-        </div>
-      {{ end }}
+
+    <div
+      style="margin: 3rem auto; max-width: 600px; padding: 2rem; background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;">
+      <h3 style="margin: 0; color: #333;">Coming soon!</h3>
+      <p style="font-size: 1rem; color: #666; margin-top: 1rem;">We are finalizing our 2026 sponsorship tiers. Please
+        check back later.</p>
+    </div>
+    */}}
+
+    <div class="sponsor-tier-grid">
+      <ul class="sponsor-tiers">
+        {{ $sponsorTiers := .Site.Data.sponsorTiers }}
+        {{ range $sponsorTiers }}
+        <li>
+          {{ partial "sponsor-tier.html" . }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 2025 Platinum Sponsors Section -->
+  {{ if gt (len .Site.Data.partner.platinum) 0 }}
+  <hr class="sponsors-divider" />
+  <h2 style="text-align: center; font-weight: bold; color: #73737a;">Platinum Sponsors (2025)</h2>
+  <div class="sponsors-grid">
+    {{ range .Site.Data.partner.platinum }}
+    <div class="sponsor-card">
+      <a href="{{ .homepage_url }}" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+        <img class="sponsor-logo"
+          style="max-height: 60px; max-width: 140px; width: auto; height: auto; object-fit: contain;"
+          src="/images/partners/platinum/{{ .logo }}" alt="{{ .name }} Logo" />
+      </a>
     </div>
     {{ end }}
+  </div>
+  {{ end }}
 
-    <!-- Media Partners Section -->
-    {{ if gt (len .Site.Data.partner.media) 0 }}
-    <hr class="sponsors-divider" />
-    <h2 style="text-align: center; font-weight: bold; color: #73737a;">Media Partners (2025)</h2>
-    <div class="sponsors-grid">
-      {{ range .Site.Data.partner.media }}
-        <div class="sponsor-card">
-          <a href="{{ .homepage_url }}" target="_blank" rel="noopener noreferrer" class="sponsor-link">
-            <img class="sponsor-logo" style="max-height: 60px; max-width: 140px; width: auto; height: auto; object-fit: contain;" src="/images/media-partners/{{ .logo }}" alt="{{ .name }} Logo" />
-          </a>
-        </div>
-      {{ end }}
+  <!-- 2025 Silver Sponsors Section -->
+  {{ if gt (len .Site.Data.partner.silver) 0 }}
+  <hr class="sponsors-divider" />
+  <h2 style="text-align: center; font-weight: bold; color: #73737a;">Silver Sponsors (2025)</h2>
+  <div class="sponsors-grid">
+    {{ range .Site.Data.partner.silver }}
+    <div class="sponsor-card">
+      <a href="{{ .homepage_url }}" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+        <img class="sponsor-logo"
+          style="max-height: 60px; max-width: 140px; width: auto; height: auto; object-fit: contain;"
+          src="/images/partners/silver/{{ .logo }}" alt="{{ .name }} Logo" />
+      </a>
     </div>
     {{ end }}
+  </div>
+  {{ end }}
 
-    {{ if gt (len .Site.Data.sponsors.platinum.items) 0 }}
-    <hr class="sponsors-divider" />
-    <h2 style="text-align: center; font-weight: bold; color: #73737a;">Past Platinum Sponsor (2024)</h2>
-    <div class="sponsors-grid">
-      {{ range .Site.Data.sponsors.platinum.items }}
-        <div class="sponsor-card">
-          <a href="{{ .homepage_url }}" target="_blank" rel="noopener noreferrer" class="sponsor-link">
-            <img class="sponsor-logo" style="max-height: 60px; max-width: 140px; width: auto; height: auto; object-fit: contain;" src="/images/partners/platinum/{{ .logo }}" alt="{{ .name }} Logo" />
-          </a>
-        </div>
-      {{ end }}
+  <!-- Media Partners Section -->
+  {{ if gt (len .Site.Data.partner.media) 0 }}
+  <hr class="sponsors-divider" />
+  <h2 style="text-align: center; font-weight: bold; color: #73737a;">Media Partners (2025)</h2>
+  <div class="sponsors-grid">
+    {{ range .Site.Data.partner.media }}
+    <div class="sponsor-card">
+      <a href="{{ .homepage_url }}" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+        <img class="sponsor-logo"
+          style="max-height: 60px; max-width: 140px; width: auto; height: auto; object-fit: contain;"
+          src="/images/media-partners/{{ .logo }}" alt="{{ .name }} Logo" />
+      </a>
     </div>
     {{ end }}
+  </div>
+  {{ end }}
+
+  {{ if gt (len .Site.Data.sponsors.platinum.items) 0 }}
+  <hr class="sponsors-divider" />
+  <h2 style="text-align: center; font-weight: bold; color: #73737a;">Past Platinum Sponsor (2024)</h2>
+  <div class="sponsors-grid">
+    {{ range .Site.Data.sponsors.platinum.items }}
+    <div class="sponsor-card">
+      <a href="{{ .homepage_url }}" target="_blank" rel="noopener noreferrer" class="sponsor-link">
+        <img class="sponsor-logo"
+          style="max-height: 60px; max-width: 140px; width: auto; height: auto; object-fit: contain;"
+          src="/images/partners/platinum/{{ .logo }}" alt="{{ .name }} Logo" />
+      </a>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
 
 </section>
 
 <style>
-/* Sponsorship Tiers Grid (2025) */
-.sponsor-tiers {
+  /* Become a Sponsor button*/
+  .sponsor-cta:hover {
+    background-color: #005f9c !important;
+    box-shadow: 0 8px 25px rgba(0, 113, 188, 0.45);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
+
+  /* Sponsorship Tiers Grid (2025) */
+  .sponsor-tiers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -109,14 +138,15 @@
     padding: 0;
     margin: 0 auto;
     max-width: 1000px;
-}
-.sponsor-tiers li {
+  }
+
+  .sponsor-tiers li {
     display: flex;
     justify-content: center;
-}
+  }
 
-/* Sponsor Tier Grid */
-.sponsor-tier-grid {
+  /* Sponsor Tier Grid */
+  .sponsor-tier-grid {
     display: grid;
     justify-content: center;
     gap: 2rem;
@@ -124,51 +154,51 @@
     padding: 0;
     margin: 0 auto;
     max-width: 1000px;
-}
-.sponsor-tier-grid li {
+  }
+
+  .sponsor-tier-grid li {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-@media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .sponsor-tiers {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-        gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 1rem;
     }
 
     .sponsor-tier-grid {
-        grid-template-columns: repeat(2, auto);
-        gap: 1.75rem;
+      grid-template-columns: repeat(2, auto);
+      gap: 1.75rem;
     }
-}
+  }
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .sponsor-tiers {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 1rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 1rem;
     }
 
     .sponsor-tier-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
-}
+  }
 
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
     .sponsor-tiers {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
     }
 
     .sponsor-tier-grid {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
     }
-}
-
+  }
 </style>
 
 {{ end }}
