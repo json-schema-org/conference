@@ -32,7 +32,7 @@ The JSON Schema Conference will take place **Dec 1, 2026** at the <a href="https
 
 We are looking for a Sponsor to help us cover the expenses of travel and accomodation as well as support speakers with a speaker stipend to make it easier for them to come.
 
-This is an amazing opportunity to support the Community. <!-- To know more about how to sponsor please check <a href="https://opencollective.com/json-schema/events/the-json-schema-conference-2025-f7f367ce" target="_blank" rel="noopener noreferrer">the conference's page in our Open Collective</a>. -->
+This is an amazing opportunity to support the Community. Kindly check out our <a href="https://opencollective.com/json-schema/events/json-schema-conference-2026-83c5f69d#section-contribute" target="_blank" rel="noopener noreferrer">sponsorship tiers</a>.
 
 
 ## CFP: Call for Paper
