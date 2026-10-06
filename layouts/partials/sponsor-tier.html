@@ -1,105 +1,114 @@
-<div class="sponsor-tier">
-  <div class="tier-info">
-    <div class="tier-title">{{ .title }}</div>
-    <div class="tier-price">{{ .price }}</div>
-    <p class="tier-description">{{ .description | truncate 150 }}</p>
+<a href="{{ .contributeURL }}" target="_blank" rel="noopener noreferrer">
+  <div class="sponsor-tier">
+    <div class="tier-info">
+      <div class="tier-title">{{ .title }}</div>
+      <div class="tier-price">{{ .price }}</div>
+      <p class="tier-description">{{ .description | truncate 350 }}</p>
+    </div>
   </div>
-</div>
+</a>
 
 <style>
-/* Sponsor Tiers Grid */
-.sponsor-tiers ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-}
+  /* Sponsor Tiers Grid */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .sponsor-tiers ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+  }
 
-/* Sponsor Tier Card */
-.sponsor-tier {
-  width: 280px;            /* fixed card width */
-  min-height: 200px;       /* optional: make them consistent in height */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #fff;
-  border-radius: 2rem;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s forwards;
-  cursor: pointer;
-  padding: 1.5rem;
-  position: relative;
-}
-
-
-.sponsor-tier:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2.5px;
-  background-color: #0071BC;
-}
-
-.sponsor-tier:hover {
-  transform: translateY(-6px) scale(1.05);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-}
-
-.tier-info {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.tier-title {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 0.5rem;
-}
-
-.tier-price {
-  font-size: 1.1rem;
-  color: #0071BC;
-  margin-bottom: 0.5rem;
-}
-
-.tier-description {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.tier-button {
-  display: inline-block;
-  text-align: center;
-  background-color: #0071BC;
-  letter-spacing: 1px;
-  color: #fff;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-@keyframes fadeUp {
-  from {
+  /* Sponsor Tier Card */
+  .sponsor-tier {
+    width: 280px;
+    /* fixed card width */
+    height: 350px;
+    /* optional: make them consistent in height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     opacity: 0;
     transform: translateY(20px);
+    animation: fadeUp 0.6s forwards;
+    cursor: pointer;
+    padding: 1.5rem;
+    position: relative;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+
+  .sponsor-tier:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background-color: #0071BC;
   }
-}
+
+  .sponsor-tier:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .tier-info {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .tier-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.5rem;
+  }
+
+  .tier-price {
+    font-size: 1.1rem;
+    color: #0071BC;
+    margin-bottom: 0.5rem;
+  }
+
+  .tier-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .tier-button {
+    display: inline-block;
+    text-align: center;
+    background-color: #0071BC;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>
