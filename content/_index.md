@@ -19,6 +19,10 @@ draft: false
 {{< countdown >}}
 
 <div class="cta-row">
+{{< button-link label="Get Tickets"
+              url="https://portal.joinfost.io/event/future-of-software-technologies-paris-2026/5e27c773-7fa8-4169-b6a7-93494701212a/json-schema-conference#tab-content-tickets"
+              target="_blank" >}}
+
 {{< button-link label="Apply to Speak"
               url="https://forms.gle/FkrStmzNm6P7f3d38"
               target="_blank" >}}
@@ -43,7 +47,7 @@ draft: false
 
 {{% /jumbo %}}
 
-{{% home-info what="Day:1,Participants:+2000,Sessions:9" class="primary" %}}
+{{% home-info what="Day:1,Participants:2000+,Sessions:9" class="primary" %}}
 
 ## What is JSON Schema Conference?
 
@@ -54,7 +58,7 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 
 {{% home-speakers %}}
 
-## Meet Our 2025 Speakers
+## Meet Our Past Speakers
 
 Join us to hear from industry experts, thought leaders, and innovators in the JSON Schema ecosystem.
 

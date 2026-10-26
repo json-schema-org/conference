@@ -31,7 +31,7 @@
 	{{ end }}
 	{{ if .Site.Params.themeColor }}
 	<meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
-	<meta name="msapplication-TileColor" content="#{{ .Site.Params.themeColor }}">
+	<meta name="msapplication-TileColor" content="{{ .Site.Params.themeColor }}">
 	{{ if .Site.Params.safariPinnedTab }}
 	<link rel="mask-icon" href="{{ .Site.Params.safariPinnedTab }}" color="{{ .Site.Params.themeColor }}">
 	{{ end }}

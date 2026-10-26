@@ -1,16 +1,17 @@
 baseURL = "/"
 relativeURLs = true
 languageCode = "en-us"
-title = "JSON Schema Conference 25 - Paris"
+title = "JSON Schema Conference - Paris"
 
 # theme
 theme = "devfest-theme-hugo"
 
 # params
 [params]
-    title = "JSON Schema Conference 25"
-    date = "2025-12-11"  # update date 
-    description = "Join us in Paris for JSON Schema Conference 2025 - December 11th at CNIT Forest"
+    title = "JSON Schema Conference"
+    year = "2026"  # current edition, used in page copy
+    date = "2026-12-01"  # update date 
+    description = "Join us in Paris for JSON Schema Conference 2026 - December 1st at CNIT Forest"
     images = ["/images/"]
     email = "info@json-schema.org"
     keywords = "event, gdg, gde, devfest, google, programming, android, chrome, developers, web, cloud, androiddev"
@@ -27,7 +28,7 @@ theme = "devfest-theme-hugo"
     footer = "images/logos/json-schema-logo-white.svg"
 
 [Data]
-  schedule = "2025-12-11"  # update date 
+  schedule = "2026-12-01"  # update date 
 
 [menu]
 [[menu.main]]
