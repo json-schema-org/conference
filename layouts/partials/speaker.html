@@ -1,5 +1,5 @@
 <div class="speaker">
-  <div role="presentation" class="speaker-img" style="background-image: url('{{ .photoURL }}');"></div>
+  <div role="presentation" class="speaker-img" style="background-image: url('{{ .photoURL }}');{{ if .photoAlignTop }} background-position: center top;{{ end }}"></div>
   <div class="info">
     <div class="speaker-company">{{ .company }}</div>
     <strong class="speaker-name">{{ .name }}</strong>

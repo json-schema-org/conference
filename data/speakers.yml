@@ -147,4 +147,5 @@
   conferenceYear: 2026
 - name: Ayodele Aransiola
   photoURL: /images/speakers/Speakers-2026/ayodele-aransiola.jpg
+  photoAlignTop: true
   conferenceYear: 2026
