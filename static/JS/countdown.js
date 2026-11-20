@@ -1,12 +1,19 @@
-// Countdown to December 1st, 2026
-const countdownDate = new Date("Dec 1, 2026 00:00:00").getTime();
+const countdownEl = document.getElementById("countdown");
+const countdownDate = Date.parse(countdownEl?.dataset.start);
+let countdown;
 
 // Track previous values for animation
-let previousValues = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+let previousValues = {};
 
 function updateCountdown() {
   const now = new Date().getTime();
   const distance = countdownDate - now;
+
+  if (distance <= 0) {
+    clearInterval(countdown);
+    countdownEl.textContent = "Conference started!";
+    return;
+  }
 
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor(
@@ -43,18 +50,9 @@ function updateCountdown() {
   updateWithAnimation(secondsEl, seconds, previousValues.seconds);
 
   previousValues = { days, hours, minutes, seconds };
-
-  if (distance < 0) {
-    clearInterval(countdown);
-    const countdownEl = document.getElementById("countdown");
-    if (countdownEl) {
-      countdownEl.innerHTML = '<div style="font-size: 2rem; font-weight: 700; color: white; animation: pulse-number 0.5s ease-in-out;">Conference Started! 🎉</div>';
-    }
-  }
 }
 
-// Initial update
-updateCountdown();
-
-// Update every second
-const countdown = setInterval(updateCountdown, 1000);
+if (countdownEl && Number.isFinite(countdownDate)) {
+  countdown = setInterval(updateCountdown, 1000);
+  updateCountdown();
+}

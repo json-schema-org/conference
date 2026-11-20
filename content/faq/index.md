@@ -12,7 +12,7 @@ draft: false
 ### What is the JSON Schema Conference?
 
 The JSON Schema Conference is a technical conference organized by the JSON Schema Community.
-It is aimed for the community to share and exchange experiences between existing users and new members. Throughout the day, renowned speakers will present a variety of topics including innovations, use cases, live coding sessions, tooling presentations, case studies as well as best practices.
+It is aimed for the community to share and exchange experiences between existing users and new members. Across the conference, renowned speakers will present a variety of topics including innovations, use cases, live coding sessions, tooling presentations, case studies as well as best practices.
 
 The JSON Schema Conference is part of  <a href="https://www.apidays.global/paris/" target="_blank" rel="noopener noreferrer">API Days Paris</a>, the leading series of worldwide conferences on the Programmable Economy. We would like to thank them to hosting us and making this conference possible.
 
@@ -24,7 +24,7 @@ The JSON Schema Conference is an event organized by the JSON Schema Community.
 
 ### Where and when it will take place?
 
-The JSON Schema Conference will take place **Dec 1, 2026** at the <a href="https://maps.app.goo.gl/U4urzY2seAZyDac78" target="_blank" rel="noopener noreferrer">CNIT Forest – Paris</a>.
+The JSON Schema Conference will take place **Dec 1–3, 2026** at the <a href="https://maps.app.goo.gl/U4urzY2seAZyDac78" target="_blank" rel="noopener noreferrer">CNIT Forest – Paris</a>.
 
 ## Sponsor / Partner?
 
@@ -37,7 +37,7 @@ This is an amazing opportunity to support the Community. Kindly check out our <a
 
 ## CFP: Call for Paper
 
-Here is the <a href="https://forms.gle/FkrStmzNm6P7f3d38" target="_blank" rel="noopener noreferrer">CFP</a> link, kindly apply to be part of the conversation. Last but not least, selected speakers can opt-in for a 500$ travel stipend. This won't cover all the expenses but we hope to make everything much easier for them.
+The call for proposals for the 2026 conference is closed.
 
 ## Accessibility Accommodations
 
@@ -45,4 +45,4 @@ We are committed to making the conference inclusive and accessible to everyone�
 
 ## Ticketing
 
-To purchase your tickets for the upcoming JSON Schema conference in Paris, kindly check the <a href="https://portal.joinfost.io/event/future-of-software-technologies-paris-2026/5e27c773-7fa8-4169-b6a7-93494701212a/json-schema-conference#tab-content-tickets">ticketing page.</a> In the upcoming weeks we’ll share a special promo code for community members. More details to be published soon.
+Use the {{< ticket-link label="ticketing page" >}} to claim a free ticket with code `APISTANDARDSFREE144`.

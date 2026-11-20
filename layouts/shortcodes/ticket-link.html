@@ -1,0 +1,5 @@
+{{- if .Get "label" -}}
+  <a href="{{ .Site.Params.ticketUrl }}">{{ .Get "label" }}</a>
+{{- else -}}
+  <a class="btn primary" href="{{ .Site.Params.ticketUrl }}" target="_blank" rel="noopener noreferrer">Get Free Tickets</a>
+{{- end -}}

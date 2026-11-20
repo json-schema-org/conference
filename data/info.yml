@@ -1,5 +1,5 @@
 id: HJRThubF4uYPkb7jSUxi
-name: JSON Schema Conference 25
+name: JSON Schema Conference 2026
 address:
   formattedAddress: "CNIT Forest - Paris, France"
   locality:
@@ -9,10 +9,8 @@ address:
     short_name: FR
     long_name: France
   latLng:
-    lat: 43.6115538
-    lng: 1.4345827
+    lat: 48.892848
+    lng: 2.240017
 dates:
-  start: "2025-12-09T09:45:00.000Z"
-  end: "2025-12-09T15:10:00.000Z"
-
-  # update dates here
+  start: "2026-12-01T10:40:00+01:00"
+  end: "2026-12-03T16:50:00+01:00"

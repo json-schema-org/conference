@@ -1,0 +1,31 @@
+# JSON Schema talk rows from the API Standards Conference agenda (issue #99).
+- day: "2026-12-01"
+  sessions:
+    - start: "14:00"
+      end: "14:25"
+      title: "Beyond Validation: Reasoning About What a Schema Means"
+      speakers: [Jason Desrosiers]
+    - start: "16:30"
+      end: "16:55"
+      title: "Not Yet Valid: Four Questions Your Editor Asks a JSON Schema"
+      speakers: [Bart Dubbeldam]
+- day: "2026-12-02"
+  sessions:
+    - start: "11:50"
+      end: "12:15"
+      title: "JSON Schema Standardization and Versions"
+      speakers: [Lisa Dusseault]
+    - start: "14:30"
+      end: "14:55"
+      title: "From Validation to Semantic Guardrails: JSON Schema as the Contract Layer for Agentic Application Development"
+      speakers: [Jean-Pierre Dijcks, Beda Hammerschmidt]
+- day: "2026-12-03"
+  sessions:
+    - start: "11:30"
+      end: "11:55"
+      title: "Foundational JSON Schema"
+      speakers: [Ben Hutton]
+    - start: "14:00"
+      end: "14:25"
+      title: "Your AI Agent Is Only as Good as Its Schema: Designing Reliable MCP Tools with JSON Schema"
+      speakers: [Ayodele Aransiola]

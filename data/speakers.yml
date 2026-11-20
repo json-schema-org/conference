@@ -127,7 +127,30 @@
   conferenceYear: 2025
 
 - name: "Ben Hutton"
-  company: "JSON Schema"
+  company: "JSON Schema Specification Lead"
   city: ""
   photoURL: "/images/speakers/Speakers-2025/ben-hutton.jpeg"
   conferenceYear: 2025
+
+# 2026 Conference Speakers
+- name: Bart Dubbeldam
+  company: DC Analytics
+  photoURL: /images/speakers/Speakers-2026/bart-dubbeldam.jpg
+  conferenceYear: 2026
+- name: Lisa Dusseault
+  company: CTO at the Data Transfer Initiative
+  photoURL: /images/speakers/Speakers-2026/lisa-dusseault.jpg
+  conferenceYear: 2026
+- name: Jean-Pierre Dijcks
+  company: Distinguished Product Manager at Oracle
+  photoURL: /images/speakers/Speakers-2026/jean-pierre-dijcks.jpg
+  conferenceYear: 2026
+- name: Beda Hammerschmidt
+  company: Vice President of Software Development at Oracle
+  photoURL: /images/speakers/Speakers-2026/beda-hammerschmidt.jpg
+  conferenceYear: 2026
+- name: Ayodele Aransiola
+  company: Software Engineer and Solution Architect
+  photoURL: /images/speakers/Speakers-2026/ayodele-aransiola.jpg
+  photoAlignTop: true
+  conferenceYear: 2026

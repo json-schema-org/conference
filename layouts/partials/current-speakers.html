@@ -1,0 +1,18 @@
+{{- $speakers := slice -}}
+{{- range .Data.schedule_2026 -}}
+  {{- range .sessions -}}
+    {{- range .speakers -}}
+      {{- $speakers = $speakers | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $roster := slice -}}
+{{- range uniq $speakers -}}
+  {{- $name := . -}}
+  {{- with index (sort (where $.Data.speakers "name" $name) "conferenceYear" "desc") 0 -}}
+    {{- $roster = $roster | append . -}}
+  {{- else -}}
+    {{- errorf "No conference speaker entry for %q" $name -}}
+  {{- end -}}
+{{- end -}}
+{{- return $roster -}}
