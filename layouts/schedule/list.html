@@ -10,30 +10,23 @@
 <div class="schedule-container">
     {{ .Content }}
 
-    {{ $days := .Site.Data.schedule_2026 }}
-    <nav class="schedule-day-links" aria-label="2026 schedule dates">
-        {{ range $days }}
-            <a href="#day_{{ .day }}">{{ dateFormat "Mon, Jan 2" .day }}</a>
-        {{ end }}
-    </nav>
-    <p class="schedule-timezone">All times are local to Paris (CET).</p>
-    {{ range $days }}
+    {{ $roster := partial "current-speakers.html" .Site }}
+    {{ range .Site.Data.schedule_2026 }}
         {{ $day := .day }}
         <section class="schedule-current-day" id="day_{{ $day }}" aria-labelledby="heading_{{ $day }}">
             <h2 id="heading_{{ $day }}">{{ dateFormat "Monday, January 2" $day }}</h2>
-            <ul>
-                {{ range .sessions }}
-                    <li>
-                        <p class="schedule-current-time">
-                            <time datetime="{{ $day }}T{{ .start }}:00+01:00">{{ .start }}</time>–<time datetime="{{ $day }}T{{ .end }}:00+01:00">{{ .end }}</time>
-                        </p>
-                        <div>
-                            <h3>{{ .title }}</h3>
-                            <p>{{ delimit .speakers ", " " and " }}</p>
-                        </div>
-                    </li>
-                {{ end }}
-            </ul>
+            {{ range .sessions }}
+                {{ $title := .title }}
+                <div class="timeslot">
+                    <div class="time-marker">
+                        <time datetime="{{ $day }}T{{ .start }}:00+01:00">{{ .start }}</time>–<time datetime="{{ $day }}T{{ .end }}:00+01:00">{{ .end }}</time>
+                    </div>
+                    {{ range .speakers }}
+                        {{ $speaker := index (where $roster "name" .) 0 }}
+                        {{ partial "schedule-session.html" (dict "title" $title "speaker" $speaker) }}
+                    {{ end }}
+                </div>
+            {{ end }}
         </section>
     {{ end }}
 
@@ -160,25 +153,8 @@
         margin: 0 auto;
         padding: 0 1rem;
     }
-    .schedule-day-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem 1.5rem;
-    }
-
-    .schedule-day-links a {
-        color: #005a96;
-        text-decoration: underline;
-    }
-
-    .schedule-timezone {
-        color: var(--time-color);
-        margin-top: 1rem;
-    }
-
-    .schedule-container .schedule-current-day {
+    .schedule-current-day {
         margin: 2rem 0;
-        scroll-margin-top: 5rem;
     }
 
     .schedule-container .schedule-current-day h2 {
@@ -187,32 +163,18 @@
         margin: 0 0 1rem;
     }
 
-    .schedule-current-day ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+    .schedule-current-day .timeslot {
+        margin-bottom: 1.5rem;
     }
 
-    .schedule-current-day li {
-        display: grid;
-        grid-template-columns: 8rem minmax(0, 1fr);
-        gap: 0.25rem 1rem;
-        padding: 1rem;
+    .schedule-current-day .session-card-no-link {
         margin-bottom: 0.75rem;
-        border: 1px solid var(--border-color);
-        border-radius: 0.75rem;
-        background: var(--card-bg);
+        cursor: default;
     }
 
-    .schedule-current-day h3,
-    .schedule-current-day p {
-        margin: 0;
+    .schedule-current-day .session-card .info {
+        min-width: 0;
         overflow-wrap: anywhere;
-    }
-
-    .schedule-current-time {
-        font-weight: 600;
-        font-variant-numeric: tabular-nums;
     }
 
     .day-block {
@@ -341,6 +303,7 @@
 	@media (max-width: 480px) {
         .schedule-hero {
             padding: 2.5rem 1rem;
+            padding-top: calc(2.5rem + var(--toolbar-height, 3.25rem));
         }
 
         .schedule-heading {
@@ -360,9 +323,6 @@
             grid-template-columns: 1fr;
         }
 
-        .schedule-current-day li {
-            grid-template-columns: 1fr;
-        }
         .time-marker {
             /* Style the time as a full-width header for the slot */
             font-size: 1.3rem;

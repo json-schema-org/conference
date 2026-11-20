@@ -19,7 +19,7 @@ draft: false
 {{< countdown >}}
 
 <div class="cta-row">
-<button type="button" class="btn primary cfp-closed" disabled>Apply to Speak (closed)</button>
+<button type="button" class="btn primary cfp-closed" disabled>Apply to Speak</button>
 {{< ticket-link >}}
 </div>
 

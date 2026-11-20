@@ -1,52 +1,49 @@
-{{ $session := .sessionPage }}
-{{ $room := .roomData }}
-
-{{/* --- Fetch speaker data from the session's own front matter --- */}}
-{{ $speakerPhotoURL := "" }}
-{{ $firstSpeaker := "" }}
-
-{{/* Check for direct 'image' field first (for breaks, lunch, etc) */}}
-{{ with $session.Params.image }}
-  {{ $speakerPhotoURL = . }}
-{{ else }}
-  {{/* Check for the 'speakers_info' array in the front matter */}}
-  {{ with $session.Params.speakers_info }}
-    {{/* Get the first speaker object from the array */}}
-    {{ $firstSpeaker = index . 0 }}
-    {{ with $firstSpeaker.photoURL }}
-      {{/* Directly use the provided photoURL */}}
-      {{ $speakerPhotoURL = . }}
+{{ $title := .title }}
+{{ $speaker := .speaker }}
+{{ $photoURL := "" }}
+{{ $format := "talk" }}
+{{ $tags := slice }}
+{{ with .sessionPage }}
+  {{ $title = .Title }}
+  {{ $format = .Params.format }}
+  {{ $tags = .Params.tags }}
+  {{ with .Params.image }}
+    {{ $photoURL = . }}
+  {{ else }}
+    {{ with .Params.speakers_info }}
+      {{ $speaker = index . 0 }}
     {{ end }}
   {{ end }}
 {{ end }}
+{{ with $speaker }}
+  {{ $photoURL = .photoURL }}
+{{ end }}
+{{ $photoURL = $photoURL | default "/images/default-session-image.png" }}
 
-{{ $speakerPhotoURL = $speakerPhotoURL | default "/images/default-session-image.png" }}
-
-
-
-{{/* --- The Card HTML Structure --- */}}
 <div class="session-card-no-link">
-  <article class="session-card format-{{ anchorize $session.Params.format }}">
+  <article class="session-card format-{{ anchorize $format }}">
 
-    <img src="{{ $speakerPhotoURL }}" class="card-img" alt="speaker image">
+    <img src="{{ $photoURL }}" class="card-img" alt="speaker image"{{ with $speaker }}{{ if .photoAlignTop }} style="object-position: center top"{{ end }}{{ end }}>
 
     <div class="info">
-      <h3 class="session-title">{{ $session.Title }}</h3>
+      <h3 class="session-title">{{ $title }}</h3>
 
-      {{ with $firstSpeaker }}
+      {{ with $speaker }}
         <strong class="speaker-name">{{ .name }}</strong>
         {{ with .company }}
           <div class="speaker-company">{{ . }}</div>
         {{ end }}
       {{ end }}
 
+      {{ if .sessionPage }}
       <div class="room-and-tags">
         <div class="session-meta">
-          {{ range $session.Params.tags }}
+          {{ range $tags }}
             <span class="session-tag">{{ . }}</span>
           {{ end }}
         </div>
       </div>
+      {{ end }}
     </div>
 
   </article>
