@@ -6,8 +6,8 @@
 	</div>
 
 	<div class="speakers-grid-3col">
-		{{ $speakers := where $.Site.Data.speakers "conferenceYear" 2025 }}
-		{{ range first 12 $speakers }}
+		{{ $speakers := where $.Site.Data.speakers "conferenceYear" 2026 }}
+		{{ range $speakers }}
 			<div class="speaker-card-wrapper">
 				{{ partial "speaker.html" . }}
 			</div>

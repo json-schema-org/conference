@@ -1,3 +1,37 @@
+# 2026 Schedule (JSON Schema talks from the light-blue rows)
+- day: 2026-12-01
+  start: "14:00"
+  end: "16:55"
+  rooms:
+    - room: main_2026
+      slots:
+        - slot: beyond_validation
+          talk: beyond_validation
+        - slot: not_yet_valid
+          talk: not_yet_valid
+
+- day: 2026-12-02
+  start: "11:50"
+  end: "14:55"
+  rooms:
+    - room: main_2026
+      slots:
+        - slot: json_schema_standardization
+          talk: json_schema_standardization
+        - slot: semantic_guardrails
+          talk: semantic_guardrails
+
+- day: 2026-12-03
+  start: "11:30"
+  end: "14:25"
+  rooms:
+    - room: main_2026
+      slots:
+        - slot: foundational_json_schema
+          talk: foundational_json_schema
+        - slot: reliable_mcp_tools
+          talk: reliable_mcp_tools
+
 # 2025 Schedule
 - day: 2025-12-11
   start: "08:45"

@@ -7,7 +7,7 @@ draft: false
 
 ### JSON Schema Conference | CNIT Forest Paris - France
 
-<h2 style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; margin:8px 0;">Dec 1, 2026</h2>
+<h2 style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; margin:8px 0;">Dec 1-3, 2026</h2>
 
 <div class="scroll-icon-positioned" aria-hidden="true">
   <svg class="icon icon-scroll-down">
@@ -19,9 +19,7 @@ draft: false
 {{< countdown >}}
 
 <div class="cta-row">
-{{< button-link label="Apply to Speak"
-              url="https://forms.gle/FkrStmzNm6P7f3d38"
-              target="_blank" >}}
+<a class="btn primary apply-speak-inactive" aria-disabled="true" tabindex="-1">Apply to Speak</a>
 
 <!--
 {{< button-link label="Become a Sponsor" 
@@ -43,7 +41,7 @@ draft: false
 
 {{% /jumbo %}}
 
-{{% home-info what="Day:1,Participants:+2000,Sessions:9" class="primary" %}}
+{{% home-info what="Day:3,Participants:+2000,Sessions:6" class="primary" %}}
 
 ## What is JSON Schema Conference?
 
@@ -54,7 +52,7 @@ of the JSON Schema Ecosystem to further the education, adoption and evolution of
 
 {{% home-speakers %}}
 
-## Meet Our 2025 Speakers
+## Meet Our 2026 Speakers
 
 Join us to hear from industry experts, thought leaders, and innovators in the JSON Schema ecosystem.
 

@@ -1,3 +1,40 @@
+# 2026 Slots
+- key: beyond_validation
+  start: "14:00"
+  end: "14:25"
+  duration: 25
+  row: { start: 1, end: 2 }
+
+- key: not_yet_valid
+  start: "16:30"
+  end: "16:55"
+  duration: 25
+  row: { start: 2, end: 3 }
+
+- key: json_schema_standardization
+  start: "11:50"
+  end: "12:15"
+  duration: 25
+  row: { start: 1, end: 2 }
+
+- key: semantic_guardrails
+  start: "14:30"
+  end: "14:55"
+  duration: 25
+  row: { start: 2, end: 3 }
+
+- key: foundational_json_schema
+  start: "11:30"
+  end: "11:55"
+  duration: 25
+  row: { start: 1, end: 2 }
+
+- key: reliable_mcp_tools
+  start: "14:00"
+  end: "14:25"
+  duration: 25
+  row: { start: 2, end: 3 }
+
 # 2025 Slots
 - key: breakfast
   start: "08:45"

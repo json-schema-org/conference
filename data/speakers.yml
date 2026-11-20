@@ -131,3 +131,45 @@
   city: ""
   photoURL: "/images/speakers/Speakers-2025/ben-hutton.jpeg"
   conferenceYear: 2025
+# 2026 Conference Speakers
+- name: "Jason Desrosiers"
+  company: "JSON Schema Spec & Tooling Architect at Hyperjump Software"
+  city: ""
+  photoURL: "/images/speakers/Speakers-2025/jason-jpg.jpeg"
+  conferenceYear: 2026
+
+- name: "Bart Dubbeldam"
+  company: "DC Analytics"
+  city: "Rotterdam, Netherlands"
+  photoURL: "/images/speakers/Speakers-2026/bart-dubbeldam.jpg"
+  conferenceYear: 2026
+
+- name: "Lisa Dusseault"
+  company: "Compaas"
+  city: "Palo Alto, California, United States"
+  photoURL: "/images/speakers/Speakers-2026/lisa-dusseault.jpg"
+  conferenceYear: 2026
+
+- name: "Jean-Pierre Dijcks"
+  company: "Distinguished Product Manager at Oracle"
+  city: ""
+  photoURL: "/images/speakers/Speakers-2026/jean-pierre-dijcks.jpg"
+  conferenceYear: 2026
+
+- name: "Beda Hammerschmidt"
+  company: "Oracle"
+  city: ""
+  photoURL: "/images/speakers/Speakers-2026/beda-hammerschmidt.jpg"
+  conferenceYear: 2026
+
+- name: "Ben Hutton"
+  company: "JSON Schema"
+  city: ""
+  photoURL: "/images/speakers/Speakers-2025/ben-hutton.jpeg"
+  conferenceYear: 2026
+
+- name: "Ayodele Aransiola"
+  company: "Software Engineer, Solution Architect"
+  city: "London, United Kingdom"
+  photoURL: "/images/speakers/Speakers-2026/ayodele-aransiola.jpg"
+  conferenceYear: 2026

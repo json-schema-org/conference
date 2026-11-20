@@ -3,18 +3,32 @@
 {{ .Content }}
 
 <div class="apply-speaker">
-  <a href="https://forms.gle/FkrStmzNm6P7f3d38" class="apply-button" target="_blank" rel="noopener">
+  <a class="apply-button apply-speak-inactive" aria-disabled="true" tabindex="-1">
     Apply to be a Speaker
   </a>
 </div>
 
 <section class="speakers-list">
   <ul class="speakers">
-    {{ $speakers := where .Site.Data.speakers "conferenceYear" 2025 }}
-    {{ range $speakers }}
+    {{ $all := .Site.Data.speakers }}
+    {{ $speakers2026 := where $all "conferenceYear" 2026 }}
+    {{ $names2026 := slice }}
+    {{ range $speakers2026 }}
+      {{ $names2026 = $names2026 | append .name }}
+    {{ end }}
+
+    {{ range $speakers2026 }}
       <li>
         {{ partial "speaker.html" . }}
       </li>
+    {{ end }}
+
+    {{ range where $all "conferenceYear" 2025 }}
+      {{ if not (in $names2026 .name) }}
+      <li>
+        {{ partial "speaker.html" . }}
+      </li>
+      {{ end }}
     {{ end }}
   </ul>
 </section>
@@ -38,10 +52,25 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
+.apply-speak-inactive,
+.apply-button.apply-speak-inactive {
+  background-color: #9bbfd6;
+  box-shadow: none;
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
 .apply-button:hover {
   background-color: #005f9c;
   box-shadow: 0 8px 16px rgba(0,0,0,0.25);
   transform: translateY(-1px) scale(1.02);
+}
+
+.apply-button.apply-speak-inactive:hover {
+  background-color: #9bbfd6;
+  box-shadow: none;
+  transform: none;
 }
 </style>
 

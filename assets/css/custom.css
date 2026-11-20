@@ -1,3 +1,11 @@
 .speaker-header {
 	padding-top: 30px;
 }
+.apply-speak-inactive,
+a.apply-speak-inactive.btn {
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.55;
+	background-color: #9bbfd6 !important;
+	box-shadow: none !important;
+}

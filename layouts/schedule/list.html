@@ -3,7 +3,7 @@
 <div class="schedule-hero">
     <div class="hero-content">
         <h1 class="schedule-heading">Conference Schedule 2026</h1>
-        {{ with (index (where $.Site.Data.rooms "key" "main") 0) }}
+        {{ with (index (where $.Site.Data.rooms "key" "main_2026") 0) }}
             <p class="schedule-hero-subtitle">{{ .description }}</p>
         {{ end }}
     </div>
@@ -12,15 +12,53 @@
 <main class="schedule-container">
     {{ .Content }}
 
-    <div style="text-align: center; padding: 4rem 1rem; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); margin: 2rem 0;">
-        <h2 style="color: var(--room-color); margin-bottom: 1rem;">Check back soon!</h2>
-        <p style="font-size: 1.2rem; color: #666;">We are working hard on the 2026 schedule. Stay tuned!</p>
-    </div>
+    {{ $days2026 := where $.Site.Data.schedule "day" ">=" "2026-01-01" }}
+    {{ if $days2026 }}
+    <nav class="day-tabs day-tabs-2026">
+        {{ range $days2026 }}
+            <a href="#day_{{ .day }}">{{ dateFormat "Mon, Jan 2" .day }}</a>
+        {{ end }}
+    </nav>
+    {{ end }}
+
+    {{ range $dayIndex, $day := $days2026 }}
+            <section id="day_{{ $day.day }}" class="day-block day-block-2026">
+                <h2 class="schedule-day-heading">{{ dateFormat "Monday, January 2, 2006" (time $day.day) }}</h2>
+
+                {{ $slotsForDay := (index $day.rooms 0).slots }}
+                {{ range $slotRef := $slotsForDay }}
+                    {{ with (index (where $.Site.Data.slots "key" $slotRef.slot) 0) }}
+                        {{ $slotData := . }}
+                        <div class="timeslot timeslot-2026">
+                            <div class="time-marker">{{ $slotData.start }} - {{$slotData.end}}</div>
+                            <div class="sessions-grid">
+
+                                {{ range $index, $room := $day.rooms }}
+                                    {{ with (index (where $room.slots "slot" $slotData.key) 0) }}
+                                        {{ $sessionRef := . }}
+
+                                        {{ with (index (where $.Site.AllPages "Params.key" $sessionRef.talk) 0) }}
+                                            {{ $sessionPage := . }}
+                                            {{ $roomData := index (where $.Site.Data.rooms "key" $room.room) 0 }}
+
+                                            {{ partial "schedule-session.html" (dict "sessionPage" $sessionPage "roomData" $roomData) }}
+
+                                        {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </section>
+    {{ end }}
 
     {{ range $dayIndex, $day := $.Site.Data.schedule }}
+            {{ if hasPrefix (printf "%s" $day.day) "2026" }}
+            {{ else }}
             <details class="schedule-accordion">
                 <summary class="accordion-header">
-                    <span class="accordion-title">See {{ if eq $dayIndex 0 }}2025{{ else }}2024{{ end }} Sessions</span>
+                    <span class="accordion-title">See {{ dateFormat "2006" $day.day }} Sessions</span>
                     <span class="accordion-icon">▼</span>
                 </summary>
                 <div class="accordion-content">
@@ -58,6 +96,7 @@
 
                 </div>
             </details>
+            {{ end }}
     {{ end }}
 </main>
 
@@ -306,6 +345,36 @@
             opacity: 1;
             transform: translateY(0);
         }
+    }
+
+    /* 2026 schedule stays open (does not collapse) */
+    .day-block-2026 {
+        display: block;
+        margin-bottom: 3rem;
+        padding-top: 1rem;
+    }
+    /* theme.css hides all h2 under .section.schedule */
+    main.schedule-container .day-block-2026 h2.schedule-day-heading {
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        border-bottom: 3px solid var(--border-color);
+        padding-bottom: 0.75rem;
+        margin: 2rem 0 1.5rem 0;
+    }
+    .day-block-2026 .timeslot-2026 {
+        margin-bottom: 1.5rem;
+    }
+    .day-block-2026 .sessions-grid {
+        display: block;
+        width: 100%;
+    }
+    .day-tabs-2026 {
+        position: sticky;
+        top: 0;
+        margin-top: 0;
     }
 
 	@media (max-width: 480px) {

@@ -1,29 +1,32 @@
 platinum:
-  - name: Sourcemeta
-    homepage_url: https://www.sourcemeta.com/
-    logo: sourcemeta.svg
-    description: Sourcemeta provides tools and solutions for JSON Schema validation and management.
-  - name: .txt
-    homepage_url: https://txt.co/
-    logo: txt.svg
-    description: .txt is a cloud platform for document management and collaboration.
-  - name: Oracle
+  - name: Oracle AI Database
     homepage_url: https://www.oracle.com/
     logo: oracle.png
     description: Oracle is a global technology company providing cloud solutions, databases, and enterprise software.
 
-silver:
+past:
+  - name: Sourcemeta
+    homepage_url: https://www.sourcemeta.com/
+    logo: sourcemeta.svg
+    logo_dir: partners/platinum
+    description: Sourcemeta provides tools and solutions for JSON Schema validation and management.
+  - name: .txt
+    homepage_url: https://txt.co/
+    logo: txt.svg
+    logo_dir: partners/platinum
+    description: .txt is a cloud platform for document management and collaboration.
   - name: Remote
     homepage_url: https://remote.com/
     logo: remote.svg
+    logo_dir: partners/silver
     description: Remote is a global HR platform for distributed teams.
   - name: Siemens
     homepage_url: https://www.siemens.com/
     logo: simens.svg
+    logo_dir: partners/silver
     description: Siemens is a global technology company focused on industry, infrastructure, transport, and healthcare.
-
-media:
-  - name: dev.events
-    homepage_url: https://dev.events/
-    logo: dev-events.png
-    description: dev.events is a platform for discovering and promoting tech events.
+  - name: Octue
+    homepage_url: https://www.octue.com/
+    logo: octue.svg
+    logo_dir: partners/platinum
+    description: Octue is a past platinum sponsor of the JSON Schema Conference.
