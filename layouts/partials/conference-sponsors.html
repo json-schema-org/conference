@@ -1,0 +1,24 @@
+<div class="sponsors-section">
+  <section aria-labelledby="current-sponsors">
+    <hr class="sponsors-divider" />
+    <h2 id="current-sponsors" class="sponsor-group-title">2026 Platinum Sponsor</h2>
+    <div class="sponsors-grid">
+      {{ range .Data.partner.platinum }}
+        {{ partial "conference-sponsor-logo.html" . }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section aria-labelledby="past-sponsors">
+    <hr class="sponsors-divider" />
+    <h2 id="past-sponsors" class="sponsor-group-title">Past Sponsors</h2>
+    <div class="sponsors-grid">
+      {{ range .Data.partner.past }}
+        {{ partial "conference-sponsor-logo.html" . }}
+      {{ end }}
+      {{ range .Data.sponsors.platinum.items }}
+        {{ partial "conference-sponsor-logo.html" (merge . (dict "logo" (printf "/images/partners/platinum/%s" .logo))) }}
+      {{ end }}
+    </div>
+  </section>
+</div>

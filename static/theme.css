@@ -114,6 +114,13 @@ body {
 }
 
 
+button.btn.cfp-closed:disabled {
+  background: #e5e7eb;
+  color: #374151;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .cta-row {
   display: flex;
   gap: 2rem; 
@@ -3798,4 +3805,9 @@ body>main .talk {
 	.page.code-of-conduct .content {
 		padding: 0 .5em
 	}
+}
+.sponsors-section .sponsor-group-title {
+  text-align: center;
+  font-weight: bold;
+  color: #595962;
 }

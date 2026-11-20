@@ -1,29 +1,23 @@
 platinum:
+  - name: Oracle AI Database
+    homepage_url: https://www.oracle.com/
+    logo: /images/partners/platinum/oracle.png
+    description: Oracle is a global technology company providing cloud solutions, databases, and enterprise software.
+
+past:
   - name: Sourcemeta
     homepage_url: https://www.sourcemeta.com/
-    logo: sourcemeta.svg
+    logo: /images/partners/platinum/sourcemeta.svg
     description: Sourcemeta provides tools and solutions for JSON Schema validation and management.
   - name: .txt
     homepage_url: https://txt.co/
-    logo: txt.svg
+    logo: /images/partners/platinum/txt.svg
     description: .txt is a cloud platform for document management and collaboration.
-  - name: Oracle
-    homepage_url: https://www.oracle.com/
-    logo: oracle.png
-    description: Oracle is a global technology company providing cloud solutions, databases, and enterprise software.
-
-silver:
   - name: Remote
     homepage_url: https://remote.com/
-    logo: remote.svg
+    logo: /images/partners/silver/remote.svg
     description: Remote is a global HR platform for distributed teams.
   - name: Siemens
     homepage_url: https://www.siemens.com/
-    logo: simens.svg
+    logo: /images/partners/silver/simens.svg
     description: Siemens is a global technology company focused on industry, infrastructure, transport, and healthcare.
-
-media:
-  - name: dev.events
-    homepage_url: https://dev.events/
-    logo: dev-events.png
-    description: dev.events is a platform for discovering and promoting tech events.

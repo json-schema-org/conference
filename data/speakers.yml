@@ -131,3 +131,20 @@
   city: ""
   photoURL: "/images/speakers/Speakers-2025/ben-hutton.jpeg"
   conferenceYear: 2025
+
+# 2026 Conference Speakers
+- name: Bart Dubbeldam
+  photoURL: /images/speakers/Speakers-2026/bart-dubbeldam.jpg
+  conferenceYear: 2026
+- name: Lisa Dusseault
+  photoURL: /images/speakers/Speakers-2026/lisa-dusseault.jpg
+  conferenceYear: 2026
+- name: Jean-Pierre Dijcks
+  photoURL: /images/speakers/Speakers-2026/jean-pierre-dijcks.jpg
+  conferenceYear: 2026
+- name: Beda Hammerschmidt
+  photoURL: /images/speakers/Speakers-2026/beda-hammerschmidt.jpg
+  conferenceYear: 2026
+- name: Ayodele Aransiola
+  photoURL: /images/speakers/Speakers-2026/ayodele-aransiola.jpg
+  conferenceYear: 2026

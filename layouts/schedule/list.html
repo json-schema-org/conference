@@ -3,24 +3,44 @@
 <div class="schedule-hero">
     <div class="hero-content">
         <h1 class="schedule-heading">Conference Schedule 2026</h1>
-        {{ with (index (where $.Site.Data.rooms "key" "main") 0) }}
-            <p class="schedule-hero-subtitle">{{ .description }}</p>
-        {{ end }}
+        <p class="schedule-hero-subtitle">JSON Schema talks at the API Standards Conference · Dec 1–3, 2026</p>
     </div>
 </div>
 
-<main class="schedule-container">
+<div class="schedule-container">
     {{ .Content }}
 
-    <div style="text-align: center; padding: 4rem 1rem; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); margin: 2rem 0;">
-        <h2 style="color: var(--room-color); margin-bottom: 1rem;">Check back soon!</h2>
-        <p style="font-size: 1.2rem; color: #666;">We are working hard on the 2026 schedule. Stay tuned!</p>
-    </div>
+    {{ $days := .Site.Data.schedule_2026 }}
+    <nav class="schedule-day-links" aria-label="2026 schedule dates">
+        {{ range $days }}
+            <a href="#day_{{ .day }}">{{ dateFormat "Mon, Jan 2" .day }}</a>
+        {{ end }}
+    </nav>
+    <p class="schedule-timezone">All times are local to Paris (CET).</p>
+    {{ range $days }}
+        {{ $day := .day }}
+        <section class="schedule-current-day" id="day_{{ $day }}" aria-labelledby="heading_{{ $day }}">
+            <h2 id="heading_{{ $day }}">{{ dateFormat "Monday, January 2" $day }}</h2>
+            <ul>
+                {{ range .sessions }}
+                    <li>
+                        <p class="schedule-current-time">
+                            <time datetime="{{ $day }}T{{ .start }}:00+01:00">{{ .start }}</time>–<time datetime="{{ $day }}T{{ .end }}:00+01:00">{{ .end }}</time>
+                        </p>
+                        <div>
+                            <h3>{{ .title }}</h3>
+                            <p>{{ delimit .speakers ", " " and " }}</p>
+                        </div>
+                    </li>
+                {{ end }}
+            </ul>
+        </section>
+    {{ end }}
 
-    {{ range $dayIndex, $day := $.Site.Data.schedule }}
+    {{ range $day := $.Site.Data.schedule }}
             <details class="schedule-accordion">
                 <summary class="accordion-header">
-                    <span class="accordion-title">See {{ if eq $dayIndex 0 }}2025{{ else }}2024{{ end }} Sessions</span>
+                    <span class="accordion-title">See {{ dateFormat "2006" $day.day }} Sessions</span>
                     <span class="accordion-icon">▼</span>
                 </summary>
                 <div class="accordion-content">
@@ -59,7 +79,7 @@
                 </div>
             </details>
     {{ end }}
-</main>
+</div>
 
 <style>
     :root {
@@ -140,51 +160,61 @@
         margin: 0 auto;
         padding: 0 1rem;
     }
-    .schedule-header {
-        text-align: center;
-        padding: 2rem 1rem 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .schedule-main-title {
-        font-size: 3.5rem;
-        font-weight: 900;
-        margin: 0 0 0.5rem 0;
-        color: #000;
-        line-height: 1.2;
-    }
-
-    .schedule-subtitle {
-        font-size: 1.6rem;
-        color: #555;
-        margin: 0;
-        font-weight: 500;
-    }
-    .day-tabs {
-        position: sticky;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        z-index: 1000;
+    .schedule-day-links {
         display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-        padding: 1rem 0;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        border-bottom: 1px solid var(--border-color);
-        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
     }
-    .day-tabs a {
-        text-decoration: none;
-        color: var(--accent-color);
+
+    .schedule-day-links a {
+        color: #005a96;
+        text-decoration: underline;
+    }
+
+    .schedule-timezone {
+        color: var(--time-color);
+        margin-top: 1rem;
+    }
+
+    .schedule-container .schedule-current-day {
+        margin: 2rem 0;
+        scroll-margin-top: 5rem;
+    }
+
+    .schedule-container .schedule-current-day h2 {
+        display: block;
+        font-size: 1.75rem;
+        margin: 0 0 1rem;
+    }
+
+    .schedule-current-day ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .schedule-current-day li {
+        display: grid;
+        grid-template-columns: 8rem minmax(0, 1fr);
+        gap: 0.25rem 1rem;
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.75rem;
+        background: var(--card-bg);
+    }
+
+    .schedule-current-day h3,
+    .schedule-current-day p {
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .schedule-current-time {
         font-weight: 600;
-        padding: 0.75rem 1.5rem;
-        border-radius: 50px;
-        transition: background-color 0.2s ease, color 0.2s ease;
+        font-variant-numeric: tabular-nums;
     }
-    .day-tabs a:hover {
-        background-color: #eaf3fb;
-    }
+
     .day-block {
         margin-bottom: 4rem;
         padding-top: 2rem;
@@ -330,11 +360,8 @@
             grid-template-columns: 1fr;
         }
 
-        .day-tabs {
-            justify-content: flex-start;
-            padding: 0.5rem 1rem;
-            white-space: nowrap;
-            overflow-x: auto;
+        .schedule-current-day li {
+            grid-template-columns: 1fr;
         }
         .time-marker {
             /* Style the time as a full-width header for the slot */

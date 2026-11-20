@@ -1,21 +1,22 @@
 baseURL = "/"
 relativeURLs = true
 languageCode = "en-us"
-title = "JSON Schema Conference 25 - Paris"
+title = "JSON Schema Conference 2026 - Paris"
 
 # theme
 theme = "devfest-theme-hugo"
 
 # params
 [params]
-    title = "JSON Schema Conference 25"
-    date = "2025-12-11"  # update date 
-    description = "Join us in Paris for JSON Schema Conference 2025 - December 11th at CNIT Forest"
+    title = "JSON Schema Conference 2026"
+    year = 2026
+    date = "2026-12-01"
+    description = "Join us at CNIT Forest in Paris on December 1–3 for the 2026 JSON Schema Conference, part of the API Standards Conference."
     images = ["/images/"]
     email = "info@json-schema.org"
     keywords = "event, gdg, gde, devfest, google, programming, android, chrome, developers, web, cloud, androiddev"
     appleTouchIcon = "apple-touch-icon.png"
-    cfpUrl = "https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx"
+    ticketUrl = "https://portal.joinfost.io/event/future-of-software-technologies-paris-2026/5e27c773-7fa8-4169-b6a7-93494701212a/api-standards-conference?coupon=APISTANDARDSFREE144"
     favicon32 = "/favicon.ico"
     favicon16 = "/favicon.ico"
     safariPinnedTab = "/safari-pinned-tab.svg"
@@ -25,17 +26,6 @@ theme = "devfest-theme-hugo"
     jumbo = "images/logos/json-schema-logo-white.svg"
     header = "images/logos/json-schema-logo-white.svg"
     footer = "images/logos/json-schema-logo-white.svg"
-
-[Data]
-  schedule = "2025-12-11"  # update date 
-
-[menu]
-[[menu.main]]
-    identifier = "apply-to-speak"
-    name = "CFP"
-    url = "https://forms.gle/FkrStmzNm6P7f3d38"
-    weight = 200
-    external = false
 
 [languages]
 [languages.en]
